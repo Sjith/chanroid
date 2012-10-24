@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_original"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_navibar" >
+
+        <TextView
+            android:id="@+id/aod_play_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Busan e-FM"
+            android:textSize="18sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/aod_play_backControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_list" >
+        </ImageView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/aod_play_titleImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" >
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_player"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/aod_btn_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/btn_play" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/img_sounddown" >
+        </ImageView>
+
+        <SeekBar
+            android:id="@+id/aod_volumn_sk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+        </SeekBar>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/img_soundup" >
+        </ImageView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_aod_select_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/btn_selectdate" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Date"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+        </TextView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp" >
+
+        <TextView
+            android:id="@+id/aod_play_script"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp" >
+        </TextView>
+    </ScrollView>
+
+</LinearLayout>

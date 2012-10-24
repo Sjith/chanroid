@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:background="#efefef"
+			android:padding="5dp" android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<ImageView android:layout_width="100dp"
+						android:layout_marginRight="5dp" android:layout_height="100dp"
+						android:src="@drawable/icon_70" android:id="@+id/eventitemicon"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentLeft="true"></ImageView>
+			<TextView android:textSize="20sp"
+						android:id="@+id/meventitemtitle" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="TextView"
+						android:layout_alignTop="@id/eventitemicon" android:textColor="#000000"
+						android:layout_toRightOf="@id/eventitemicon"></TextView>
+			<TextView android:id="@+id/meventitemend" android:textSize="12sp"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="TextView" android:layout_alignBottom="@id/eventitemicon"
+						android:textColor="#000000" android:layout_alignLeft="@+id/meventitemtitle"></TextView>
+			<TextView android:text="TextView" android:id="@+id/meventitemcontent" android:gravity="center_vertical"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="3dp"
+						android:layout_below="@+id/meventitemtitle" android:layout_margin="2dp" android:textSize="14sp"
+						android:layout_alignLeft="@+id/meventitemtitle" android:textColor="#336699" android:maxLines="2"
+						android:layout_above="@+id/meventitemstart" android:layout_toLeftOf="@+id/imageView1"></TextView>
+			<TextView android:id="@+id/meventitemstart" android:textSize="12sp"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="TextView" android:textColor="#000000"
+						android:layout_above="@id/meventitemend" android:layout_alignLeft="@id/meventitemend"></TextView>
+			<ImageView android:id="@+id/imageView1"
+						android:layout_margin="10dp" android:layout_width="wrap_content"
+						android:src="@drawable/center_arrow" android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_alignParentRight="true"></ImageView>
+
+
+</RelativeLayout>

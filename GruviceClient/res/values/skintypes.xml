@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="SkinTypeEntries"><item>Gruvice1</item>
+<item>Gruvice2</item>
+</string-array>
+<string-array name="SkinTypeValues"><item>Gruvice1</item>
+<item>Gruvice2</item>
+</string-array>
+</resources>

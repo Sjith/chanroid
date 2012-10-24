@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical" android:background="#FFFFFF">
+
+
+
+
+	<RelativeLayout android:id="@+id/RelativeLayout02"
+		android:layout_width="wrap_content" android:background="#888888"
+		android:layout_height="50dip">
+		<ImageView android:id="@+id/ImageView06"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></ImageView>
+		<ImageView android:id="@+id/ImageView07"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_alignParentRight="true"></ImageView>
+		<LinearLayout android:id="@+id/LinearLayout01"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_centerInParent="true">
+			<Button android:id="@+id/tmBtnExcelInfo" android:onClick="onClick"
+				android:layout_width="wrap_content" android:background="@drawable/topmenu_land_excel_info"
+				android:layout_height="50dip"></Button>
+			<ImageView android:id="@+id/ImageView03"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/topmenu_dot" android:layout_gravity="center"
+				android:layout_marginTop="5dip" android:visibility="gone"></ImageView>
+			<Button android:id="@+id/tmBtnFieldGC" android:onClick="onClick"
+				android:layout_width="wrap_content" android:background="@drawable/topmenu_land_field_gc"
+				android:layout_height="50dip"></Button>
+			<ImageView android:id="@+id/ImageView04"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/topmenu_dot" android:layout_gravity="center"
+				android:layout_marginTop="5dip" android:visibility="gone"></ImageView>
+			<Button android:id="@+id/tmBtnScreenGC" android:onClick="onClick"
+				android:layout_width="wrap_content" android:background="@drawable/topmenu_land_screen_gc"
+				android:layout_height="50dip"></Button>
+			<ImageView android:id="@+id/ImageView05"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="5dip" android:layout_gravity="center"
+				android:background="@drawable/topmenu_dot" android:visibility="gone"></ImageView>
+			<Button android:id="@+id/tmBtnMyGolf" android:onClick="onClick"
+				android:background="@drawable/topmenu_land_mygolf"
+				android:layout_width="wrap_content" android:layout_height="50dip"></Button>
+
+
+
+		</LinearLayout>
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<com.google.android.maps.MapView
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:apiKey="0Ek0NyNrQWUx9ozfKkeOXaNGxUXheK2TVVGQMSQ"
+			android:enabled="true" android:clickable="true" android:id="@+id/MapView"
+			android:layout_marginTop="1dip" />
+		<RelativeLayout android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true" android:id="@+id/searchLayout"
+			android:layout_width="fill_parent" android:layout_height="40dip"
+			android:background="@drawable/btn_search_unpress_back">
+
+
+
+			<LinearLayout android:id="@+id/LinearLayout02"
+				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:layout_margin="3dip" android:background="@drawable/m_search_back"
+				android:gravity="center">
+				<ImageView android:layout_height="wrap_content"
+					android:id="@+id/searchEtName" android:background="@drawable/ttl_info"
+					android:layout_width="wrap_content"></ImageView>
+			</LinearLayout>
+		</RelativeLayout>
+		<Button android:id="@+id/mBtnList" android:onClick="onClick"
+			android:background="@drawable/btn_list" android:layout_marginLeft="20dip"
+			android:layout_above="@+id/btndummy" android:layout_height="50dip"
+			android:layout_width="50dip" android:visibility="gone"></Button>
+		<Button android:id="@+id/mBtnMyLocation" android:onClick="onClick"
+			android:background="@drawable/btn_mylocation" android:layout_width="40dip"
+			android:layout_below="@+id/searchLayout" android:layout_height="40dip"
+			android:layout_toLeftOf="@+id/btndummy2" android:visibility="invisible"></Button>
+
+		<Button android:layout_width="wrap_content" android:id="@+id/btndummy"
+			android:visibility="invisible" android:layout_alignParentBottom="true"
+			android:layout_height="20dip"></Button>
+		<Button android:text="@+id/Button01" android:id="@+id/btndummy2"
+			android:layout_alignParentRight="true" android:layout_height="20dip"
+			android:layout_width="20dip" android:layout_alignParentBottom="true"
+			android:visibility="invisible"></Button>
+
+
+
+
+
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_above="@+id/btndummy" android:id="@+id/RLZoomPanel"
+			android:layout_marginLeft="15dip" android:layout_width="120dip"
+			android:layout_alignRight="@+id/mBtnMyLocation">
+
+			<RelativeLayout android:layout_height="wrap_content"
+				android:id="@+id/ZoomPanel" android:layout_centerInParent="true"
+				android:layout_width="39dip">
+				<ImageView android:id="@+id/ImageView02"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/expand_ing"
+					android:layout_centerInParent="true"></ImageView>
+				<ImageView android:id="@+id/ImageView01"
+					android:layout_height="wrap_content" android:background="@drawable/expand_dot"
+					android:layout_centerVertical="true" android:layout_marginLeft="3dip"
+					android:layout_alignParentRight="true" android:layout_width="wrap_content"></ImageView>
+			</RelativeLayout>
+			<Button android:id="@+id/mBtnZoomIn" android:onClick="onClick"
+				android:layout_alignTop="@+id/mBtnList" android:layout_toRightOf="@+id/mBtnList"
+				android:background="@drawable/btn_zoomin" android:layout_height="50dip"
+				android:layout_width="50dip" android:layout_alignParentRight="true"></Button>
+			<Button android:id="@+id/mBtnZoomOut" android:onClick="onClick"
+				android:layout_alignTop="@+id/mBtnList" android:background="@drawable/btn_zoomout"
+				android:layout_height="50dip" android:layout_width="50dip"
+				android:layout_alignParentLeft="true"></Button>
+		</RelativeLayout>
+	</RelativeLayout>
+</LinearLayout>

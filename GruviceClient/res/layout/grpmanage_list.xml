@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent">
+
+	<RelativeLayout android:id="@+id/gmRelativeLayout"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:background="#FFFFFF">
+		<ListView android:id="@+id/gmLvGroups" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" android:layout_above="@+id/gmBtnDeleteGrp"
+			android:cacheColorHint="#00000000" android:padding="10dip">
+		</ListView>
+
+		<Button android:layout_width="wrap_content"
+			android:layout_alignParentBottom="true" android:id="@+id/gmBtnDeleteGrp"
+			android:text="@string/txtOK" android:onClick="onClick"
+			android:background="@drawable/v2_btn_bg" android:textColor="#FFFFFF"
+			android:layout_height="50dip">
+		</Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_alignParentBottom="true" android:id="@+id/gmBtnAddGrp"
+			android:text="@string/gmBtnAddGrp" android:onClick="onClick"
+			android:layout_toRightOf="@+id/gmBtnDeleteGrp"
+			android:background="@drawable/v2_btn_bg" android:textColor="#FFFFFF"
+			android:layout_height="50dip">
+		</Button>
+		<ImageView android:id="@+id/gmImageView"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true" android:background="@drawable/v2_ml_bottom"
+			android:layout_width="90dip" android:layout_height="40dip"></ImageView>
+	</RelativeLayout>
+</LinearLayout>

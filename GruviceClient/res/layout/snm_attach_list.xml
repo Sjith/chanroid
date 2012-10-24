@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/snmRl02"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+
+	<Button android:layout_width="wrap_content"
+		android:layout_alignParentBottom="true" android:visibility="visible"
+		android:id="@+id/snmBtnAttachCommit" android:text="확인"
+		android:onClick="onClick" android:background="@drawable/v2_btn_bg"
+		android:layout_height="50dip" android:padding="5dip"
+		android:textColor="#FFFFFF">
+	</Button>
+		
+	<ListView android:layout_width="fill_parent" android:id="@+id/snmAttachListView"
+		android:layout_above="@id/snmBtnAttachCommit" 
+		android:layout_height="fill_parent" android:cacheColorHint="#00000000">
+	</ListView>
+
+	<Button android:layout_width="wrap_content" android:layout_toRightOf="@id/snmBtnAttachCommit"
+		android:layout_alignParentBottom="true" android:id="@+id/snmBtnAttachCancel" android:text="취소"
+		android:onClick="onClick" android:background="@drawable/v2_btn_bg"
+		android:layout_height="50dip" android:padding="5dip"
+		android:textColor="#FFFFFF" android:visibility="visible">
+	</Button>
+	<Button android:layout_width="wrap_content" android:layout_toRightOf="@id/snmBtnAttachCancel"
+		android:layout_alignParentBottom="true" android:id="@+id/snmBtnAttachRemove" android:text="삭제"
+		android:onClick="onClick" android:background="@drawable/v2_btn_bg"
+		android:layout_height="50dip" android:padding="5dip"
+		android:textColor="#FFFFFF" android:visibility="visible">
+	</Button>
+  	
+  
+  
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, MenuActivity!</string>
+	<string name="app_name">홀인원 골프정보</string>
+	<string name="mnBtnGoogleMap">GC</string>
+	<string name="mnBtnSearch">ScreenGC</string>
+	<string name="mnBtnExcel">Excel</string>
+	<string name="srchEtSearch">Name of Golf Club</string>
+	<string name="mnBtnMyGolf">My Golf</string>
+	<string name="enterNameOfGC">골프장명입력</string>
+	
+</resources>

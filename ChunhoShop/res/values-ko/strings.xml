@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+			<string name="hello">Hello World, ChunhoShopActivity!</string>
+			<string name="app_name">천호쇼핑</string>
+
+			<string name="alert">알림</string>
+			<string name="reallyexit">종료하시겠습니까?</string>
+			<string name="yes">예</string>
+			<string name="no">아니오</string>
+			<string name="done">확인</string>
+			<string name="back">뒤로</string>
+
+			<string name="searchproduct">제품검색</string>
+			<string name="chunhozone">천호ZONE</string>
+			<string name="mychunho">고객센터</string>
+			<string name="mycart">장바구니</string>
+			<string name="buylist">주문내역</string>
+
+			<string name="search">검색</string>
+			<string name="searchtext">검색어</string>
+			<string name="event">이달의행사</string>
+			<string name="productdesc">제품정보</string>
+			<string name="commentlist">상품평</string>
+			<string name="setting">혜택</string>
+
+			<string name="notice">공지사항</string>
+			<string name="membonus">회원 혜택/사은품</string>
+			<string name="sending">주문\n배송조회</string>
+			<string name="faq">FAQ</string>
+			<string name="samplecomplete">샘플신청이 정상적으로 완료되었습니다.\n\n샘플신청은 한달에 한번만 가능합니다.(30일
+						기준)\n\n무료샘플 배송기간은 1주일 정도 소요되며,\n신청자가 많을경우 배송이 지연될 수
+						있습니다.\n\n감사합니다.\n\n천호제품은 모바일에서도[천호쇼핑]</string>
+			<string name="ordercomplete">모바일 주문이 정상적으로 예약되었습니다.\n\n안전거래를 위하여\n적립금, 할인쿠폰 및
+						쇼핑칩, 구매사은품 등\n다양하고 푸짐한 최종혜택은\n상담시 적용됩니다.\n\n감사합니다.\n\n천호제품은
+						모바일에서도[천호쇼핑]</string>
+			<string name="getevent">이벤트\n당첨자</string>
+			<string name="way">찾아\n오시는길</string>
+			<string name="sample">무료샘플신청</string>
+			<string name="membonus1">천호쇼핑 회원님만 누릴 수 있는 특별한 혜택을 확인하세요.</string>
+			<string name="membonus2">믿음과 신뢰의 천호식품 제품을 쉽고 빠르게 만나는 천호쇼핑 모바일 공간에서 회원님을 위한
+						푸짐한 혜택과 다양한 이벤트를 놓치지 마세요!\n\n깜짝 특별사은품도 있으니 자주 방문해 주세요.</string>
+			<string name="sampleinfo">1. 샘플 신청은 2가지 제품에 대해 각각 2개씩 총 4개 발송, 일부제품은
+						제외됩니다.\n\n건강기능식품은 관련법에 의거 샘플 증정 안됩니다. \n\n2. 같은 주소지, 전화번호일 경우 한번만
+						신청 가능하며, 그 이상은 신청하셔도 발송되지 않습니다. </string>
+			<string name="ordertext1">고객님의 안전거래를 위해 전화로 주문결제를 받습니다. 원하는 시간을 입력해주시면, 해당
+						시간에 맞춰 전화를 드립니다. 안전하고 간단하게 주문하세요!</string>
+			<string name="ordertext2">3만원 미만 주문 시 배송비 2,500원이 추가됩니다.\n1:1 무료 맞춤 상담
+						18시까지\n토요일 09:00~17:00시까지\n일요일/공휴일 휴무</string>
+
+
+			<string name="ingredient">성분</string>
+			<string name="target">대상별</string>
+			<string name="situation">상황별</string>
+			<string name="health">건강기능</string>
+			<string name="giftcuchun">선물추천</string>
+			<string name="pricekind">금액대</string>
+
+			<string name="price1">10만원대</string>
+			<string name="price2">20만원대</string>
+			<string name="price3">30만원대</string>
+			<string name="price4">40만원대</string>
+
+			<string name="health1">남성 건강</string>
+			<string name="health2">여성 건강</string>
+			<string name="health3">부모님 건강</string>
+			<string name="health4">자녀/수험생 건강</string>
+
+			<string name="sit1">몸이 천근만근 하다면</string>
+			<string name="sit2">활기찬 결혼생활을 위해</string>
+			<string name="sit3">독소 배출이 필요하다면</string>
+			<string name="sit4">몸 속 찬 기운이 걱정된다면</string>
+			<string name="sit5">몸 속 흐름이 걱정된다면</string>
+			<string name="sit6">환절기마다 힘들다면</string>
+			<string name="sit7">TV, 컴퓨터 노출 많다면</string>
+			<string name="sit8">과도한 업무에 시달린다면</string>
+			<string name="sit9">체지방, 변비, 피부 관련</string>
+			<string name="sit10">금주, 금연을 하고 있다면</string>
+
+			<string name="galic">마늘</string>
+			<string name="onion">양파</string>
+			<string name="blueberry">블루베리</string>
+			<string name="ginseng">홍삼</string>
+			<string name="ssuk">쑥</string>
+			<string name="doraji">도라지</string>
+			<string name="hutgae">헛개</string>
+			<string name="sansuyu">산수유</string>
+			<string name="best">베스트</string>
+			<string name="juice">과즙류</string>
+
+
+
+</resources>

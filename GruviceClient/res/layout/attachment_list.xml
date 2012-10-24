@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+
+	<RelativeLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/snmRl01">
+		<ListView android:layout_width="fill_parent" android:id="@+id/alLvFileList"
+			android:layout_above="@+id/alBtnDownLoad" android:layout_below="@+id/alTvStorageSatus"
+			android:layout_height="fill_parent" android:cacheColorHint="#00000000">
+		</ListView>
+		<Button android:layout_width="wrap_content"
+			android:layout_alignParentBottom="true" android:visibility="visible"
+			android:id="@+id/alBtnDownLoad" android:text="@string/alBtnDownLoad" android:onClick="onClickDownloadFile"
+			android:background="@drawable/v2_btn_bg" android:layout_height="50dip" android:padding="5dip" android:textColor="#FFFFFF"></Button>
+		<TextView android:layout_height="wrap_content" android:text="@+id/TextView01"
+			android:layout_width="wrap_content" android:layout_alignParentBottom="false"
+			android:id="@+id/alTvStorageSatus" android:textColor="#FFFFFF" android:textSize="20dip" android:paddingLeft="5dip"></TextView>
+		<EditText android:text="@+id/EditText01"
+			android:layout_height="wrap_content" android:id="@+id/etSaveFilePath"
+			android:layout_toRightOf="@+id/btnDownLoad"
+			android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+			android:visibility="invisible"></EditText>
+		<Button android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_toRightOf="@+id/btnDownLoad"
+			android:id="@+id/btnDownloadCancel" android:layout_alignParentBottom="true"
+			android:text="Cancel" android:visibility="invisible"></Button>
+
+	</RelativeLayout>
+
+
+</LinearLayout>

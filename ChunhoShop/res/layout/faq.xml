@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:background="#ffffff"
+			android:layout_width="match_parent" android:layout_height="match_parent">
+			<ProgressBar android:layout_height="wrap_content"
+						android:layout_gravity="center" android:id="@+id/faqprogress"
+						android:visibility="gone" style="?android:attr/progressBarStyleLarge"
+						android:layout_width="wrap_content"></ProgressBar>
+			<LinearLayout android:layout_width="match_parent"
+						android:id="@+id/linearLayout1" android:layout_height="match_parent"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+									android:gravity="center" android:padding="5dp"
+									android:layout_width="match_parent" android:id="@+id/linearLayout2">
+									<Button android:text="문자문의" android:id="@+id/smsbtn"
+												android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+												android:layout_weight="1" android:textColor="#ffffff"
+												android:background="@drawable/login_btn" android:onClick="onClick"
+												android:layout_width="wrap_content" android:layout_height="40dp"></Button>
+									<Button android:text="이메일문의" android:id="@+id/mailbtn"
+												android:layout_weight="1" android:textColor="#ffffff"
+												android:background="@drawable/login_btn" android:onClick="onClick"
+												android:layout_width="wrap_content" android:layout_height="40dp"></Button>
+									<Button android:text="무료전화" android:id="@+id/callbtn"
+												android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+												android:layout_weight="1" android:textColor="#ffffff"
+												android:background="@drawable/login_btn" android:onClick="onClick"
+												android:layout_width="wrap_content" android:layout_height="40dp"></Button>
+						</LinearLayout>
+						<ListView android:layout_width="wrap_content"
+									android:layout_height="wrap_content" android:background="#ffffff"
+									android:id="@+id/faqlist"></ListView>
+			</LinearLayout>
+
+			<FrameLayout android:layout_width="match_parent"
+						android:visibility="gone" android:id="@+id/faqdesc"
+						android:layout_height="match_parent"></FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/main_back"
+			android:layout_width="match_parent" android:layout_height="match_parent">
+			<LinearLayout android:layout_width="match_parent"
+						android:orientation="vertical" android:layout_height="wrap_content"
+						android:id="@+id/msgheader">
+						<LinearLayout android:layout_height="wrap_content"
+									android:layout_width="match_parent" android:id="@+id/msglinearLayout1">
+									<EditText android:id="@+id/msguserText1" android:hint="@string/user"
+												android:layout_width="wrap_content" android:layout_height="wrap_content"
+												android:layout_weight="1" android:singleLine="true">
+									</EditText>
+									<Button android:text="@string/friendlist" android:id="@+id/msgfriendbutton1"
+												android:onClick="onClick" android:layout_width="wrap_content"
+												android:layout_height="wrap_content"></Button>
+						</LinearLayout>
+						
+						<LinearLayout android:layout_height="wrap_content"
+									android:layout_width="match_parent" android:id="@+id/msglinearLayout2">
+									<EditText android:id="@+id/msgestText2" android:hint="@string/est"
+												android:layout_width="wrap_content" android:layout_height="wrap_content"
+												android:layout_weight="1" android:singleLine="true"></EditText>
+									<Button android:text="@string/grouplist" android:id="@+id/msgestbutton"
+												android:onClick="onClick" android:layout_width="wrap_content"
+												android:layout_height="wrap_content"></Button>
+						</LinearLayout>
+						
+						<EditText android:id="@+id/msgtitletext" android:layout_width="match_parent" android:layout_height="match_parent"
+									android:hint="@string/title" android:singleLine="true"></EditText>
+						
+			</LinearLayout>
+			<EditText android:layout_width="match_parent" android:id="@+id/msgeditText3"
+						android:layout_above="@+id/msgbottom" android:layout_below="@id/msgheader"
+						android:hint="@string/content" android:layout_height="match_parent"
+						android:gravity="top">
+			</EditText>
+
+			<LinearLayout android:layout_height="wrap_content"
+						android:gravity="center" android:layout_alignParentBottom="true"
+						android:layout_width="match_parent" android:id="@+id/msgbottom">
+
+						<Button android:layout_width="wrap_content"
+									android:onClick="onClick" android:layout_alignParentBottom="true"
+									android:text="@string/send" android:layout_height="wrap_content"
+									android:id="@+id/sendmsgbtn"></Button>
+						<Button android:text="@string/attachlink" android:id="@+id/attachbtn"
+									android:onClick="onClick" android:layout_width="wrap_content"
+									android:layout_height="wrap_content"></Button>
+						<Button android:text="@string/init" android:id="@+id/clearbtn"
+									android:onClick="onClick" android:layout_width="wrap_content"
+									android:layout_height="wrap_content"></Button>
+
+			</LinearLayout>
+
+
+
+
+</RelativeLayout>

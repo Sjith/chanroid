@@ -1,0 +1,16 @@
+Activity 화면 약자 정리
+.MenuActivity				>mn
+.MsgActivity				>msg
+.MsgListActivity			>ml
+.MsgListTabActivity			>mt
+.MsgFullScreenActivity		>mfs
+.SvcSettingActivity			>svc
+.AttachmentListActivity		>al
+.AttachmentListActibity2	>al2
+.DownloadStatusActivity		>dns
+.RunnableAttachListActivity	>att
+.FileBrowserActivity		>fbr
+.SendMessageActivity		>snm
+.Notification				>ntc
+.Group Setting				>gs
+.RegistrationActivity		>rs

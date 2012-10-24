@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/snmSaveTempMsg" android:title="@string/menuSnmSaveTempMsg"></item>
+	<item android:id="@+id/snmResumeTempMsg" android:title="@string/menuSnmResumeTempMsg"></item>
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout android:id="@+id/snmAttListItem"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:gravity="center_vertical">
+		<RelativeLayout android:id="@+id/snmAttListRL1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<CheckedTextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:clickable="true"
+				android:focusable="true" android:layout_gravity="center_vertical|center_horizontal"
+				android:visibility="visible" android:id="@+id/snmAttCtvItem"
+				android:checkMark="@drawable/v2_ic_checkbox"></CheckedTextView>
+
+		</RelativeLayout>
+
+
+
+		<RelativeLayout android:id="@+id/snmAttListRL2"
+			android:layout_height="wrap_content" android:layout_width="fill_parent">
+			<ImageButton android:layout_width="50dp" android:layout_height="50dp" android:scaleType="fitXY"
+					android:id="@+id/snmAttImage" android:visibility="gone"></ImageButton>
+			<TextView android:layout_width="wrap_content" android:layout_toRightOf="@+id/snmAttImage"
+				android:layout_height="wrap_content" android:id="@+id/snmAttName"
+				android:text="" android:textSize="20dip" android:layout_centerVertical="true"
+				android:textColor="@color/v2_list_text_color"></TextView>
+		</RelativeLayout>
+	</LinearLayout>
+
+
+</LinearLayout>

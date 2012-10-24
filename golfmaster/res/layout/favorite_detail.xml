@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_height="fill_parent" android:layout_width="300dip">
+	
+
+	<RelativeLayout android:id="@+id/RelativeLayout02" android:layout_height="fill_parent" android:layout_width="fill_parent">
+			
+			
+			
+			
+		
+
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"><ImageView android:id="@+id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bullet_01" android:layout_gravity="center_vertical" android:layout_margin="5dip"></ImageView>
+<TextView android:text="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="15sp" android:id="@+id/TvName" android:textColor="#FF5E0B" android:textStyle="bold"></TextView>
+</LinearLayout>
+<LinearLayout android:id="@+id/LinearLayout02" android:layout_below="@id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"><ImageView android:id="@+id/ImageView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bullet_03" android:layout_gravity="center_vertical" android:layout_marginLeft="10dip" android:layout_marginBottom="5dip" android:layout_marginRight="5dip" android:layout_marginTop="5dip"></ImageView>
+<TextView android:text="@+id/TextView02" android:layout_height="wrap_content" android:id="@+id/TvAddress" android:layout_width="250dip" android:textColor="#000000"></TextView>
+</LinearLayout>
+<LinearLayout android:id="@+id/LinearLayout03" android:layout_below="@id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="10dip" android:paddingBottom="5dip" android:paddingRight="5dip" android:paddingTop="5dip">
+
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnCall" android:background="@drawable/btn_tel" android:layout_marginRight="5dip"></Button>
+<TextView android:text="@+id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TvCall" android:textColor="#FF0000"></TextView>
+</LinearLayout>
+<LinearLayout android:id="@+id/LinearLayout04" android:layout_below="@id/LinearLayout03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_home" android:id="@+id/btnHome" android:layout_margin="5dip" android:visibility="gone"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/BtnDetail" android:background="@drawable/btn_detailview" android:layout_margin="5dip" android:visibility="gone"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnMap" android:background="@drawable/btn_location" android:layout_margin="5dip"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnFavorite" android:background="@drawable/btn_bookmark" android:layout_margin="5dip"></Button>
+
+</LinearLayout>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:id="@+id/BtnClose" android:layout_alignBottom="@+id/LinearLayout04" android:background="@drawable/btn_close" android:visibility="visible" android:layout_marginRight="12dip" android:layout_marginBottom="5dip"></Button>
+</RelativeLayout>
+	
+	
+
+</LinearLayout>

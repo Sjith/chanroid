@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:background="#FFFFFF"
+>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_width="fill_parent"
+		android:gravity="center_horizontal"
+		android:background="#FFFFFF"
+		android:id="@+id/elLlTopMenu"
+	>
+		<Button
+			android:id="@+id/tmBtnExcelInfo"
+			android:background="@drawable/topmenu_excel_info"
+			android:onClick="onClick"
+			android:layout_width="80dip"
+			android:layout_height="30dip"
+		></Button>
+		<Button
+			android:id="@+id/tmBtnFieldGC"
+			android:background="@drawable/topmenu_field_gc"
+			android:onClick="onClick"
+			android:layout_width="80dip"
+			android:layout_height="30dip"
+		></Button>
+		<Button
+			android:id="@+id/tmBtnScreenGC"
+			android:background="@drawable/topmenu_screen_gc"
+			android:onClick="onClick"
+			android:layout_width="80dip"
+			android:layout_height="30dip"
+		></Button>
+		<Button
+			android:id="@+id/tmBtnMyGolf"
+			android:onClick="onClick"
+			android:background="@drawable/topmenu_mygolf"
+			android:layout_width="80dip"
+			android:layout_height="30dip"
+		></Button>
+	</LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/searchLayout"
+		android:layout_width="fill_parent"
+		android:background="@drawable/btn_search_unpress_back"
+		android:layout_height="40dip"
+	>
+		<LinearLayout
+			android:id="@+id/LinearLayout03"
+			android:background="@drawable/m_search_back"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_margin="3dip"
+		>
+			<EditText
+				android:layout_height="wrap_content"
+				android:id="@+id/searchEtName"
+				android:gravity="center"
+				android:clickable="false"
+				android:focusable="false"
+				android:hint="골프장정보"
+				android:singleLine="true"
+				android:background="#00000000"
+				android:layout_width="fill_parent"
+				android:layout_gravity="center"
+				android:textSize="20sp"
+			></EditText>
+		</LinearLayout>
+
+
+
+	</RelativeLayout>
+
+	<ScrollView
+		android:id="@+id/ScrollView01"
+		android:layout_height="wrap_content"
+		android:fadingEdge="none"
+		android:background="#FFFFFF"
+		android:layout_width="fill_parent"
+	>
+		<RelativeLayout
+			android:id="@+id/RelativeLayout02"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+		>
+			<ImageView
+				android:id="@+id/ImageView01"
+				android:layout_width="wrap_content"
+				android:background="@drawable/info_txt"
+				android:layout_height="28dip"
+				android:layout_marginLeft="20dip"
+				android:layout_marginRight="20dip"
+				android:layout_marginTop="10dip"
+			></ImageView>
+
+			<TableLayout
+				android:layout_height="wrap_content"
+				android:id="@+id/tlBasicInfo"
+				android:layout_width="fill_parent"
+				android:layout_marginTop="5dip"
+				android:layout_marginBottom="5dip"
+				android:layout_marginRight="10dip"
+				android:layout_marginLeft="10dip"
+				android:layout_below="@+id/ImageView01" android:visibility="visible">
+				<LinearLayout
+					android:id="@+id/LinearLayout04"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+					<ImageView
+						android:id="@+id/ImageView02"
+						android:background="@drawable/info_basic"
+						android:layout_height="40dip"
+						android:layout_width="fill_parent"
+					></ImageView>
+				</LinearLayout>
+				<TableRow
+					android:id="@+id/TableRow02"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+				>
+					<LinearLayout
+						android:id="@+id/LinearLayout05"
+						android:layout_height="wrap_content"
+						android:layout_margin="5dip"
+						android:layout_gravity="center_vertical" android:layout_width="75dip">
+						<ImageView
+							android:id="@+id/ImageView03"
+							android:background="@drawable/info_address"
+							android:layout_height="15dip" android:layout_width="28dip"></ImageView>
+					</LinearLayout>
+
+
+					<ImageView
+						android:id="@+id/IvDotHeight01"
+						android:layout_height="fill_parent" android:background="#c0d990" android:layout_margin="3dip" android:layout_width="1px"></ImageView>
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:id="@+id/LlAddress"
+						android:layout_marginRight="5dip"
+						android:layout_gravity="center_vertical" android:layout_width="195dip">
+
+						<TextView
+							android:text="@+id/TextView04"
+							android:layout_height="wrap_content"
+							android:id="@+id/TvAddress"
+							android:textColor="#000000"
+							android:layout_gravity="center_vertical" android:layout_width="165dip"></TextView>
+						<Button
+							android:id="@+id/Button01"
+							android:layout_marginRight="5dip"
+							android:layout_gravity="center_vertical"
+							android:background="@drawable/btn_location"
+							android:layout_height="30dip"
+							android:layout_width="30dip"
+						></Button>
+					</LinearLayout>
+				
+</TableRow>
+				<ImageView
+					android:id="@+id/ImageView07"
+					android:layout_width="fill_parent"
+					android:layout_height="1px" android:background="#c0d990"></ImageView>
+
+				<TableRow
+					android:id="@+id/TableRow03"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:visibility="visible">
+					<LinearLayout
+						android:id="@+id/LinearLayout06"
+						android:layout_height="wrap_content"
+						android:layout_margin="5dip"
+						android:layout_gravity="center_vertical" android:layout_width="75dip">
+						<ImageView
+							android:id="@+id/ImageView05"
+							android:background="@drawable/info_category"
+						android:layout_height="15dip" android:layout_width="28dip"></ImageView>
+					</LinearLayout>
+					<ImageView
+						android:id="@+id/IvDotHeight02"
+						android:layout_height="fill_parent" android:layout_margin="3dip" android:layout_width="1px" android:background="#c0d990"></ImageView>
+					<TextView
+						android:text="@+id/TextView06"
+						android:layout_height="wrap_content"
+						android:id="@+id/TvCategory"
+						android:textColor="#000000"
+						android:layout_gravity="center_vertical" android:layout_width="190dip"></TextView>
+
+				
+</TableRow>
+				<ImageView
+					android:id="@+id/ImageView08"
+					android:layout_width="fill_parent"
+					android:background="#c0d990" android:layout_height="1px"></ImageView>
+
+				<TableRow
+					android:id="@+id/TableRow04"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:visibility="visible">
+					<LinearLayout
+						android:id="@+id/LinearLayout07"
+						android:layout_height="wrap_content"
+						android:layout_margin="5dip"
+						android:layout_gravity="center_vertical" android:layout_width="75dip">
+						<ImageView
+							android:id="@+id/ImageView07"
+							android:background="@drawable/info_holl_number" android:layout_height="16dip" android:layout_width="48dip"></ImageView>
+					</LinearLayout>
+					<ImageView
+						android:id="@+id/IvDotHeight03"
+						android:layout_height="fill_parent" android:layout_margin="3dip" android:layout_width="1px" android:background="#c0d990"></ImageView>
+					<TextView
+						android:layout_height="wrap_content"
+						android:text="@+id/TvHall"
+						android:id="@+id/TvHall"
+						android:textColor="#000000"
+						android:layout_gravity="center_vertical" android:layout_width="190dip"></TextView>
+
+				
+</TableRow>
+				<ImageView
+					android:id="@+id/ImageView09"
+					android:layout_width="fill_parent"
+					android:layout_height="1px" android:background="#c0d990"></ImageView>
+
+				<TableRow
+					android:id="@+id/TableRow05"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent" android:visibility="visible">
+
+					<LinearLayout
+						android:id="@+id/LinearLayout09"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:layout_margin="5dip"
+					android:layout_width="75dip">
+						<ImageView
+							android:background="@drawable/info_tel"
+							android:id="@+id/IvTel"
+						android:layout_height="15dip" android:layout_width="28dip"></ImageView>
+					</LinearLayout>
+					<ImageView
+						android:id="@+id/IvDotHeight04"
+						android:layout_height="fill_parent" android:layout_margin="3dip" android:layout_width="1px" android:background="#c0d990"></ImageView>
+					<LinearLayout
+						android:id="@+id/LinearLayout01"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical" android:layout_width="wrap_content">
+						<Button
+							android:id="@+id/btnCall"
+							android:layout_height="20dip"
+							android:layout_width="20dip"
+							android:layout_marginRight="5dip"
+							android:background="@drawable/info_tel_icon"
+							android:visibility="gone"
+						></Button>
+						<TextView
+							android:text="@+id/TextView10"
+							android:id="@+id/TvTelNumber"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:textColor="#000000" android:layout_width="190dip"></TextView>
+					</LinearLayout>
+
+
+				
+</TableRow>
+				<ImageView
+					android:id="@+id/ImageView10"
+					android:layout_width="fill_parent"
+					android:layout_height="1px" android:background="#c0d990"></ImageView>
+
+
+
+
+				<TableRow
+					android:id="@+id/TableRow06"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:visibility="visible">
+					<LinearLayout
+						android:id="@+id/LinearLayout08"
+						android:layout_height="wrap_content"
+						android:layout_margin="5dip"
+						android:layout_gravity="center_vertical" android:layout_width="75dip">
+						<ImageView
+							android:id="@+id/ImageView11"
+							android:background="@drawable/info_homepage"
+							android:layout_marginRight="10dip"
+						android:layout_height="15dip" android:layout_width="56dip"></ImageView>
+					</LinearLayout>
+
+					
+				<ImageView android:id="@+id/IvDotHeight05" android:layout_height="fill_parent" android:layout_margin="3dip" android:layout_width="1px" android:background="#c0d990"></ImageView>
+					<LinearLayout
+						android:id="@+id/LinearLayout02"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+					android:layout_width="190dip">
+						<Button
+							android:id="@+id/btnHome"
+							android:layout_height="20dip"
+							android:layout_width="20dip"
+							android:layout_marginRight="5dip"
+							android:background="@drawable/info_home_icon"
+							android:visibility="gone"
+						></Button>
+						<TextView
+							android:text="@+id/TextView12"
+							android:layout_height="wrap_content"
+							android:id="@+id/TvHomePage"
+							android:layout_gravity="center_vertical"
+							android:textColor="#0000FF"
+						android:layout_width="190dip"></TextView>
+					</LinearLayout>
+				</TableRow>
+				<ImageView
+					android:layout_width="fill_parent"
+					android:id="@+id/ImageView11"
+					android:layout_height="1px" android:background="#c0d990"></ImageView>
+
+			</TableLayout>
+			<TableLayout
+				android:layout_height="wrap_content"
+				android:id="@+id/tlUseInfo"
+				android:layout_below="@id/tlBasicInfo"
+				android:layout_width="fill_parent"
+				android:layout_marginTop="5dip"
+				android:layout_marginBottom="5dip"
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip" android:visibility="visible">
+
+				<TableRow
+					android:id="@+id/TableRow07"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+				</TableRow>
+				<LinearLayout
+					android:id="@+id/LinearLayout10"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+					<ImageView
+						android:background="@drawable/info_use"
+						android:layout_height="40dip"
+						android:layout_width="fill_parent"
+						android:id="@+id/IvInfoUse"
+					></ImageView>
+				</LinearLayout>
+				<TableRow
+					android:id="@+id/TableRow08"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+					<LinearLayout
+						android:id="@+id/LinearLayout16"
+						android:layout_height="wrap_content"
+						android:layout_margin="5dip"
+						android:layout_gravity="center_vertical" android:layout_width="75dip">
+						<ImageView
+							android:background="@drawable/info_restday"
+							android:layout_gravity="center_vertical"
+							android:id="@+id/IvRest"
+						android:layout_height="15dip" android:layout_width="42dip">
+						</ImageView>
+					</LinearLayout>
+					<ImageView
+						android:id="@+id/IvDotHeight06"
+						android:layout_height="fill_parent" android:background="#c0d990" android:layout_marginTop="3dip" android:layout_width="1px" android:layout_margin="3dip"></ImageView>
+					<TextView
+						android:text="@+id/TextView15"
+						android:layout_height="wrap_content"
+						android:id="@+id/TvHollyday"
+						android:textColor="#000000"
+						android:layout_gravity="center_vertical" android:layout_width="190dip"></TextView>
+
+				
+</TableRow>
+				<ImageView
+					android:layout_width="fill_parent"
+					android:id="@+id/ImageView13"
+					android:background="#c0d990" android:layout_height="1px"></ImageView>
+
+				<TableRow
+					android:id="@+id/TableRow09"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+					<LinearLayout
+						android:id="@+id/LinearLayout17"
+						android:layout_height="wrap_content"
+						android:layout_margin="5dip"
+						android:layout_gravity="center_vertical" android:layout_width="75dip">
+						<ImageView
+							android:id="@+id/ImageView02"
+							android:background="@drawable/info_booking_wd"
+							android:layout_gravity="center_vertical"
+						android:layout_height="15dip" android:layout_width="56dip"></ImageView>
+					</LinearLayout>
+
+					<ImageView
+						android:id="@+id/IvDotHeight07"
+						android:layout_height="fill_parent" android:layout_width="1px" android:background="#c0d990" android:layout_margin="3dip"></ImageView>
+					<TextView
+						android:text="@+id/TextView17"
+						android:layout_height="wrap_content"
+						android:id="@+id/TvReservationWeekday"
+						android:textColor="#000000"
+						android:layout_gravity="center_vertical" android:layout_width="190dip"></TextView>
+				
+</TableRow>
+				<ImageView
+					android:layout_width="fill_parent"
+					android:id="@+id/ImageView14"
+					android:layout_height="1px" android:background="#c0d990"></ImageView>
+
+				<TableRow
+					android:id="@+id/TableRow10"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+					<LinearLayout
+						android:id="@+id/LinearLayout18"
+						android:layout_height="wrap_content"
+						android:layout_margin="5dip"
+						android:layout_gravity="center_vertical" android:layout_width="75dip">
+						<ImageView
+							android:id="@+id/ImageView03"
+							android:background="@drawable/info_reservationwe" android:layout_height="15dip" android:layout_width="56dip"></ImageView>
+					</LinearLayout>
+
+					<ImageView
+						android:id="@+id/IvDotHeight08"
+						android:layout_height="fill_parent" android:layout_width="1px" android:background="#c0d990" android:layout_margin="3dip"></ImageView>
+					<TextView
+						android:text="@+id/TextView19"
+						android:layout_height="wrap_content"
+						android:id="@+id/TvReservationWeekend"
+						android:textColor="#000000"
+						android:layout_gravity="center_vertical" android:layout_width="190dip"></TextView>
+				
+</TableRow>
+				<ImageView
+					android:layout_width="fill_parent"
+					android:id="@+id/ImageView15"
+					android:layout_height="1px" android:background="#c0d990"></ImageView>
+
+				<TableRow
+					android:id="@+id/TableRow11"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+					<LinearLayout
+						android:id="@+id/LinearLayout19"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:layout_margin="5dip" android:layout_width="75dip">
+						<ImageView
+							android:id="@+id/ImageView04"
+							android:background="@drawable/info_booking_team" android:layout_height="17dip" android:layout_width="69dip">
+						</ImageView>
+					</LinearLayout>
+
+					<ImageView
+						android:id="@+id/IvDotHeight09"
+						android:layout_height="fill_parent" android:layout_width="1px" android:background="#c0d990" android:layout_margin="3dip"></ImageView>
+					<TextView
+						android:layout_height="wrap_content"
+						android:text="@+id/TvTeamUse"
+						android:id="@+id/TvTeamReservation"
+						android:textColor="#000000"
+						android:layout_gravity="center_vertical" android:layout_width="190dip">
+					</TextView>
+
+				
+</TableRow>
+				<ImageView
+					android:layout_width="fill_parent"
+					android:id="@+id/ImageView16"
+				android:layout_height="1px" android:background="#c0d990"></ImageView>
+
+
+</TableLayout>
+			<TableLayout
+				android:layout_height="wrap_content"
+				android:id="@+id/tlFeeInfo"
+				android:layout_below="@id/tlUseInfo"
+				android:layout_marginTop="5dip"
+				android:layout_marginBottom="5dip"
+				android:layout_width="fill_parent"
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+			>
+				<LinearLayout
+					android:id="@+id/LinearLayout11"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+					<ImageView
+						android:id="@+id/ImageView22"
+						android:background="@drawable/info_fee"
+						android:layout_height="40dip"
+						android:layout_width="fill_parent"
+					>
+					</ImageView>
+				</LinearLayout>
+				<TableRow
+					android:id="@+id/TableRow13"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+					<LinearLayout
+						android:id="@+id/LinearLayout13"
+						android:layout_height="wrap_content"
+						android:layout_margin="5dip" android:layout_width="75dip">
+						<ImageView
+							android:id="@+id/ImageView23"
+							android:background="@drawable/info_green_fee" android:layout_width="40dip" android:layout_height="15dip"></ImageView>
+					</LinearLayout>
+					
+				<ImageView android:id="@+id/IvDotHeight10" android:layout_height="fill_parent" android:layout_margin="3dip" android:layout_width="1px" android:background="#c0d990"></ImageView>
+					<LinearLayout
+						android:id="@+id/LinearLayout12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+					>
+						<TextView
+							android:layout_height="wrap_content"
+							android:textColor="#000000"
+							android:id="@+id/TvGreenFeeMwmberWD"
+							android:text="회원(주중) : \n" android:layout_width="190dip"></TextView>
+						<TextView
+							android:layout_height="wrap_content"
+							android:id="@+id/TvGeenFeeMemberWE"
+							android:text="회원(주말) : \n"
+							android:textColor="#000000" android:layout_width="190dip">
+						</TextView>
+						<TextView
+							android:layout_height="wrap_content"
+							android:id="@+id/TvGreenFeeWEMemberWD"
+							android:text="주중회원(주중) : \n"
+							android:textColor="#000000" android:layout_width="190dip"></TextView>
+						<TextView
+							android:layout_height="wrap_content"
+							android:id="@+id/TvGreenFeeWEMemberWE"
+							android:text="주중회원(주말) : \n"
+							android:textColor="#000000" android:layout_width="190dip"></TextView>
+						<TextView
+							android:layout_height="wrap_content"
+							android:id="@+id/TvGreenFeeNormalWD"
+							android:text="일반(주중) : \n"
+							android:textColor="#000000" android:layout_width="190dip"></TextView>
+						<TextView
+							android:layout_height="wrap_content"
+							android:id="@+id/TvGreenFeeNormalWE"
+							android:text="일반(주말) : \n"
+							android:textColor="#000000" android:layout_width="190dip"></TextView>
+					</LinearLayout>
+				</TableRow>
+				<ImageView
+					android:layout_width="fill_parent"
+					android:id="@+id/ImageView17"
+				android:background="#c0d990" android:layout_height="1px"></ImageView>
+
+				<TableRow
+					android:id="@+id/TableRow14"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+					<LinearLayout
+						android:id="@+id/LinearLayout14"
+						android:layout_height="wrap_content"
+						android:layout_margin="5dip" android:layout_width="75dip">
+						<ImageView
+							android:id="@+id/IvDotHeight11"
+							android:background="@drawable/info_caddy_fee"
+						android:layout_height="15dip" android:layout_width="40dip"></ImageView>
+					</LinearLayout>
+					<ImageView
+						android:id="@+id/IvDotHeight11"
+						android:layout_height="fill_parent" android:layout_width="1px" android:layout_margin="3dip" android:background="#c0d990"></ImageView>
+					<TextView
+						android:text="@+id/TextView26"
+						android:layout_height="wrap_content"
+						android:id="@+id/TvCaddyFee"
+						android:textColor="#000000"
+						android:layout_gravity="center_vertical" android:layout_width="190dip"></TextView>
+
+				
+</TableRow>
+				<ImageView
+					android:layout_width="fill_parent"
+					android:id="@+id/ImageView18"
+				android:background="#c0d990" android:layout_height="1px"></ImageView>
+
+				<TableRow
+					android:id="@+id/TableRow15"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+					<LinearLayout
+						android:id="@+id/LinearLayout15"
+						android:layout_height="wrap_content"
+						android:layout_margin="5dip" android:layout_width="75dip">
+						<ImageView
+							android:id="@+id/ImageView25"
+							android:background="@drawable/info_cart_fee"
+						android:layout_height="15dip" android:layout_width="75dip"></ImageView>
+					</LinearLayout>
+					<ImageView
+						android:id="@+id/IvDotHeight12"
+						android:layout_height="fill_parent" android:layout_margin="3dip" android:layout_width="1px" android:background="#c0d990"></ImageView>
+					<TextView
+						android:text="@+id/TextView28"
+						android:layout_height="wrap_content"
+						android:id="@+id/TvCartFee"
+						android:textColor="#000000"
+						android:layout_gravity="center_vertical" android:layout_width="190dip"></TextView>
+
+				
+</TableRow>
+				<ImageView
+					android:layout_width="fill_parent"
+					android:id="@+id/ImageView19"
+				android:background="#c0d990" android:layout_height="1px"></ImageView>
+
+
+</TableLayout>
+
+		</RelativeLayout>
+	</ScrollView>
+</LinearLayout>

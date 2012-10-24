@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:gravity="center" android:background="@drawable/main_back"
+			android:layout_height="match_parent">
+
+
+			<ImageView android:layout_width="wrap_content" android:layout_gravity="center"
+						android:layout_margin="30dp" android:scaleType="fitXY"
+						android:src="@drawable/main_logo" android:layout_height="120dp"/>
+
+
+			<Button android:id="@+id/mainbutton3" android:onClick="onClick"
+						android:background="@drawable/main_btn_store" android:layout_marginLeft="80dp" android:layout_marginTop="70dp"
+						android:layout_gravity="top"
+						android:layout_width="120dp" android:layout_height="120dp"></Button>
+			<Button android:id="@+id/mainbutton2" android:onClick="onClick" android:layout_gravity="right"
+						android:layout_marginRight="25dp" android:layout_marginTop="90dp"
+						android:background="@drawable/main_btn_map" android:layout_width="120dp"
+						android:layout_height="120dp"></Button>
+			<Button android:id="@+id/mainbutton4" android:onClick="onClick" android:layout_marginRight="15dp" android:layout_marginBottom="100dp"
+						android:background="@drawable/main_btn_event" android:layout_gravity="bottom|right"
+						android:layout_width="120dp" android:layout_height="120dp"></Button>
+			<Button android:id="@+id/mainbutton5" android:onClick="onClick"
+						android:layout_marginLeft="25dp" android:layout_marginBottom="100dp"
+						android:background="@drawable/main_btn_message" android:layout_gravity="bottom"
+						android:layout_width="120dp" android:layout_height="120dp"></Button>
+			<Button android:background="@drawable/main_btn_mypage" android:layout_gravity="bottom|right"
+						android:layout_height="120dp" android:id="@+id/mainbutton6" android:layout_marginRight="70dp" android:layout_marginBottom="20dp"
+						android:layout_width="120dp" android:onClick="onClick"></Button>
+
+
+
+
+</FrameLayout>

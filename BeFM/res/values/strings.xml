@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, eBFMView!</string>
+    <string name="app_name">BeFM</string>
+    <string name="RadioTab">Radio</string>
+    <string name="NewsTab">News</string>
+    <string name="AODTab">AOD</string>
+    <string name="SettingTab">Setting</string>
+	<!-- <string name="app_name">AAC Player</string>-->
+	<string name="app_version">0.8</string>
+	<string name="button_close">Close</string>
+	<string name="button_faad2">Player I (FAAD2)</string>
+	<string name="button_ffmpeg">Player II (FFmpeg)</string>
+	<string name="button_opencore">Player III (OpenCORE)</string>
+	<string name="button_mmswma">Player IV (MMS/WMA)</string>
+	<string name="button_file">Player V (file chunks)</string>
+	<string name="button_stop">STOP</string>
+	<string name="text_exception">Error</string>
+	<string name="text_buffering">Buffering...</string>
+	<string name="text_buffers">Buffers (ms)</string>
+	<string name="text_buffers_audio">Audio</string>
+	<string name="text_buffers_decode">Decode</string>
+	<string name="text_using_FAAD2">Using FAAD2 ...</string>
+	<string name="text_using_FFmpeg">Using FFmpeg ...</string>
+	<string name="text_using_OpenCORE">Using OpenCORE ...</string>
+	<string name="text_using_MMSWMA">Using MMS/WMA ...</string>
+	<string name="text_using_file_chunks">Using file chunks ...</string>
+	<string name="text_revision">$Revision: 23 $</string>
+	<string name="text_playing">Playing...</string>
+	<string name="text_stopped">Stopped</string>    
+</resources>

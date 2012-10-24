@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:background="@drawable/main_back" android:layout_height="match_parent">
+
+			<ScrollView android:layout_width="match_parent" android:fillViewport="true"
+						android:layout_height="match_parent"> 
+
+						<LinearLayout android:layout_width="match_parent"
+									android:layout_height="match_parent" android:orientation="vertical">
+
+									<LinearLayout android:layout_width="match_parent"
+												android:layout_height="match_parent"
+												android:layout_marginTop="60dp" android:layout_marginRight="40dp"
+												android:layout_marginLeft="40dp" android:layout_weight="1"
+												android:background="#ffffff">
+
+									</LinearLayout>
+
+									<LinearLayout android:layout_width="match_parent"
+												android:layout_marginBottom="40dp"
+												android:layout_marginRight="40dp" android:layout_marginLeft="40dp"
+												android:layout_height="wrap_content" android:id="@+id/linearLayout1"
+												android:orientation="vertical">
+
+												<LinearLayout android:layout_width="match_parent"
+															android:layout_height="wrap_content" android:id="@+id/linearLayout2">
+															<EditText android:layout_width="wrap_content"
+																		android:singleLine="true" android:hint="@string/name"
+																		android:layout_weight="1" android:layout_height="wrap_content"
+																		android:id="@+id/checknametext">
+															</EditText>
+
+
+												</LinearLayout>
+
+												<LinearLayout android:layout_width="match_parent"
+															android:layout_height="wrap_content" android:id="@+id/linearLayout3">
+															<EditText android:layout_width="match_parent"
+																		android:hint="@string/personnum1"
+																		android:layout_weight="1" android:maxLength="6"
+																		android:layout_height="wrap_content" android:id="@+id/checknumtext1"
+																		android:inputType="number"></EditText>
+															<EditText android:layout_width="match_parent"
+																		android:maxLength="7" android:layout_weight="1"
+																		android:layout_height="wrap_content" android:id="@+id/checknumtext2"
+																		android:inputType="number" android:password="true"></EditText>
+
+												</LinearLayout>
+
+												<LinearLayout android:layout_width="match_parent"
+															android:layout_height="wrap_content" android:id="@+id/linearLayout4">
+															<Button android:text="@string/checkname"
+																		android:id="@+id/checkbtn" android:layout_weight="1"
+																		android:layout_width="wrap_content"
+																		android:background="@drawable/btn"
+																		android:layout_height="wrap_content"></Button>
+															<Button android:text="@string/init" android:id="@+id/checkinitbtn"
+																		android:background="@drawable/btn"
+																		android:layout_weight="1" android:layout_width="wrap_content"
+																		android:layout_height="wrap_content"></Button>
+												</LinearLayout>
+
+									</LinearLayout>
+						</LinearLayout>
+
+
+			</ScrollView>
+
+
+</LinearLayout>

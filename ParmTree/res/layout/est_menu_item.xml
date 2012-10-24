@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+	<ImageView android:id="@+id/estmenuicon"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:src="@drawable/icon"></ImageView>
+	<TextView android:id="@+id/estmenuname" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="맛있는거"
+		android:textSize="24sp" android:layout_toRightOf="@id/estmenuicon"></TextView>
+	<TextView android:id="@+id/estmenuprice" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="(1000000원)" android:layout_alignBottom="@id/estmenuname"
+		android:layout_toRightOf="@id/estmenuname"></TextView>
+	<TextView android:id="@+id/estmenudesc" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="맛있습니다."
+		android:layout_toRightOf="@id/estmenuicon" android:layout_below="@id/estmenuname"
+		android:layout_alignBottom="@id/estmenuicon"></TextView>
+    		    
+</RelativeLayout>

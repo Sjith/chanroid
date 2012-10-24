@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="ConnectionTypeEntries"><item>WI-FI Only</item>
+<item>3G Only</item><item>3G / WI-FI</item>
+</string-array>
+<string-array name="ConnectionTypeValues"><item>WI-FI Only</item>
+<item>3G Only</item><item>3G / WI-FI</item>
+</string-array>
+</resources>

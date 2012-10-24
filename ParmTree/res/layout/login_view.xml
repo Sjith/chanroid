@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:background="@drawable/main_back" android:layout_height="match_parent">
+
+			<ScrollView android:layout_width="match_parent" android:fillViewport="true"
+						android:layout_height="match_parent">
+
+						<LinearLayout android:layout_width="match_parent" android:orientation="vertical"
+									android:layout_height="match_parent">
+
+									<LinearLayout android:layout_marginTop="60dp" android:layout_marginRight="40dp"
+												android:layout_marginLeft="40dp" android:layout_weight="1"
+												android:background="#ffffff" android:layout_height="match_parent" android:layout_width="match_parent">
+
+									</LinearLayout>
+
+									<LinearLayout android:layout_width="match_parent"
+												android:layout_height="wrap_content"
+												android:layout_marginBottom="40dp"
+												android:layout_marginLeft="40dp" android:layout_marginRight="40dp"
+												android:id="@+id/linearLayout1" android:orientation="vertical">
+
+												<LinearLayout android:layout_width="match_parent"
+															android:layout_height="wrap_content" android:id="@+id/linearLayout2">
+															<EditText android:layout_width="wrap_content"
+																		android:singleLine="true" android:hint="@string/id"
+																		android:layout_weight="1" android:layout_height="wrap_content"
+																		android:id="@+id/loginiddtext">
+															</EditText>
+
+
+												</LinearLayout>
+
+												<LinearLayout android:layout_width="match_parent"
+															android:layout_height="wrap_content" android:id="@+id/linearLayout3">
+															<EditText android:layout_width="wrap_content"
+																		android:hint="@string/password" android:layout_weight="1"
+																		android:layout_height="wrap_content" android:id="@+id/loginpwtext"
+																		android:inputType="textPassword"></EditText>
+												</LinearLayout>
+
+												<LinearLayout android:layout_width="match_parent"
+															android:layout_height="wrap_content" android:id="@+id/linearLayout4">
+															<Button android:text="@string/login" android:id="@+id/loginbtn"
+																		android:background="@drawable/btn"
+																		android:layout_weight="1" android:layout_width="wrap_content"
+																		android:layout_height="wrap_content"></Button>
+															<Button android:text="@string/registration"
+																		android:id="@+id/joinbtn" android:background="@drawable/btn"
+																		android:layout_weight="1" android:layout_width="wrap_content"
+																		android:layout_height="wrap_content"></Button>
+												</LinearLayout>
+									</LinearLayout>
+
+
+						</LinearLayout>
+
+
+			</ScrollView>
+
+</LinearLayout>

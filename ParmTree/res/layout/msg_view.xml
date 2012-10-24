@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:background="@drawable/main_back" android:layout_height="match_parent">
+
+
+			<LinearLayout android:id="@+id/titlelayout"
+						android:layout_width="match_parent" android:layout_height="wrap_content"
+						android:gravity="center_vertical" android:background="@drawable/msg_frame"
+						android:layout_margin="10dp">
+
+
+
+
+
+						<TextView android:id="@+id/titletext" android:textSize="30sp"
+									android:textColor="#000000" android:layout_width="match_parent"
+									android:layout_height="wrap_content" android:singleLine="true"
+									android:text="제목 테스트" android:marqueeRepeatLimit="99999"
+									android:layout_weight="1"></TextView>
+
+
+			</LinearLayout>
+
+			<RelativeLayout android:id="@+id/msgviewheader"
+						android:layout_below="@id/titlelayout" android:background="@drawable/msg_frame"
+						android:layout_width="match_parent" android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+
+
+						<ImageView android:layout_width="18dp" android:id="@+id/msgbullet1"
+									android:layout_height="18dp" android:src="@drawable/bullet_02"></ImageView>
+
+						<TextView android:id="@+id/sendertitle" android:layout_toRightOf="@id/msgbullet1" android:textSize="18sp"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:text=" 보낸이 : " android:textColor="#000000"></TextView>
+
+						<TextView android:id="@+id/sendertext"
+									android:layout_toRightOf="@id/sendertitle" android:singleLine="true"
+									android:textColor="#000000" android:layout_width="wrap_content"
+									android:layout_height="wrap_content" android:text="보낸이 테스트"
+									android:textSize="18sp" android:layout_weight="1"></TextView>
+
+
+						<ImageView android:layout_width="18dp" android:id="@+id/msgbullet2"
+									android:layout_below="@id/msgbullet1" android:layout_height="18dp"
+									android:src="@drawable/bullet_02"></ImageView>
+
+						<TextView android:id="@+id/senddatetitle" android:layout_toRightOf="@id/msgbullet2" android:textSize="18sp"
+									android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/sendertitle"
+									android:text=" 보낸시간 : " android:textColor="#000000"></TextView>
+
+						<TextView android:id="@+id/senddatetext"
+									android:layout_below="@id/sendertext" android:singleLine="true"
+									android:textColor="#000000" android:layout_toRightOf="@id/senddatetitle"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:text="보낸시간 테스트" android:textSize="18sp"
+									android:layout_weight="1"></TextView>
+
+			</RelativeLayout>
+
+			<LinearLayout android:id="@+id/msgviewbody"
+						android:orientation="vertical" android:layout_margin="10dp"
+						android:layout_below="@id/msgviewheader" android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+
+						<ScrollView android:id="@+id/scrollView1"
+									android:layout_weight="1" android:background="@drawable/msg_frame"
+									android:layout_width="match_parent" android:layout_height="match_parent">
+									<LinearLayout android:id="@+id/msgviewcontent"
+												android:layout_width="match_parent" android:layout_height="wrap_content">
+
+												<!-- 동적으로 생성한다. -->
+
+									</LinearLayout>
+						</ScrollView>
+
+						<LinearLayout android:id="@+id/msgviewbottom"
+									android:gravity="center|center_vertical" android:layout_width="match_parent"
+									android:layout_height="wrap_content" android:layout_margin="5dp">
+									<Button android:text="@string/reply" android:id="@+id/msgviewreplybtn"
+												android:background="@drawable/btn" android:textSize="20sp"
+												android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+									<Button android:text="@string/attachlink" android:id="@+id/msgviewetcbtn"
+												android:background="@drawable/btn" android:textSize="20sp"
+												android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+									<Button android:text="@string/delete" android:id="@+id/msgviewdelbtn"
+												android:background="@drawable/btn" android:textSize="20sp"
+												android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+
+						</LinearLayout>
+			</LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

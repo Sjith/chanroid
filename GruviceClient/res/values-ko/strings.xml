@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Gruvice</string>
+
+	<string name="mnBtnMsgList">메시지목록</string>
+	<string name="mnBtnGrpList">그룹서비스</string>
+	<string name="mnBtnAttachList">첨부파일보기</string>
+	<string name="mnBtnSvcSetting">설정</string>
+	<string name="mnBtnSendMsg">메시지보내기</string>
+	<string name="mnBtnGrpSetting">그룹설정</string>
+	<string name="mnTxtNotice">알림</string>
+	<string name="mnTxtNoticeMessage">기기 등록을 하여야 정상적으로 사용가능합니다. 기기등록은 옵션메뉴나 등록버튼을 통해서 가능합니다.</string>
+	<string name="mnTxtNotShowing">그만보기</string>
+	<string name="mnBtnRegistration">등록</string>
+	<string name="mnTxtStorageMessage">외부 저장장치를 찾을 수 없습니다.\n첨부파일은 외장메모리에 내려받으시는 것을 권장합니다..</string>
+
+	<string name="mlCtvItem"></string>
+	<string name="mlBtnDeleteItem">삭제</string>
+
+	<string name="mlCtvSelectAll">전체선택</string>
+	<string name="mlTxtNoMessage">메시지가 없습니다.</string>
+	<string name="mlSendedMsgMenu">보낸메시지</string>
+	<string name="mlReceivedMsgMenu">받은메시지</string>
+
+	<string name="msgTvTitle">제목</string>
+	<string name="msgBtnAttachment">첨부파일</string>
+	<string name="msgBtnAppInstall">APP설치</string>
+	<string name="msgDetailViewTitle">상세보기</string>
+    <string name="msgDetailViewReceiveDate">받은날짜</string>
+    <string name="msgDetailViewCreateDate">보낸날짜</string>
+    <string name="msgDetailViewReceiver">받은사람</string>
+    <string name="msgDetailViewSender">보낸사람</string>
+    
+    <string name="msgResendPiece1">원본 메시지 : \n</string>
+    <string name="msgResendPiece2">\n=========\n 본문 : \n</string>
+    
+	<string name="msgTxtLastMsg">마지막 메시지 입니다.</string>
+
+	<string name="alBtnDownLoad">다운로드</string>
+	<string name="altxtDelete">다운로드 받은 파일이 삭제됩니다. 계속하시겠습니까?</string>
+	<string name="altxtUnfinishDownload">다운로드 도중 에러가 발생하였습니다.</string>
+	<string name="altxtFileNotFound">다운로드 할 파일이 존재하지 않습니다.</string>
+	<string name="altxtNotEnoughStorage">저장공간이 부족합니다.\n파일을 삭제하고 다시 시도해 주세요.</string>
+	<string name="altxtNoAttachFile">첨부파일이 없습니다.</string>
+	<string name="altxtDataStorage">남은저장공간 </string>
+	<string name="altxtStorage10">남은 용량이 10% 미만입니다. 외장메모리의 불필요한 파일을 정리하고 사용하시기 바랍니다.</string>
+	<string name="altxtStorage1">남은 용량이 1% 미만입니다. 너무 많은 파일을 저장하면 시스템에 손상이 생길 수 있습니다.</string>
+	
+	<string name="altxtNotSupportType">지원하지 않는 파일형식입니다.</string>
+	
+	<string name="dnsBtnDownLoadStart">시작</string>
+	<string name="dnsBtnDownLoadCancel">취소</string>
+	<string name="dnsTvDownloadStatusTitle">다운로드상태</string>
+
+	<string name="dnsTxtDownloadStart">을(를) 다운로드합니다.</string>
+	<string name="dnsTxtDownloadComplete">다운로드가 완료 되었습니다.</string>
+	<string name="dnsTxtDownloadCancel">다운로드가 취소 되었습니다.</string>
+
+	<string name="glBtnDeleteGrp">그룹삭제</string>
+	<string name="glMenuGroup">그룹메뉴</string>
+	<string name="glMenuDeleteGroup">삭제</string>
+	<string name="glMenuEditGroup">이름변경</string>
+	<string name="glBtnReadMsg">메시지읽기</string>
+	<string name="glBtnEditOK">변경</string>
+	<string name="glBtnEditCancel">취소</string>
+	<string name="glTxtDeleteGroup">그룹에 속한 모든 메시지가 지워집니다. 계속 할까요?</string>
+	<string name="glTxtNoGroupList">메시지가 없습니다.</string>
+	<string name="glTxtLoadingList">서버에서 그룹정보를\n가져 오는 중입니다.</string>
+	
+	<string name="gmBtnRemoveGrp">탈퇴</string>
+	<string name="gmBtnAddGrp">그룹생성</string>
+
+	<string name="snmEtContents">내용 </string>
+	<string name="snmEtTitle">제목</string>
+	<string name="snmActvReceiver">수신자</string>
+	<string name="snmBtnSendMsg">보내기</string>
+	<string name="snmBtnImgAtta">그림첨부</string>
+	<string name="snmBtnAtta">파일첨부</string>	
+	<string name="snmBtnTakeImg">사진촬영</string>
+	<string name="snmBtnAttImg">기존사진</string>	
+	<string name="snmBtnPreview">미리보기</string>
+	<string name="snmBtnGrp">그룹</string>
+	<string name="snmBtnPerson">주소록</string>
+
+	<string name="snmTxtAttImg">이미지는 10장까지 첨부 가능하나, 3장 이상은 사용하지 않으시는 것을 권장합니다.\n
+								촬영시 용량이 2mb가 초과하면 사용할 수 없습니다.</string>
+	<string name="snmTxtSending">메시지 전송중...</string>
+  	<string name="snmTxtSendSuccess">전송이 완료 되었습니다.</string>
+    <string name="snmTxtSendFaile">전송이 실패 하였습니다.</string>
+    
+    <string name="snmSaveTempMsg">메시지를 저장 하였습니다.</string>
+    <string name="snmResumeTempMsg">메시지를 불러왔습니다.</string>
+    <string name="snmErrNetwork">Data망에 접속할 수 없습니다. 잠시 후 다시 시도해주세요.</string>
+    <string name="snmErrContent">내용이 비었습니다.</string>
+    <string name="snmErrReceiver">받는사람이 비었습니다.</string>
+    <string name="snmErrSender">보내는사람이 비었습니다.</string>
+    
+    <string name="rmShowmov">동영상재생</string>
+    
+	<string name="ralTxtNoAttach">다운로드된 파일이 없습니다</string>
+
+	<string name="rsCbWebRegist">웹에서 이미 등록하신 경우 체크해 주세요.</string>
+	<string name="rsTvEmail">이메일</string>
+	<string name="rsTvPw">비밀번호</string>
+	<string name="rsTvPw2">확인</string>
+	<string name="rsTvName">성명</string>
+	<string name="rsTvPhoneNo">전화번호</string>
+	<string name="rsTxtRegistrationSucess">등록에 성공했습니다.</string>
+	<string name="rsTxtRegistrationFailure">등록에 실패했습니다.</string>
+	
+	<string name="rsTxtAlreadyRegisted">계정 정보가 이미 입력되어 있습니다.\n다른 사용자를 등록하시겠습니까?</string>
+	<string name="rsTxtReallyNotRegistration">회원가입을 하지 않을시 어플리케이션이 바로 종료됩니다. 종료하시겠습니까?</string>
+	
+	<string name="rsTxtMailtooshort">잘못된 메일입니다.</string>
+	<string name="rsTxtPasswordtooshort">비밀번호와 비밀번호확인이 일치하지 않습니다.</string>
+	<string name="rsTxtNameisempty">이름이 너무 짧습니다.</string>
+	<string name="rsTxtPhoneNotooshort">잘못된 휴대폰 번호입니다.</string>
+	
+	<string name="txtAlret">경고!</string>
+	<string name="txtWarnningDeleteMsg">메시지를 삭제하시겠습니까?</string>
+	<string name="txtDeletingMsg">삭제중..</string>
+	<string name="txtDone">닫기</string>
+	<string name="txtYES">예</string>
+	<string name="txtNO">아니요</string>
+	<string name="txtOK">확인</string>
+	<string name="txtCancel">취소</string>
+	<string name="txtNotiText">클릭해주세요.</string>
+	<string name="txtSelectAll">전체선택</string>
+	<string name="txtDeselectAll">전체해제</string>
+	
+</resources>

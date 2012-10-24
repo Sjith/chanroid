@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="preference_root">
+
+	<PreferenceCategory android:key="LocationSetting"
+		android:summary="" android:enabled="true" android:title="위치 관련 설정">
+		<ListPreference android:key="GPSType" android:title="GPS 감도 설정"
+			android:summary="@string/setTxtGPSPower" android:entries="@array/GPSTypeEntries"
+			android:entryValues="@array/GPSTypeValues" android:defaultValue="2" />
+		<CheckBoxPreference android:key="AutoRefreshLocation"
+			android:defaultValue="false" android:title="자동 위치 갱신"
+			android:summary="@string/setTxtAutoRefreshLocation" />
+		<CheckBoxPreference android:key="GPSSetting"
+			android:defaultValue="true" android:title="GPS 설정여부 물어보기"
+			android:summary="@string/setTxtGPSSetting" />
+		<CheckBoxPreference android:key="SatelliteSetting" android:enabled="false"
+			android:defaultValue="false" android:title="위성지도로 보기"
+			android:summary="@string/setTxtSatelliteSetting" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:key="MessageSetting"
+		android:enabled="true" android:title="메시지 관련 설정">
+		<CheckBoxPreference android:key="EnabledPush"
+			android:defaultValue="true" android:title="메시지 알림"
+			android:summary="@string/setTxtEnabledPush" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:key="UserSetting"
+		android:enabled="true" android:title="사용자 설정">
+		<ListPreference android:key="FavoriteRegion" android:title="관심지역 설정"
+			android:summary="@string/setTxtFavoriteRegion" android:entries="@array/RegionTypeEntries"
+			android:entryValues="@array/RegionTypeValues" android:defaultValue="부산">
+		</ListPreference>		
+	</PreferenceCategory>
+	
+</PreferenceScreen>

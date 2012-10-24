@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_aod_date_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_aod_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <DatePicker
+            android:id="@+id/aod_datepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/btn_aod_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/btn_select" >
+        </ImageView>
+        <!-- <Button android:layout_width="wrap_content" android:text="Select" android:id="@+id/btn_aod_select" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginLeft="30px" android:layout_marginRight="30px"></Button> -->
+
+        <ImageView
+            android:id="@+id/btn_aod_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_cancel" >
+        </ImageView>
+        <!-- <Button android:id="@+id/btn_aod_back" android:layout_height="wrap_content" android:layout_weight="1" android:text="Cancel" android:layout_width="wrap_content" android:layout_marginLeft="30px" android:layout_marginRight="30px"></Button> -->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="AOD is offering"
+        android:textSize="16sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="only a 1 month old"
+        android:textSize="20sp" >
+    </TextView>
+
+</LinearLayout>

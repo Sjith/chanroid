@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Gruvice</string>
+
+	<string name="mnBtnMsgList">Message List</string>
+	<string name="mnBtnGrpList">Group View</string>
+	<string name="mnBtnAttachList">Attachment List</string>
+	<string name="mnBtnSvcSetting">Setting</string>
+	<string name="mnBtnSendMsg">SendMessage</string>
+	<string name="mnBtnGrpSetting">GroupSetting</string>
+	<string name="mnTxtNotice">Notice</string>
+	<string name="mnTxtNoticeMessage">If you are not Registration, Please Registration This Device by OptionMenu or Registration Button</string>
+	<string name="mnTxtNotShowing">Do Not Show Again.</string>
+	<string name="mnBtnRegistration">Registration</string>
+	<string name="mnTxtStorageMessage">Can not find External Storage.</string>
+	
+
+	<string name="mlBtnDeleteItem">Delete</string>
+	
+	<string name="mlCtvSelectAll">Select all</string>
+	<string name="mlTxtNoMessage">NO Message!</string>
+	<string name="mlSendedMsgMenu">Sended</string>
+	<string name="mlReceivedMsgMenu">Received</string>
+	<string name="mlCtvItem"></string>
+
+	<string name="msgTvTitle">Title</string>
+	<string name="msgBtnAttachment">Attachment</string>
+	<string name="msgBtnAppInstall">App Install</string>
+	<string name="msgDetailViewTitle">Detail View</string>
+	<string name="msgDetailViewReceiveDate">Receive Date</string>
+	<string name="msgDetailViewCreateDate">Create Date</string>
+	<string name="msgDetailViewReceiver">Receiver</string>
+	<string name="msgDetailViewSender">Sender</string>
+	
+    <string name="msgResendPiece1">Org msg : \n</string>
+    <string name="msgResendPiece2">\n=========\n body : \n</string>
+
+	<string name="msgTxtLastMsg">This is Last Message.</string>
+
+	<string name="alBtnDownLoad">Download</string>
+	<string name="alAttachName">AttachName</string>
+	<string name="alBtnRunApp">Install</string>
+	<string name="altxtDelete">This Action is going to Attachment File. Continue?</string>
+	<string name="altxtUnfinishDownload">Error. Retry Download Again</string>
+	<string name="altxtFileNotFound">File not found</string>
+	<string name="altxtNoAttachFile">There is no Attachment File.</string>
+	<string name="altxtDataStorage">Free Space</string>
+	
+	<string name="altxtNotSupportType">This filetype is not support in system.</string>
+
+	<string name="altxtStorage10">Not enough Free Space.(10) Please delete Unusually files.</string>
+	<string name="altxtStorage1">Not enough Free Space.(1) Please delete Unusually files.</string>
+
+	<string name="dnsBtnDownLoadStart">Download</string>
+	<string name="dnsBtnDownLoadCancel">Cancel</string>
+	<string name="dnsTvDownloadStatusTitle">Download Status</string>
+
+	<string name="dnsTxtDownloadStart">is Download started.</string>
+	<string name="dnsTxtDownloadComplete">Download Completed..</string>
+	<string name="dnsTxtDownloadCancel">Download Cancel..</string>
+
+	<string name="glBtnDeleteGrp">Delete</string>
+	<string name="glMenuGroup">Group Menu</string>
+	<string name="glMenuDeleteGroup">Delete</string>
+	<string name="glMenuEditGroup">Edit Name</string>
+	<string name="glBtnReadMsg">ReadMsg</string>
+	<string name="glBtnEditOK">Change Name</string>
+	<string name="glBtnEditCancel">Cancel</string>
+	<string name="glTxtDeleteGroup">All message in selected group will DELETE,
+		Continue? </string>
+	<string name="glTxtNoGroupList">There is No Message.</string>
+	<string name="glTxtLoadingList">Loading Group list...</string>
+	
+	<string name="gmBtnRemoveGrp">Remove</string>
+	<string name="gmBtnAddGrp">Add</string>
+
+	<string name="snmEtContents">Contents </string>
+	<string name="snmEtTitle">Title</string>
+	<string name="snmActvReceiver">To :</string>
+	<string name="snmBtnSendMsg">Send Message</string>
+	<string name="snmBtnImgAtta">Image Attach</string>
+	<string name="snmBtnAtta">File Attach</string>
+	<string name="snmBtnPreview">Preview</string>
+	<string name="snmBtnGrp">Grp</string>
+	
+	<string name="snmSelectgrp">Select group</string>
+	
+	<string name="snmBtnPerson">Address</string>
+	<string name="snmTxtSending">Sending Message...</string>
+	<string name="snmTxtSendSuccess">Sending Message is Success.</string>
+	<string name="snmTxtSendUnsuccess">Sending Message is unsuccessful.</string>
+	
+	<string name="snmOverlengthImage">attach Image length have to smaller than 2mb.</string>
+	<string name="snmOverlengthFile">attach File length have to smaller than 30mb.</string>
+
+	<string name="snmSaveTempMsg">Be Saved Temp Message.</string>
+	<string name="snmResumeTempMsg">Be Resumed Temp Message.</string>
+	<string name="snmErrNetwork">Network is not working. try again later.</string>
+	<string name="snmErrContent">contents are EMPTY</string>
+	<string name="snmErrReceiver">receiver is EMPTY</string>
+	<string name="snmErrSender">sender is EMPTY</string>
+	
+	<string name="rmShowmov">Movie Clip</string>
+
+	<string name="ralTxtNoAttach">There is not Downloaded File</string>
+
+	<string name="rsCbWebRegist">If you registration by Web, check it.</string>
+	<string name="rsTvEmail">Email</string>
+	<string name="rsTvPw">PassWord</string>
+	<string name="rsTvPw2">Confirm</string>
+	<string name="rsTvName">Name</string>
+	<string name="rsTvPhoneNo">Phone</string>
+	<string name="rsTxtRegistrationSucess">Registration Success.</string>
+	<string name="rsTxtRegistrationFailure">Registration Failed.</string>
+	
+	<string name="rsTxtAlreadyRegisted">Already Registed. Registration new user?</string>
+	
+	<string name="rsTxtMailtooshort">email is too short.</string>
+	<string name="rsTxtPasswordtooshort">Password and Confirm is not same word.</string>
+	<string name="rsTxtNameisempty">name is empty</string>
+	<string name="rsTxtPhoneNotooshort">PhoneNumber is too short.</string>
+
+	<string name="txtAlret">Alert!</string>
+	<string name="txtWarnningDeleteMsg">Are you sure DELETE Message.</string>
+	<string name="txtDeletingMsg">Delete Msg.</string>
+	<string name="txtDone">Done</string>
+	<string name="txtYES">YES</string>
+	<string name="txtNO">NO</string>
+	<string name="txtNotiText">Click for read this Message.</string>
+	<string name="txtOK">OK</string>
+	<string name="txtCancel">Cancel</string>
+	<string name="txtSelectAll">Select All</string>
+	<string name="txtDeselectAll">Deselect All</string>
+
+</resources>

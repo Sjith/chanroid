@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="settingsCategorAlram">Setting Notification</string>
+	<string name="settingsEnableSound">Enable Sound</string>
+	<string name="settingsEnableSoundDetail">Notification with Sound</string>
+	<string name="settingsEnableVibrate">Enable Vibrate</string>
+	<string name="settingsEnableVibrateDetail">Notification with Vibrate</string>
+	<string name="settingsCategoryConnection">Connection Noti Setting</string>
+	<string name="settingsConnectionNoti">Connect Notification</string>
+	<string name="settingsConnectionNotiDetail">Notify Network Connection</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:background="@drawable/main_back" android:layout_height="match_parent">
+			<ScrollView android:layout_width="match_parent"
+						android:layout_marginTop="80dp" android:id="@+id/scrollView1"
+						android:layout_height="wrap_content">
+						<LinearLayout android:id="@+id/linearLayout5"
+									android:layout_width="match_parent" android:layout_height="match_parent">
+									<LinearLayout android:layout_width="match_parent"
+												android:layout_height="match_parent" android:id="@+id/linearLayout1"
+												android:layout_margin="30dp" android:orientation="vertical">
+												<LinearLayout android:layout_width="match_parent"
+															android:layout_height="wrap_content" android:id="@+id/linearLayout3"
+															android:orientation="vertical">
+															<LinearLayout android:layout_width="match_parent"
+																		android:layout_height="wrap_content" android:id="@+id/linearLayout4">
+															</LinearLayout>
+												</LinearLayout>
+												<EditText android:layout_width="match_parent"
+															android:layout_height="wrap_content" android:id="@+id/regidtext"
+															android:singleLine="true" android:hint="@string/id"></EditText>
+												<EditText android:layout_width="match_parent"
+															android:password="true" android:layout_height="wrap_content"
+															android:id="@+id/regpasswordtext" android:singleLine="true"
+															android:hint="@string/password"></EditText>
+												<EditText android:layout_width="match_parent"
+															android:password="true" android:layout_height="wrap_content"
+															android:id="@+id/regconfirmtext" android:singleLine="true"
+															android:hint="@string/confirm"></EditText>
+												<EditText android:layout_width="match_parent"
+															android:layout_height="wrap_content" android:id="@+id/regmailtext"
+															android:singleLine="true" android:hint="@string/email"
+															android:inputType="textEmailAddress"></EditText>
+
+												<LinearLayout android:layout_width="match_parent"
+															android:layout_height="wrap_content" android:orientation="horizontal"
+															android:layout_gravity="center">
+
+															<TextView android:layout_width="wrap_content"
+																		android:layout_height="match_parent" android:text="관심지역"
+																		android:gravity="center" />
+
+
+															<Spinner android:layout_width="wrap_content"
+																		android:layout_weight="1" android:layout_height="wrap_content"
+																		android:id="@+id/regregionspinner"></Spinner>
+
+												</LinearLayout>
+
+
+												<LinearLayout android:layout_width="match_parent"
+															android:gravity="center" android:layout_height="wrap_content"
+															android:id="@+id/linearLayout2">
+															<Button android:text="@string/registration"
+																		android:background="@drawable/btn" android:onClick="onClick"
+																		android:layout_width="wrap_content"
+																		android:layout_height="wrap_content" android:id="@+id/regokbtn"></Button>
+															<Button android:text="@string/init"
+																		android:background="@drawable/btn" android:onClick="onClick"
+																		android:layout_width="wrap_content"
+																		android:layout_height="wrap_content" android:id="@+id/regclearbtn"></Button>
+												</LinearLayout>
+									</LinearLayout>
+						</LinearLayout>
+			</ScrollView>
+
+</LinearLayout>

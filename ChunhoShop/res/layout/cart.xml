@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:background="#ffffff" android:orientation="vertical"
+			android:layout_width="match_parent" android:layout_height="match_parent">
+
+			<ListView android:layout_width="match_parent" android:id="@+id/cartlist"
+						android:layout_height="wrap_content" android:layout_above="@+id/cartbottom"
+						android:layout_alignParentTop="true"></ListView>
+
+			<ProgressBar android:layout_width="wrap_content"
+						android:visibility="gone" android:layout_height="wrap_content"
+						style="?android:attr/progressBarStyleLarge" android:id="@+id/cartprogress"
+						android:layout_centerInParent="true"></ProgressBar>
+			<RelativeLayout android:padding="10dp"
+						android:layout_width="match_parent" android:background="#cccccc"
+						android:id="@+id/cartbottom" android:layout_height="wrap_content"
+						android:layout_alignParentBottom="true"
+						android:layout_alignParentLeft="true">
+						<TextView android:textColor="#000000" android:id="@+id/ctextView1"
+									android:text="총 주문 금액" android:textSize="18sp"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+						<TextView android:textColor="#000000" android:id="@+id/cpricetext"
+									android:text="0원" android:layout_width="wrap_content"
+									android:textSize="18sp" android:layout_height="wrap_content"
+									android:layout_alignParentRight="true"></TextView>
+						<TextView android:text="ㄴ" android:id="@+id/textView1"
+									android:textColor="#000000" android:layout_width="wrap_content"
+									android:layout_marginTop="5dp" android:layout_height="wrap_content"
+									android:layout_below="@+id/ctextView1"
+									android:layout_marginLeft="10dp" android:layout_alignLeft="@+id/ctextView1"></TextView>
+						<ImageView android:layout_width="wrap_content"
+									android:layout_height="wrap_content" android:src="@drawable/list_s4"
+									android:id="@+id/imageView1" android:layout_toRightOf="@+id/textView1"
+									android:layout_alignTop="@+id/textView1"
+									android:layout_alignBottom="@+id/textView1"></ImageView>
+						<TextView android:text="0원" android:id="@+id/chealthpricetext"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:textColor="#000000" android:layout_alignRight="@+id/cpricetext"
+									android:layout_alignTop="@+id/imageView1"
+									android:layout_alignBottom="@+id/imageView1"></TextView>
+						<Button android:background="@drawable/cart_btn_2"
+									android:layout_marginTop="10dp" android:id="@+id/cartgiftbtn"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:onClick="onClick" android:layout_below="@+id/textView1"
+									android:layout_alignLeft="@+id/ctextView1"></Button>
+						<TextView android:text=" 제품 금액" android:id="@+id/textView2"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_toRightOf="@+id/imageView1" android:textColor="#000000"
+									android:layout_alignBottom="@+id/imageView1"
+									android:layout_alignTop="@+id/imageView1"></TextView>
+						<Button android:background="@drawable/cart_btn_1"
+									android:id="@+id/cartorderbtn" android:layout_width="wrap_content"
+									android:layout_height="wrap_content" android:onClick="onClick" android:layout_alignRight="@+id/chealthpricetext" android:layout_alignTop="@+id/cartgiftbtn" android:layout_alignBottom="@+id/cartgiftbtn"></Button>
+			</RelativeLayout>
+
+</RelativeLayout>

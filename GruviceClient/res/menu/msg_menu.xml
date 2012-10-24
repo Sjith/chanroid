@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 메시지 읽기 -->
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/msgDetail" android:title="@string/menuMsgDetail"></item>
+<item android:id="@+id/msgDelete" android:title="@string/menuMsgDelete"></item>
+<item android:id="@+id/msgReSend" android:title="전달"></item>
+<item android:id="@+id/msgReply" android:title="@string/menuMsgReply"></item>
+</menu>

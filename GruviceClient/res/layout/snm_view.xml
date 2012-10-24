@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:id="@+id/snmLl01">
+		<TextView android:layout_height="wrap_content" android:id="@+id/snmTvSender"
+			android:text="from" android:textSize="20dip" android:layout_width="wrap_content"></TextView>
+		<RelativeLayout android:id="@+id/RelativeLayout02"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+			<RelativeLayout android:id="@+id/RelativeLayout03"
+				android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<AutoCompleteTextView android:id="@+id/snmActvReceiver" android:inputType="number"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:hint="@string/snmActvReceiver" android:layout_toLeftOf="@+id/snmBtnPerson">
+				</AutoCompleteTextView>
+				<Button android:layout_width="wrap_content"
+					android:layout_height="45dp" android:background="@drawable/v2_btn_bg"
+					android:layout_alignParentRight="true" android:onClick="onClick"
+					android:id="@+id/snmBtnGrp" android:text="@string/snmBtnGrp"
+					android:textColor="#ffffff"></Button>
+				<Button android:layout_width="wrap_content" android:background="@drawable/v2_btn_bg"
+					android:layout_height="45dp" android:layout_toLeftOf="@+id/snmBtnGrp"
+					android:id="@+id/snmBtnPerson" android:onClick="onClick"
+					android:text="@string/snmBtnPerson" android:textColor="#ffffff"></Button>
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:id="@+id/snmEtTitle"
+			android:hint="@string/snmEtTitle" android:singleLine="true"></EditText>
+		<RelativeLayout android:id="@+id/RelativeLayout01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+			<EditText android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:inputType="textMultiLine"
+				android:id="@+id/snmEtContents" android:hint="@string/snmEtContents"
+				android:gravity="top" android:layout_above="@+id/snmLlButtom"></EditText>
+
+
+			<LinearLayout android:layout_height="wrap_content"
+				android:id="@+id/snmLlButtom" android:layout_alignParentBottom="true"
+				android:layout_width="fill_parent" android:background="#FFFFFF">
+				<Button android:id="@+id/snmBtnSendMsg" android:text="@string/snmBtnSendMsg"
+					android:layout_width="wrap_content" android:layout_height="50dip"
+					android:textColor="#FFFFFF" android:padding="5dip"
+					android:background="@drawable/v2_btn_bg"></Button>
+				<Button android:layout_width="wrap_content" android:id="@+id/snmBtnImgAtta"
+					android:text="@string/snmBtnImgAtta" android:onClick="onClick"
+					android:layout_height="50dip" android:textColor="#FFFFFF"
+					android:padding="5dip" android:background="@drawable/v2_btn_bg"></Button>
+				<Button android:layout_width="wrap_content" android:id="@+id/snmBtnAtta"
+					android:text="@string/snmBtnAtta" android:onClick="onClick"
+					android:layout_height="50dip" android:textColor="#FFFFFF"
+					android:padding="5dip" android:background="@drawable/v2_btn_bg"
+					android:visibility="visible"></Button>
+				<Button android:layout_width="wrap_content" android:id="@+id/snmBtnAttachList"
+					android:text="첨부목록" android:onClick="onClick"
+					android:clickable="true" android:layout_height="50dip"
+					android:textColor="#FFFFFF" android:padding="5dip"
+					android:visibility="visible" android:background="@drawable/v2_btn_bg"></Button>
+				<Button android:layout_width="wrap_content" android:id="@+id/snmBtnPreview"
+					android:text="@string/snmBtnPreview" android:onClick="onClick"
+					android:clickable="true" android:layout_height="50dip"
+					android:textColor="#FFFFFF" android:padding="5dip"
+					android:visibility="invisible" android:background="@drawable/v2_btn_bg"></Button>
+				
+			</LinearLayout>
+			
+		</RelativeLayout>
+	</LinearLayout>
+
+
+
+</LinearLayout>

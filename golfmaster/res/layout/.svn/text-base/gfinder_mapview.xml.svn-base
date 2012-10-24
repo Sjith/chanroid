@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="#FFFFFF"
+>
+
+	<LinearLayout
+		android:id="@+id/LinearLayout01"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_width="wrap_content"
+	>
+		<Button
+			android:id="@+id/tmBtnExcelInfo"
+			android:background="@drawable/topmenu_excel_info"
+			android:onClick="onClick"
+			android:layout_width="80dip"
+			android:layout_height="30dip"
+		></Button>
+		<Button
+			android:id="@+id/tmBtnFieldGC"
+			android:background="@drawable/topmenu_field_gc"
+			android:onClick="onClick"
+			android:layout_width="80dip"
+			android:layout_height="30dip"
+		></Button>
+		<Button
+			android:id="@+id/tmBtnScreenGC"
+			android:background="@drawable/topmenu_screen_gc"
+			android:onClick="onClick"
+			android:layout_width="80dip"
+			android:layout_height="30dip"
+		></Button>
+		<Button
+			android:id="@+id/tmBtnMyGolf"
+			android:onClick="onClick"
+			android:background="@drawable/topmenu_mygolf"
+			android:layout_width="80dip"
+			android:layout_height="30dip"
+		></Button>
+	</LinearLayout>
+	<RelativeLayout
+		android:id="@+id/RelativeLayout01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	>
+		<com.google.android.maps.MapView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:apiKey="06JxTMdoTtI9pNDqvWEtVvlCwBWQlPD0PiMyCAw"
+			android:enabled="true"
+			android:clickable="true"
+			android:id="@+id/MapView"
+			android:layout_marginTop="1dip" />
+		<RelativeLayout
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:id="@+id/searchLayout"
+			android:layout_width="fill_parent"
+			android:background="@drawable/btn_search_unpress_back"
+			android:layout_height="40dip"
+		>
+			<LinearLayout
+				android:id="@+id/LinearLayout02"
+				android:background="@drawable/m_search_back"
+				android:layout_marginBottom="3dip"
+				android:layout_marginLeft="3dip"
+				android:layout_marginTop="3dip"
+				android:layout_width="fill_parent"
+				android:layout_toLeftOf="@drawable/search_btn"
+				android:layout_marginRight="3dip"
+				android:layout_height="fill_parent"
+			>
+				<EditText
+					android:id="@+id/searchEtName"
+					android:visibility="visible"
+					android:background="#00000000"
+					android:textSize="17sp"
+					android:layout_width="250dip"
+					android:layout_height="fill_parent"
+				android:hint="@string/enterNameOfGC" android:imeOptions="actionDone" android:singleLine="true"></EditText>
+			</LinearLayout>
+			<Button
+				android:layout_width="wrap_content"
+				android:id="@+id/searchBtnRun"
+				android:background="@drawable/btn_search"
+				android:onClick="onClick"
+				android:visibility="visible"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true"
+				android:layout_height="fill_parent"
+				android:layout_marginRight="3dip"
+				android:layout_marginBottom="3dip"
+				android:layout_marginTop="3dip"
+			></Button>
+
+
+
+		</RelativeLayout>
+
+		<ProgressBar
+			android:layout_width="wrap_content"
+			android:id="@+id/ProgressBar01"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/searchLayout"
+			android:visibility="gone"
+		></ProgressBar>
+		<Button
+			android:id="@+id/mBtnList"
+			android:onClick="onClick"
+			android:background="@drawable/btn_list"
+			android:layout_marginLeft="20dip"
+			android:layout_above="@+id/btndummy"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+		></Button>
+		<Button
+			android:id="@+id/mBtnMyLocation"
+			android:onClick="onClick"
+			android:background="@drawable/btn_mylocation"
+			android:layout_below="@+id/searchLayout"
+			android:layout_toLeftOf="@+id/btndummy2"
+			android:layout_height="50dip"
+			android:layout_width="50dip"
+		></Button>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:id="@+id/btndummy"
+			android:visibility="invisible"
+			android:layout_alignParentBottom="true"
+			android:layout_height="20dip"
+		></Button>
+		<Button
+			android:text="@+id/Button01"
+			android:id="@+id/btndummy2"
+			android:layout_alignParentRight="true"
+			android:layout_height="20dip"
+			android:layout_width="20dip"
+			android:layout_alignParentBottom="true"
+			android:visibility="invisible"
+		></Button>
+
+
+		<Button
+			android:id="@+id/mBtnRefresh"
+			android:onClick="onClick"
+			android:background="@drawable/btn_refresh"
+			android:layout_height="50dip"
+			android:layout_width="50dip"
+			android:layout_toLeftOf="@+id/mBtnMyLocation"
+			android:layout_below="@+id/searchLayout"
+		></Button>
+
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_above="@+id/btndummy"
+			android:id="@+id/RLZoomPanel"
+			android:layout_width="120dip"
+			android:layout_marginLeft="15dip"
+			android:layout_alignRight="@+id/mBtnMyLocation"
+		>
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:id="@+id/ZoomPanel"
+				android:layout_centerInParent="true"
+				android:layout_width="40dip"
+			>
+				<ImageView
+					android:id="@+id/ImageView02"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/expand_ing"
+					android:layout_centerInParent="true"
+				></ImageView>
+				<ImageView
+					android:id="@+id/ImageView01"
+					android:layout_height="wrap_content"
+					android:background="@drawable/expand_dot"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="3dip"
+					android:layout_alignParentRight="true"
+					android:layout_width="wrap_content"
+				></ImageView>
+			</RelativeLayout>
+			<Button
+				android:id="@+id/mBtnZoomIn"
+				android:onClick="onClick"
+				android:layout_alignTop="@+id/mBtnList"
+				android:layout_toRightOf="@+id/mBtnList"
+				android:background="@drawable/btn_zoomin"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+			></Button>
+			<Button
+				android:id="@+id/mBtnZoomOut"
+				android:onClick="onClick"
+				android:layout_alignTop="@+id/mBtnList"
+				android:background="@drawable/btn_zoomout"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_alignParentLeft="true"
+			></Button>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/RlLocation"
+			android:layout_below="@+id/LinearLayout01"
+			android:layout_width="fill_parent"
+			android:background="@drawable/btn_search_unpress_back"
+			android:layout_height="80dip" android:visibility="gone">
+
+
+
+
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/btnLocationRun"
+				android:onClick="onClick"
+				android:background="@drawable/search_btn"
+				android:layout_marginLeft="5dip"
+				android:layout_marginTop="5dip" android:layout_toRightOf="@+id/LDAddr"></Button>
+			<RelativeLayout
+				android:id="@+id/LSAddr"
+				android:layout_marginLeft="10dip"
+				android:layout_marginTop="5dip"
+				android:layout_height="32dip"
+				android:background="@drawable/m_search_back"
+			android:layout_marginRight="50dip" android:layout_width="250dip">
+				<EditText
+					android:layout_height="wrap_content"
+					android:id="@+id/etSAddr"
+					android:inputType="none"
+					android:singleLine="true"
+					android:clickable="false"
+					android:focusable="false"
+					android:layout_gravity="center_vertical"
+					android:background="#00FFFFFF"
+					android:layout_marginLeft="10dip"
+					android:layout_width="210dip"
+				></EditText>
+				
+			</RelativeLayout><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnSAddr" android:onClick="onClick" android:background="@drawable/search_start_btn" android:layout_gravity="center_vertical" android:layout_alignTop="@+id/LSAddr" android:layout_toLeftOf="@+id/btnLocationRun"></Button>
+			
+			<RelativeLayout
+				android:id="@+id/LDAddr"
+				android:layout_below="@id/LSAddr"
+				android:layout_marginLeft="10dip"
+				android:layout_height="32dip"
+				android:background="@drawable/m_search_back"
+				android:layout_marginTop="3dip"
+				android:layout_marginBottom="3dip" android:clipToPadding="false" android:layout_width="250dip">
+				<EditText
+					android:layout_height="wrap_content"
+					android:id="@+id/etDAddr"
+					android:inputType="none"
+					android:singleLine="true"
+					android:focusable="false"
+					android:clickable="false"
+					android:layout_gravity="center_vertical"
+					android:background="#00FFFFFF"
+					android:layout_marginLeft="10dip"
+					android:layout_width="210dip"
+				></EditText>
+				
+			</RelativeLayout><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnDAddr" android:onClick="onClick" android:background="@drawable/search_dest_btn" android:layout_alignTop="@+id/LDAddr" android:layout_toLeftOf="@+id/btnLocationRun"></Button>
+			
+		</RelativeLayout>
+	</RelativeLayout>
+
+</LinearLayout>

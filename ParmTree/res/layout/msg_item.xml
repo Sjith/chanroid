@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical"
+			android:orientation="horizontal" android:layout_width="match_parent" android:padding="5dp"
+			android:layout_height="wrap_content">
+			
+			<CheckedTextView android:id="@+id/msgitemcheck"
+						android:background="@drawable/btn_check" android:layout_marginRight="5dp"
+						android:layout_alignParentLeft="true" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"></CheckedTextView>
+						
+			<ImageView android:id="@+id/msgreadflag" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="5dp"
+						android:layout_toRightOf="@id/msgitemcheck" android:visibility="gone"></ImageView>
+
+			<TextView android:id="@+id/msgitemtitle" android:singleLine="true" android:textColor="#000000"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:textSize="22sp" android:text="message title test"
+						android:layout_toRightOf="@id/msgreadflag"></TextView>
+
+			<TextView android:id="@+id/msgitemsender" android:textColor="#000000"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:textSize="14sp" android:text="message sender test" android:singleLine="true"
+						android:layout_toRightOf="@id/msgreadflag" android:layout_below="@id/msgitemtitle">
+			</TextView>
+
+</RelativeLayout>

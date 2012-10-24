@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 첨부파일리스트 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/alDownload" android:title="@string/menuAlDownload"></item>
+<item android:id="@+id/alDelete" android:title="@string/menuAlDelete"></item>
+</menu>

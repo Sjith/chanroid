@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radio_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_original"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_radio_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/img_logo" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_radio_mainbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/img_radio_maintitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_radio_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_player"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <ImageView
+            android:id="@+id/btn_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/btn_play" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/img_sounddown" >
+        </ImageView>
+
+        <SeekBar
+            android:id="@+id/radio_volumn_sk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+        </SeekBar>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/img_soundup" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_radio_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/radio_btn_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:src="@drawable/btn_playlist" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/radio_btn_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:src="@drawable/btn_schedule" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/radio_btn_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:src="@drawable/btn_comment" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_radio_adv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom" >
+
+        <ImageView
+            android:id="@+id/img_radio_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ImageView>
+    </LinearLayout>
+
+</LinearLayout>

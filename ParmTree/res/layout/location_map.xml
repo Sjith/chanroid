@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+		<com.google.android.maps.MapView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:apiKey="0Ek0NyNrQWUw3zX_BmUi-CQfYzCRid1UZndyrwA"
+			android:enabled="true"
+			android:clickable="true"
+			android:id="@+id/MapView"/>
+			
+		<Button
+			android:id="@+id/nearLocation"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:onClick="onClick"
+			android:background="@drawable/btn_around"
+			android:layout_gravity="top"/>
+			
+		<Button 
+			android:id="@+id/refreshCurrentLocation"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:onClick="onClick"
+			android:background="@drawable/btn_reset"
+			android:layout_gravity="right|top"/>
+    
+</FrameLayout>

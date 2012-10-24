@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 다운로드 완료된 첨부파일 보기  -->
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/ralRemove" android:title="@string/menuRalRemove"></item>
+<item android:id="@+id/ralRemoveAll" android:title="@string/menuRalRemoveAll"></item>
+</menu>

@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder
+END
+SearchScreenGCList.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/SearchScreenGCList.java
+END
+MenuActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/MenuActivity.java
+END
+SearchFieldGCList.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/SearchFieldGCList.java
+END
+GCActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/golfmaster/!svn/ver/22/trunk/src/kr/co/drdesign/golffinder/GCActivity.java
+END
+FavoriteActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/golfmaster/!svn/ver/23/trunk/src/kr/co/drdesign/golffinder/FavoriteActivity.java
+END
+GCInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/golfmaster/!svn/ver/9/trunk/src/kr/co/drdesign/golffinder/GCInfo.java
+END
+FavoriteRecentWebDBHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/FavoriteRecentWebDBHelper.java
+END
+FavoriteExcelDBHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/FavoriteExcelDBHelper.java
+END
+ExcelActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/ExcelActivity.java
+END
+ExcelInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/ExcelInfo.java
+END
+ExcelDetailInfoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/ExcelDetailInfoActivity.java
+END
+FavoriteWebDBHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/FavoriteWebDBHelper.java
+END
+FavoriteRecentDBHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/FavoriteRecentDBHelper.java
+END
+SearchGCList.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/SearchGCList.java
+END
+SearchScreenGCActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/golfmaster/!svn/ver/26/trunk/src/kr/co/drdesign/golffinder/SearchScreenGCActivity.java
+END
+SearchScreenGCInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/golfmaster/!svn/ver/13/trunk/src/kr/co/drdesign/golffinder/SearchScreenGCInfo.java
+END
+FinishChainActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/golfmaster/!svn/ver/18/trunk/src/kr/co/drdesign/golffinder/FinishChainActivity.java
+END
+SearchFieldGCActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/golfmaster/!svn/ver/24/trunk/src/kr/co/drdesign/golffinder/SearchFieldGCActivity.java
+END
+GCSimpleMapActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/golfmaster/!svn/ver/24/trunk/src/kr/co/drdesign/golffinder/GCSimpleMapActivity.java
+END
+SearchFieldGCInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/golfmaster/!svn/ver/13/trunk/src/kr/co/drdesign/golffinder/SearchFieldGCInfo.java
+END
+GCList.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/golfmaster/!svn/ver/9/trunk/src/kr/co/drdesign/golffinder/GCList.java
+END
+ExcelLocationCategoryActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/golfmaster/!svn/ver/24/trunk/src/kr/co/drdesign/golffinder/ExcelLocationCategoryActivity.java
+END
+ExcelList.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/ExcelList.java
+END
+SearchGCActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/SearchGCActivity.java
+END
+SearchGCInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/golfmaster/!svn/ver/27/trunk/src/kr/co/drdesign/golffinder/SearchGCInfo.java
+END

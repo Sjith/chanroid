@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/workerBack"
+  android:orientation="vertical"
+  android:padding="3dp"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+    
+    <ImageView android:id="@+id/workerPicture" android:layout_width="wrap_content"
+    		 android:layout_height="wrap_content" android:background="@drawable/icon"/>
+    		 
+    	<TextView android:id="@+id/workerName" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    		android:layout_toRightOf="@id/workerPicture" android:textSize="24sp" android:text="이름/직급"/>
+    	<TextView android:id="@+id/workerKind" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    		android:layout_toRightOf="@id/workerName" android:textSize="18sp" android:text="(업체명)" android:layout_alignBottom="@id/workerName"/>
+    	<TextView android:id="@+id/workerAddr" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    		android:layout_toRightOf="@id/workerPicture" android:layout_below="@id/workerName" 
+    		android:textSize="14sp" android:text="소개글"/>
+
+</RelativeLayout>

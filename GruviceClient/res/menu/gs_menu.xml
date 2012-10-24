@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 구독리스트 -->
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/gsSubscribe" android:title="@string/menuGsSubscribe"></item>
+<item android:id="@+id/gsUnsubscribe" android:title="@string/menuGsUnsubscribe"></item>
+</menu>

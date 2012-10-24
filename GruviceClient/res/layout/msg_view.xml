@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent">
+	
+	<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:layout_height="fill_parent"
+		android:layout_width="fill_parent" android:id="@+id/msgRl">
+		<TextView android:layout_width="fill_parent" android:id="@+id/msgTvTitle"
+			android:text="@string/msgTvTitle" android:fadingEdge="none"
+			android:fadingEdgeLength="5dip" android:layout_height="30dip"
+			android:textColor="#FFFFFF" android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip" android:textSize="23dip"
+			android:layout_marginTop="20dip" android:ellipsize="marquee"
+			android:singleLine="true"></TextView>
+
+		<ImageView android:id="@+id/ImageView01"
+			android:layout_below="@+id/msgTvTitle" android:layout_width="fill_parent"
+			android:layout_height="2dip" android:background="#777777"
+			android:layout_marginLeft="5dip" android:layout_marginRight="5dip"></ImageView>
+		<ScrollView android:layout_width="fill_parent"
+			android:layout_below="@+id/msgTvTitle" android:id="@+id/msgScrollView"
+			android:layout_height="fill_parent" android:layout_above="@+id/msgLl01"
+			android:layout_margin="10dip">
+			<LinearLayout android:layout_width="fill_parent"
+				android:orientation="vertical" android:layout_height="wrap_content"
+				android:id="@+id/msgLinearLayout">
+
+			</LinearLayout>
+		</ScrollView>
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+			android:gravity="center" android:id="@+id/msgLl01"
+			android:background="#FFFFFF">
+			
+				<!-- <Button android:layout_height="wrap_content"
+				android:id="@+id/msgBtnAppInstall"
+				android:text="@string/msgBtnAppInstall"
+				android:visibility="gone"
+				android:layout_width="wrap_content">
+				</Button> 
+				<Button
+				android:layout_height="wrap_content"
+				android:id="@+id/msgBtnAttachment"
+				android:text="@string/msgBtnAttachment"
+				android:visibility="gone"
+				android:layout_width="wrap_content">
+				</Button> -->
+				
+		</LinearLayout>
+
+	</RelativeLayout>
+	</FrameLayout>
+	
+	
+</LinearLayout>

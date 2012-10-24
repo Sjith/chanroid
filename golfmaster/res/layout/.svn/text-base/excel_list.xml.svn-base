@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_width="fill_parent"
+		android:gravity="center_horizontal"
+		android:background="#FFFFFF"
+		android:id="@+id/elLlTopMenu"
+	>
+		<Button
+			android:id="@+id/tmBtnExcelInfo"
+			android:background="@drawable/topmenu_excel_info"
+			android:onClick="onClick"
+		android:layout_height="30dip" android:layout_width="80dip"></Button>
+		<Button
+			android:id="@+id/tmBtnFieldGC"
+			android:background="@drawable/topmenu_field_gc"
+			android:onClick="onClick"
+		android:layout_height="30dip" android:layout_width="80dip"></Button>
+		<Button
+			android:id="@+id/tmBtnScreenGC"
+			android:background="@drawable/topmenu_screen_gc"
+			android:onClick="onClick"
+		android:layout_width="80dip" android:layout_height="30dip"></Button>
+		<Button
+			android:id="@+id/tmBtnMyGolf"
+			android:onClick="onClick"
+			android:background="@drawable/topmenu_mygolf"
+		android:layout_width="80dip" android:layout_height="30dip"></Button>
+	</LinearLayout>
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/RelativeLayout02"
+		android:layout_below="@+id/elLlTopMenu"
+		android:orientation="vertical"
+	android:background="#FFFFFF">
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:id="@+id/elLlSearchBar"
+			android:layout_below="@+id/elLlTopMenu"
+			android:background="@drawable/btn_search_unpress_back" android:layout_height="40dip">
+
+
+			<LinearLayout android:id="@+id/LinearLayout02" android:layout_width="fill_parent" android:layout_margin="3dip" android:background="@drawable/m_search_back" android:layout_height="fill_parent"><EditText android:layout_height="wrap_content" android:id="@+id/elActvNameOfGC" android:hint="골프장명입력" android:background="#00000000" android:layout_width="230dip" android:layout_gravity="center_vertical" android:textSize="17sp" android:imeOptions="actionDone" android:singleLine="true"></EditText></LinearLayout>
+			<!-- Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/elBtnVoiceSearch"
+				android:onClick="onClick"
+				android:background="@drawable/btn_voicesearch"
+				android:layout_toRightOf="@+id/elActvNameOfGC"
+				android:layout_centerVertical="true"
+				android:visibility="gone"
+			></Button-->
+			<Button
+				android:layout_width="wrap_content"
+				android:id="@+id/elBtnSearch"
+				android:onClick="onClick"
+				android:background="@drawable/btn_search"
+				android:layout_margin="3dip" android:layout_alignParentRight="true" android:layout_height="34dip"></Button>
+
+
+		
+</RelativeLayout>
+
+
+		<LinearLayout
+			android:id="@+id/LinearLayout01"
+			android:layout_below="@+id/elLlSearchBar"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+		>
+			<ListView
+				android:id="@+id/elLvResult"
+				android:cacheColorHint="#00000000"
+				android:layout_width="fill_parent" android:fadingEdge="none" android:divider="#00000000" android:layout_height="wrap_content"></ListView>
+		<ImageView android:id="@+id/ImageView01" android:background="#cacfc1" android:layout_height="1dip" android:layout_width="fill_parent"></ImageView>
+</LinearLayout>
+	
+</RelativeLayout>
+
+<Button android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TESTETST" android:visibility="gone"></Button>
+</RelativeLayout>

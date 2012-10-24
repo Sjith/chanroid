@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="fill_parent">
+	<LinearLayout
+		android:id="@+id/LinearLayout01"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+	android:layout_width="fill_parent" android:paddingLeft="10dip" android:layout_marginRight="5dip" android:layout_centerInParent="true" android:gravity="center">
+
+
+		
+
+
+
+
+
+
+<LinearLayout android:id="@+id/LinearLayout04" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_gravity="center_vertical|center" android:gravity="center_vertical"><ImageView android:id="@+id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bullet_05" android:layout_margin="7dip" android:visibility="gone"></ImageView><RelativeLayout android:id="@+id/RelativeLayout01" android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_gravity="center_vertical">
+			<TextView android:layout_height="wrap_content" android:id="@+id/srchTvName" android:text="@+id/srchTvName" android:textStyle="bold" android:textSize="16sp" android:textColor="#5A7F00" android:layout_width="270dip" android:layout_toLeftOf="@+id/ImageView03"></TextView>
+			<TextView android:layout_height="wrap_content" android:id="@+id/srchTvAddress" android:text="@+id/srchTvAddress" android:layout_below="@+id/srchTvName" android:textColor="#666666" android:layout_width="fill_parent" android:layout_toLeftOf="@+id/ImageView03"></TextView>
+			
+		<ImageView android:id="@+id/ImageView03" android:layout_height="fill_parent" android:layout_width="1px" android:background="#c0d990" android:layout_margin="3dip" android:layout_toLeftOf="@+id/LinearLayout02" android:layout_marginBottom="3dip" android:layout_marginTop="3dip" android:layout_marginLeft="7dip"></ImageView><LinearLayout android:id="@+id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginLeft="7dip" android:layout_marginRight="7dip">
+				<Button android:id="@+id/srchBtnLink" android:background="@drawable/btn_home" android:layout_height="wrap_content" android:layout_width="wrap_content" android:visibility="gone"></Button>
+				<Button android:id="@+id/srchBtnDetail" android:background="@drawable/btn_detailview" android:layout_height="wrap_content" android:layout_width="wrap_content" android:visibility="gone"></Button><Button android:id="@+id/srchBtnCall" android:background="@drawable/btn_tel" android:layout_height="30dip" android:layout_width="30dip" android:layout_marginRight="5dip"></Button>
+			<Button android:id="@+id/srchBtnFavorite" android:background="@drawable/btn_bookmark" android:layout_height="30dip" android:layout_width="30dip"></Button><Button android:id="@+id/srchBtnLocation" android:layout_alignParentRight="true" android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/btn_location_run" android:visibility="gone"></Button><LinearLayout android:id="@+id/LinearLayout03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"></LinearLayout>
+</LinearLayout><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/srchTvDistance" android:text="@+id/srchTvDistance" android:visibility="gone" android:textColor="#000000" android:layout_below="@+id/srchTvAddress"></TextView></RelativeLayout></LinearLayout>
+<RelativeLayout android:id="@+id/RelativeLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content"></RelativeLayout>
+</LinearLayout>
+<ImageView android:layout_below="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/scrhIV"></ImageView>
+
+<ImageView android:id="@+id/ImageView02" android:layout_below="@id/scrhIV" android:background="#c0d990" android:layout_height="1px" android:layout_width="fill_parent"></ImageView>
+</RelativeLayout>

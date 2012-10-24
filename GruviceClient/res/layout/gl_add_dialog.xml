@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_height="wrap_content"
+	android:layout_width="250dip">
+	<EditText android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/glAddGroupName"></EditText>
+	<EditText android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/glAddGroupKName"></EditText>
+	<EditText android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/glAddGroupDesc"></EditText>
+
+
+
+	<RelativeLayout android:id="@+id/RelativeLayout011"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/glBtnAddOK"
+			android:text="@string/mnBtnRegistration" android:layout_toLeftOf="@+id/glBtnEditCancel"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/glBtnAddCancel"
+			android:text="@string/glBtnEditCancel"
+			android:layout_alignParentRight="true"></Button>
+	</RelativeLayout>
+</LinearLayout>

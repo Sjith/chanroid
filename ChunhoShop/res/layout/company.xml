@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:background="#ffffff"
+			android:layout_width="match_parent" android:layout_height="match_parent">
+
+			<RelativeLayout android:layout_height="wrap_content"
+						android:id="@+id/companytitle" android:background="@drawable/navi_bg"
+						android:layout_width="match_parent">
+						<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+									android:layout_height="wrap_content" android:textColor="#ffffff"
+									android:text="천호쇼핑" android:layout_width="wrap_content"
+									android:layout_centerVertical="true"
+									android:layout_centerHorizontal="true" android:id="@+id/textView1"></TextView>
+						<Button android:id="@+id/companysettingbtn"
+									android:onClick="onClick" android:layout_height="wrap_content"
+									android:background="@drawable/navi_settings"
+									android:layout_width="wrap_content"
+									android:layout_centerVertical="true"
+									android:layout_alignParentRight="true"></Button>
+						<Button android:id="@+id/companybackbtn"
+									android:layout_centerVertical="true" android:onClick="onClick"
+									android:layout_height="wrap_content" android:background="@drawable/navi_back"
+									android:layout_width="wrap_content"></Button>
+			</RelativeLayout>
+
+			<ScrollView android:layout_height="wrap_content"
+						android:scrollbars="none" android:layout_width="match_parent">
+						<LinearLayout android:orientation="vertical"
+									android:layout_width="match_parent" android:layout_height="match_parent">
+									<ImageView android:layout_height="wrap_content" android:id="@+id/companyimg"
+												android:layout_width="wrap_content"></ImageView><!--  android:src="@drawable/company_01" -->
+									<Button android:background="@drawable/company_02_btn"
+												android:onClick="onClick" android:id="@+id/combutton1"
+												android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+									<ImageView android:layout_height="wrap_content"
+												android:layout_width="wrap_content" android:src="@drawable/company_03"></ImageView>
+
+						</LinearLayout>
+			</ScrollView>
+
+</LinearLayout>

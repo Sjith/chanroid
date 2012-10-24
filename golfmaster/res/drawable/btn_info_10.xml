@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_pressed="false"
+		android:drawable="@drawable/btn_info_unpress_10" />
+	<item android:state_pressed="true"
+		android:drawable="@drawable/btn_info_press_10" />
+</selector>

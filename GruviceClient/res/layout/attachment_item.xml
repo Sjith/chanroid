@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:gravity="center_vertical">
+		<RelativeLayout android:id="@+id/RelativeLayout01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<Button android:layout_width="wrap_content" android:gravity="bottom"
+				android:layout_height="wrap_content" android:id="@+id/alBtnRunAPP"
+				android:text="@string/alBtnRunApp" android:background="@drawable/ic_run"
+				android:visibility="gone"></Button>
+				<!-- 앱 실행버튼 기본적으로 숨김상태 -->
+			<CheckedTextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:clickable="true"
+				android:focusable="true" android:layout_gravity="center_vertical|center_horizontal"
+				android:visibility="visible" android:id="@+id/alCtvItem"
+				android:checkMark="@drawable/v2_ic_checkbox"></CheckedTextView>
+
+		</RelativeLayout>
+
+
+
+		<RelativeLayout android:id="@+id/RelativeLayout02"
+			android:layout_height="wrap_content" android:layout_width="fill_parent">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/alAttachName"
+				android:text="@string/alAttachName" android:textSize="20dip"
+				android:textColor="@color/v2_list_text_color"></TextView>
+			<TextView android:text="@+id/TextView01"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:id="@+id/alAttachMsgInfo" android:layout_below="@+id/alAttachName"
+				android:textColor="#FFFFFF"></TextView>
+		</RelativeLayout>
+	</LinearLayout>
+
+
+</LinearLayout>

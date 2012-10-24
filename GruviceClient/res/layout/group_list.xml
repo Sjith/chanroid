@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent">
+
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:background="#FFFFFF">
+		<ListView android:id="@+id/glLvGroups" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" android:layout_above="@+id/glBtnDeleteGrp"
+			android:cacheColorHint="#00000000" 
+			android:padding="10dip">
+		</ListView>
+		
+		<Button android:layout_width="wrap_content"
+			android:layout_alignParentBottom="true" android:id="@+id/glBtnDeleteGrp" android:text="@string/glBtnDeleteGrp"
+			android:onClick="onClickBtnDeleteGrp" android:background="@drawable/v2_btn_bg" android:textColor="#FFFFFF" android:layout_height="50dip" android:layout_toRightOf="@+id/glBtnSelectAll">
+		</Button>
+		<Button android:layout_width="wrap_content" android:id="@+id/glBtnReadMsg"
+			android:text="@string/glBtnReadMsg" android:layout_alignParentBottom="true"
+			android:layout_toRightOf="@+id/glBtnDeleteGrp" android:onClick="onClickBtnReadMsg" android:background="@drawable/v2_btn_bg" android:textColor="#FFFFFF" android:layout_height="50dip"></Button><CheckedTextView android:layout_width="wrap_content" android:id="@+id/glCtvSelectAll" android:clickable="true" android:focusable="true" android:layout_alignParentBottom="true" android:checkMark="@drawable/v2_ic_checkbox" android:layout_height="50dip" android:visibility="invisible"></CheckedTextView>
+	<Button android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:background="@drawable/v2_btn_bg" android:layout_height="50dip" android:textColor="#FFFFFF" android:id="@+id/glBtnSelectAll" android:text="@string/txtSelectAll" android:onClick="onClick"></Button>
+<ImageView android:id="@+id/ImageView01" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:background="@drawable/v2_ml_bottom" android:layout_width="90dip" android:layout_height="40dip"></ImageView>
+</RelativeLayout>
+</LinearLayout>

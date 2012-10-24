@@ -1,0 +1,10 @@
+set solib-search-path /home/vaclav/Desktop/aacplayer-android-r25/bin/ndk/local/armeabi
+directory /usr/local/google/android-ndk-r4/build/platforms/android-3/arch-arm/usr/include
+directory /home/vaclav/Desktop/aacplayer-android-r25/jni/libmms
+directory /home/vaclav/Desktop/aacplayer-android-r25/jni/libmms
+directory /home/vaclav/Desktop/aacplayer-android-r25/jni/libmms
+directory /home/vaclav/Desktop/aacplayer-android-r25/jni/libmms
+directory /home/vaclav/Desktop/aacplayer-android-r25/jni/libmms
+directory /home/vaclav/Desktop/aacplayer-android-r25/jni/libmms
+directory /home/vaclav/Desktop/aacplayer-android-r25/jni/libmms
+directory /home/vaclav/Desktop/aacplayer-android-r25/jni/libmms

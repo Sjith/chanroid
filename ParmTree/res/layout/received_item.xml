@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="wrap_content" android:padding="3dp">
+
+
+	<CheckedTextView android:id="@+id/rmcheckedView1"
+		android:layout_width="wrap_content" android:text="" android:background="@drawable/icon"
+		android:layout_height="wrap_content" android:layout_alignParentLeft="true"></CheckedTextView>
+
+	<ImageView android:id="@+id/rmItemIv1" android:layout_width="wrap_content" android:src="@drawable/icon"
+		android:layout_height="wrap_content" android:layout_toRightOf="@id/rmcheckedView1"></ImageView>
+		
+	<TextView android:id="@+id/rmTitle" android:layout_width="wrap_content" android:text="제목 테스트입니다." android:textSize="24sp"
+		android:layout_height="wrap_content" android:layout_toRightOf="@id/rmItemIv1"></TextView>
+		
+	<TextView android:id="@+id/rmSender" android:layout_width="wrap_content" android:text="발신자 테스트입니다." android:textSize="12sp"
+		android:layout_height="wrap_content" android:layout_below="@id/rmTitle" android:layout_toRightOf="@id/rmItemIv1"></TextView>
+
+</RelativeLayout>

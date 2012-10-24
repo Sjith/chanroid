@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_checked="false" android:state_pressed="true"
+		android:drawable="@drawable/v2_ic_checkbox_unchecked_press" />
+	<item android:state_checked="false" android:state_pressed="false"
+		android:drawable="@drawable/v2_ic_checkbox_unchecked_unpress" />
+	<item android:state_checked="true" android:state_pressed="true"
+		android:drawable="@drawable/v2_ic_checkbox_checked_press" />
+	<item android:state_checked="true" android:state_pressed="false"
+		android:drawable="@drawable/v2_ic_checkbox_checked_unpress" />
+</selector>

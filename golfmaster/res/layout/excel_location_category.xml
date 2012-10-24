@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_width="fill_parent"
+		android:gravity="center_horizontal"
+		android:background="#FFFFFF"
+		android:id="@+id/elLlTopMenu"
+	>
+		<Button
+			android:id="@+id/tmBtnExcelInfo"
+			android:background="@drawable/topmenu_excel_info"
+			android:onClick="onClick"
+		android:layout_width="80dip" android:layout_height="30dip"></Button>
+		<Button
+			android:id="@+id/tmBtnFieldGC"
+			android:background="@drawable/topmenu_field_gc"
+			android:onClick="onClick"
+		android:layout_width="80dip" android:layout_height="30dip"></Button>
+		<Button
+			android:id="@+id/tmBtnScreenGC"
+			android:background="@drawable/topmenu_screen_gc"
+			android:onClick="onClick"
+		android:layout_width="80dip" android:layout_height="30dip"></Button>
+		<Button
+			android:id="@+id/tmBtnMyGolf"
+			android:onClick="onClick"
+			android:background="@drawable/topmenu_mygolf"
+		android:layout_width="80dip" android:layout_height="30dip"></Button>
+	</LinearLayout>
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:id="@+id/RelativeLayout02"
+		android:layout_below="@+id/elLlTopMenu"
+		android:padding="0dip"
+	android:background="#FFFFFF" android:layout_height="fill_parent">
+		<RelativeLayout
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:id="@+id/searchLayout"
+			android:layout_width="fill_parent"
+			android:layout_height="40dip" android:background="@drawable/btn_search_unpress_back">
+			<LinearLayout android:id="@+id/LinearLayout06" android:layout_below="@id/searchEtName" android:layout_width="fill_parent" android:layout_margin="3dip" android:layout_height="fill_parent" android:background="@drawable/m_search_back" android:gravity="center"><ImageView android:layout_height="wrap_content" android:id="@+id/searchEtName" android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:background="@drawable/ttl_info">
+			</ImageView></LinearLayout>
+			
+		
+</RelativeLayout>
+
+		<LinearLayout
+			android:id="@+id/LinearLayout01"
+			android:layout_below="@id/searchLayout"
+			android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:gravity="right" android:layout_marginBottom="10dip">
+			<Button
+				android:id="@+id/Button01"
+				android:textColor="#00000000"
+				android:textSize="1sp"
+				android:background="@drawable/area_seoul"
+				android:onClick="onClick"
+				android:text="서울/경기/인천" android:layout_marginRight="10dip" android:layout_width="300dip" android:layout_height="95dip" android:layout_marginTop="10dip"></Button>
+		
+</LinearLayout>
+		<TableLayout
+			android:id="@+id/TableLayout01"
+			android:layout_below="@+id/LinearLayout01"
+		android:background="@drawable/area_back" android:layout_marginTop="5dip" android:layout_marginRight="10dip" android:layout_marginLeft="10dip" android:layout_width="wrap_content" android:layout_height="290dip">
+			<TableRow
+				android:id="@+id/TableRow01"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			android:gravity="center" android:layout_marginTop="3dip">
+				
+				<LinearLayout
+					android:id="@+id/LinearLayout03"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+					<Button
+						android:id="@+id/ImageButton02"
+						android:textColor="#00000000"
+						android:textSize="1sp"
+						android:onClick="onClick"
+						android:background="@drawable/area_jn"
+						android:text="전라남도/광주"
+					android:layout_margin="2dip" android:layout_height="90dip" android:layout_width="90dip"></Button>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/LinearLayout04"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+					<Button
+						android:id="@+id/ImageButton03"
+						android:textColor="#00000000"
+						android:textSize="1sp"
+						android:onClick="onClick"
+						android:background="@drawable/area_jb"
+						android:text="전라북도"
+					android:layout_margin="2dip" android:layout_height="90dip" android:layout_width="90dip"></Button>
+				</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<Button android:id="@+id/ImageButton01" android:textColor="#00000000" android:textSize="1sp" android:onClick="onClick" android:background="@drawable/area_cn" android:text="충청남도/대전" android:layout_margin="2dip" android:layout_height="90dip" android:layout_width="90dip"></Button>
+				</LinearLayout></TableRow>
+			<TableRow
+				android:id="@+id/TableRow02"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			android:gravity="center">
+				<LinearLayout android:id="@+id/LinearLayout04" android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<Button android:id="@+id/ImageButton03" android:textColor="#00000000" android:textSize="1sp" android:onClick="onClick" android:background="@drawable/area_kn" android:text="경상남도/부산/울산" android:layout_margin="2dip" android:layout_width="90dip" android:layout_height="90dip"></Button>
+				</LinearLayout><LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:layout_width="wrap_content">
+					
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/LinearLayout03"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+					<Button
+						android:id="@+id/ImageButton02"
+						android:textColor="#00000000"
+						android:textSize="1sp"
+						android:onClick="onClick"
+						android:background="@drawable/area_cb"
+						android:text="충청북도"
+					android:layout_margin="2dip" android:layout_width="90dip" android:layout_height="90dip"></Button>
+				</LinearLayout>
+				
+			</TableRow>
+			<TableRow
+				android:id="@+id/TableRow03"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			android:gravity="center">
+				<LinearLayout
+					android:id="@+id/LinearLayout02"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+					<Button
+						android:id="@+id/ImageButton01"
+						android:textColor="#00000000"
+						android:textSize="1sp"
+						android:onClick="onClick"
+						android:background="@drawable/area_kb"
+						android:text="경상북도/대구"
+					android:layout_margin="2dip" android:layout_height="90dip" android:layout_width="90dip"></Button>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/LinearLayout03"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+					<Button
+						android:id="@+id/ImageButton02"
+						android:textColor="#00000000"
+						android:textSize="1sp"
+						android:onClick="onClick"
+						android:background="@drawable/area_kw"
+						android:text="강원도"
+					android:layout_margin="2dip" android:layout_height="90dip" android:layout_width="90dip"></Button>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/LinearLayout04"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				>
+					<Button
+						android:id="@+id/ImageButton03"
+						android:textColor="#00000000"
+						android:textSize="1sp"
+						android:onClick="onClick"
+						android:background="@drawable/area_je"
+						android:text="제주"
+					android:layout_margin="2dip" android:layout_width="90dip" android:layout_height="90dip"></Button>
+				</LinearLayout>
+			</TableRow>
+		</TableLayout>
+	<LinearLayout android:id="@+id/LinearLayout05" android:layout_below="@id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"></LinearLayout>
+</RelativeLayout>
+
+</RelativeLayout>

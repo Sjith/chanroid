@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="menuMnPreferences">설정</string>
+	<string name="menuMnRegistration">등록</string>
+	<string name="menuAlDownload">다운로드</string>
+	<string name="menuAlDelete">삭제</string>
+	<string name="menuGlRemove">삭제</string>
+	<string name="menuGlRead">읽기</string>
+	<string name="menuGsSubscribe">구독</string>
+	<string name="menuGsUnsubscribe">구독해지</string>
+	<string name="menuMlDelete">삭제</string>
+	<string name="menuMlRefresh">새로고침</string>
+	<string name="menuMlBack2Menu">메인메뉴</string>
+	<string name="menuMsgDetail">상세보기</string>
+	<string name="menuMsgDelete">삭제</string>
+	<string name="menuMsgReply">회신</string>
+	<string name="menuRalRemove">삭제</string>
+	<string name="menuRalRemoveAll">모두삭제</string>
+	<string name="menuArgos">테스트</string>
+	<string name="menuSnmSaveTempMsg">임시저장</string>
+	<string name="menuSnmResumeTempMsg">불러오기</string>
+</resources>

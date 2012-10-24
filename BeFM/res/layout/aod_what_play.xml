@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_original"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_navibar" >
+
+        <TextView
+            android:id="@+id/aod_what_play_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="What do you say"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/aod_what_play_backControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_list" >
+        </ImageView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_player"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <ImageView
+            android:id="@+id/aod_what_btn_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/btn_play" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/img_sounddown" >
+        </ImageView>
+
+        <SeekBar
+            android:id="@+id/aod_what_volumn_sk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+        </SeekBar>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/img_soundup" >
+        </ImageView>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp" >
+
+        <TextView
+            android:id="@+id/aod_what_play_script"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp" >
+        </TextView>
+    </ScrollView>
+
+</LinearLayout>

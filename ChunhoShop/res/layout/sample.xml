@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:background="#ffffff"
+			android:layout_width="match_parent" android:layout_height="match_parent">
+
+			<RelativeLayout android:layout_height="wrap_content" android:background="@drawable/navi_bg"
+						android:layout_width="match_parent">
+
+						<Button android:background="@drawable/navi_back"
+									android:layout_width="wrap_content" android:id="@+id/samplebackbtn"
+									android:layout_height="wrap_content"
+									android:layout_centerVertical="true" android:onClick="onClick"
+									android:layout_alignParentLeft="true"></Button>
+
+						<TextView android:text="@string/sample"
+									android:textColor="#ffffff" android:textAppearance="?android:attr/textAppearanceMedium"
+									android:layout_width="wrap_content" android:id="@+id/sampletitle"
+									android:layout_height="wrap_content"
+									android:layout_centerVertical="true"
+									android:layout_centerHorizontal="true"></TextView>
+
+			</RelativeLayout>
+
+			<ScrollView android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+			<LinearLayout android:layout_width="match_parent"
+						android:padding="10dp" android:layout_height="match_parent"
+						android:orientation="vertical" android:background="#ffffff">
+			<LinearLayout android:layout_width="match_parent"
+						android:gravity="center_vertical" android:layout_height="wrap_content">
+						<ImageView android:layout_width="wrap_content" android:src="@drawable/sample_text_01" android:id="@+id/imageView1" android:layout_height="wrap_content" android:layout_margin="10dp"></ImageView>
+			</LinearLayout>
+						<RelativeLayout android:layout_width="match_parent"
+									android:background="@drawable/box" android:layout_height="wrap_content">
+									<ImageView android:layout_width="wrap_content"
+												android:src="@drawable/sample_name" android:layout_height="wrap_content"
+												android:id="@+id/sampleimg1" android:layout_alignParentLeft="true"
+												android:layout_alignBottom="@+id/samplenametext"
+												android:layout_alignTop="@+id/samplenametext"></ImageView>
+									<EditText android:layout_width="wrap_content"
+												android:id="@+id/samplenametext" android:layout_height="wrap_content"
+												android:background="@drawable/search_box"
+												android:layout_alignParentTop="true"
+												android:layout_toRightOf="@+id/sampleimg1"
+												android:layout_alignParentRight="true" android:singleLine="true"
+												android:paddingLeft="3dp" android:layout_marginTop="3dp">
+									</EditText>
+									<EditText android:layout_width="wrap_content"
+												android:id="@+id/samplecalltext" android:layout_height="wrap_content"
+												android:layout_below="@+id/samplenametext"
+												android:layout_alignParentRight="true" android:background="@drawable/search_box"
+												android:layout_alignLeft="@+id/samplenametext"
+												android:singleLine="true" android:paddingLeft="3dp"
+												android:layout_marginTop="3dp" android:inputType="number"></EditText>
+									<ImageView android:layout_width="wrap_content"
+												android:src="@drawable/sample_call" android:layout_height="wrap_content"
+												android:id="@+id/sampleimg2" android:layout_alignTop="@+id/samplecalltext"
+												android:layout_toLeftOf="@+id/samplecalltext"
+												android:layout_alignBottom="@+id/samplecalltext"></ImageView>
+									<EditText android:layout_width="wrap_content"
+												android:id="@+id/sampleproducttext" android:paddingLeft="3dp"
+												android:layout_height="wrap_content" android:singleLine="true"
+												android:layout_below="@+id/samplecalltext"
+												android:layout_alignParentRight="true" android:enabled="true"
+												android:background="@drawable/search_box"
+												android:layout_alignLeft="@+id/samplecalltext"
+												android:layout_marginTop="3dp"></EditText>
+									<ImageView android:layout_width="wrap_content"
+												android:src="@drawable/sample_samplename"
+												android:layout_height="wrap_content" android:id="@+id/sampleimg3"
+												android:layout_alignBottom="@+id/sampleproducttext"
+												android:layout_alignLeft="@+id/sampleimg2"
+												android:layout_alignTop="@+id/sampleproducttext"
+												android:layout_toLeftOf="@+id/sampleproducttext"></ImageView>
+									<EditText android:layout_width="wrap_content"
+												android:layout_marginTop="3dp" android:background="@drawable/search_box"
+												android:id="@+id/sampleproducttext2" android:paddingLeft="3dp"
+												android:layout_height="wrap_content" android:singleLine="true"
+												android:layout_below="@id/sampleproducttext"
+												android:layout_alignRight="@+id/sampleproducttext"
+												android:layout_alignLeft="@+id/sampleproducttext"></EditText>
+						</RelativeLayout>
+
+			<LinearLayout android:layout_width="match_parent"
+						android:orientation="vertical" android:gravity="center_vertical"
+						android:layout_height="wrap_content">
+						<ImageView android:layout_width="wrap_content"
+									android:layout_margin="10dp" android:src="@drawable/sample_text_02"
+									android:id="@+id/imageView2" android:layout_height="wrap_content"></ImageView>
+			<LinearLayout android:layout_height="wrap_content" android:paddingLeft="10dp"
+						android:layout_width="match_parent" android:id="@+id/linearLayout1">
+						<TextView android:text="3. 샘플신청시, 배송비는 " android:id="@+id/textView1" android:textColor="#555555" android:textSize="13sp"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+						<TextView android:text="착불" android:id="@+id/textView2" android:textColor="#555555"
+									android:textStyle="bold" android:layout_width="wrap_content" android:textSize="13sp"
+									android:layout_height="wrap_content"></TextView>
+						<TextView android:text="입니다." android:id="@+id/textView3"
+			android:textColor="#555555" android:textSize="13sp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			</LinearLayout>
+			</LinearLayout>
+						<Button android:background="@drawable/sample_btn"
+									android:id="@+id/samplecommitbtn" android:layout_gravity="center_horizontal"
+									android:layout_width="wrap_content" android:layout_margin="10dp"
+									android:layout_height="wrap_content" android:onClick="onClick"></Button>
+
+			</LinearLayout>
+
+			</ScrollView>
+
+
+
+</LinearLayout>

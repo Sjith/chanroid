@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 첨부파일리스트 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- item android:id="@+id/btnHome" android:icon="@drawable/icon" android:title="HOME"></item-->
+<item android:id="@+id/btnAbout" android:title="ABOUT"></item>
+</menu>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:background="@drawable/map_ballon_back" android:padding="5dip">
+
+			<LinearLayout android:id="@+id/ballontop"
+						android:layout_marginLeft="5dp" android:gravity="center_vertical"
+						android:layout_width="wrap_content" android:layout_height="20dp">
+						<ImageView android:layout_height="wrap_content"
+									android:id="@+id/imageView1" android:layout_width="wrap_content"
+									android:src="@drawable/bullet_01"></ImageView>
+						<TextView android:layout_width="wrap_content" android:layout_marginLeft="3dp" android:id="@+id/ballontitle"
+									android:textSize="18sp" android:layout_height="wrap_content" android:maxLength="6"
+									android:textColor="#000000" android:text="제목" />
+						<ImageView android:layout_width="20dp" android:id="@+id/ballonkindicon"
+									android:layout_marginLeft="3dp" android:layout_height="20dp"
+									android:background="@drawable/btn_food_press" />
+						<ImageView android:layout_width="20dp" android:id="@+id/ballonpremiicon"
+									android:layout_marginLeft="3dp" android:layout_height="20dp"
+									android:background="@drawable/btn_premium_unpress" />
+
+
+			</LinearLayout>
+
+
+
+			<LinearLayout android:id="@+id/ballonbottom1"
+						android:layout_marginLeft="10dp" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:gravity="center_vertical"
+						android:layout_below="@id/ballontop" android:layout_marginTop="20dp">
+						<ImageView android:layout_height="wrap_content"
+									android:id="@+id/imageView2" android:layout_width="wrap_content"
+									android:src="@drawable/bullet_02"></ImageView>
+						<TextView android:layout_width="wrap_content"
+									android:layout_height="wrap_content" android:textColor="#000000"
+									android:singleLine="true" android:textSize="16sp"
+									android:id="@+id/ballonaddrtext" android:text="주소 : 부산광역시 부산진구 부전동 여기 저기 내집은 어딘가"
+									android:layout_marginLeft="5dp" android:layout_marginRight="5dp" />
+			</LinearLayout>
+			<LinearLayout android:id="@+id/ballonbottom2"
+						android:layout_marginLeft="10dp" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:gravity="center_vertical"
+						android:layout_below="@id/ballonbottom1" android:layout_marginTop="5dp">
+						<ImageView android:layout_height="wrap_content"
+									android:id="@+id/imageView3" android:layout_width="wrap_content"
+									android:src="@drawable/bullet_02"></ImageView>
+						<TextView android:layout_width="wrap_content" android:id="@+id/ballontelnumtext"
+									android:singleLine="true" android:layout_height="wrap_content"
+									android:textColor="#000000" android:textSize="16sp"
+									android:text="전화번호 : " android:layout_marginLeft="5dp"
+									android:layout_marginRight="5dp" />
+			</LinearLayout>
+			<LinearLayout android:id="@+id/ballonbottom3"
+						android:layout_marginLeft="10dp" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:gravity="center_vertical"
+						android:layout_below="@id/ballonbottom2" android:layout_marginTop="5dp">
+						<ImageView android:layout_height="wrap_content"
+									android:id="@+id/imageView3" android:layout_width="wrap_content"
+									android:src="@drawable/bullet_02"></ImageView>
+						<TextView android:layout_width="wrap_content" android:id="@+id/ballondesc"
+									android:singleLine="true" android:layout_height="wrap_content"
+									android:textColor="#000000" android:textSize="16sp"
+									android:text="업체소개 : " android:layout_marginLeft="5dp"
+									android:layout_marginRight="5dp" />
+			</LinearLayout>
+
+			<TextView android:id="@+id/ballondesctext" android:textSize="14sp"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_alignTop="@id/ballonbottom3" android:textColor="#000000"
+						android:layout_toRightOf="@id/ballonbottom3"
+						android:text="내용테스트내용테스트내용테스트내용테스트내용테스트내용테스트" />
+
+
+			<Button android:layout_width="30dp" android:background="@drawable/btn_close"
+						android:layout_height="30dp" android:id="@+id/ballonclosebtn"
+						android:layout_marginLeft="5dp" android:layout_alignParentTop="true"
+						android:onClick="onClick" android:layout_alignParentRight="true"></Button>
+			<Button android:background="@drawable/btn_favo"
+						android:layout_marginLeft="5dp" android:layout_width="30dp"
+						android:layout_height="30dp" android:id="@+id/ballonfavobtn"
+						android:onClick="onClick" android:layout_toLeftOf="@+id/ballonclosebtn"></Button>
+			<Button android:background="@drawable/btn_search"
+						android:layout_marginLeft="5dp" android:layout_width="30dp"
+						android:layout_height="30dp" android:id="@+id/ballondetailbtn"
+						android:onClick="onClick" android:layout_toLeftOf="@+id/ballonfavobtn"></Button>
+			<Button android:background="@drawable/btn_call"
+						android:layout_marginLeft="5dp" android:layout_width="30dp"
+						android:layout_height="30dp" android:id="@+id/balloncallbtn"
+						android:onClick="onClick" android:layout_toLeftOf="@+id/ballondetailbtn"></Button>
+
+
+
+</RelativeLayout>

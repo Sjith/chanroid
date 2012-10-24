@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<ImageView android:id="@+id/gifticon"
+						android:layout_width="70dp" android:src="@drawable/icon"
+						android:layout_height="70dp"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentLeft="true"></ImageView>
+			<TextView android:layout_width="wrap_content" android:id="@+id/giftname"
+						android:text="TextView" android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_alignParentTop="true" android:layout_toRightOf="@id/gifticon"></TextView>
+			<TextView android:layout_width="wrap_content" android:id="@+id/giftnum"
+						android:text="TextView" android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:layout_below="@id/giftname" android:layout_toRightOf="@id/gifticon"></TextView>
+
+
+
+</RelativeLayout>

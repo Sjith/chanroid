@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:background="#ffffff" android:layout_height="match_parent">
+
+			<RelativeLayout android:layout_height="wrap_content"
+						android:background="@drawable/navi_bg" android:layout_width="match_parent">
+
+						<Button android:background="@drawable/navi_back"
+									android:layout_width="wrap_content" android:id="@+id/searchbackbtn"
+									android:layout_height="wrap_content"
+									android:layout_centerVertical="true" android:onClick="onClick"
+									android:layout_alignParentLeft="true"></Button>
+
+						<TextView android:text="@string/searchproduct"
+									android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+									android:gravity="center" android:textColor="#ffffff"
+									android:textAppearance="?android:attr/textAppearanceMedium"
+									android:layout_width="wrap_content" android:id="@+id/searchtitle"
+									android:layout_height="wrap_content"
+									android:layout_centerVertical="true" android:layout_toRightOf="@+id/searchbackbtn"
+									android:layout_toLeftOf="@+id/searchsettingbtn"></TextView>
+
+						<Button android:background="@drawable/navi_settings"
+									android:layout_width="wrap_content" android:id="@+id/searchsettingbtn"
+									android:layout_height="wrap_content"
+									android:layout_centerVertical="true" android:onClick="onClick"
+									android:layout_alignParentRight="true"></Button>
+
+			</RelativeLayout>
+			<TextView android:layout_height="wrap_content" android:id="@+id/searchname"
+						android:layout_width="match_parent" android:text="TextView"
+						android:layout_margin="5dp" android:gravity="center"
+						android:textStyle="bold" style="@android:style/TextAppearance.Medium"
+						android:visibility="visible" android:textColor="#000000"></TextView>
+			<ImageView android:src="@drawable/event_line"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:id="@+id/imageView1"></ImageView>
+
+			<RelativeLayout android:layout_height="wrap_content"
+						android:padding="5dp" android:layout_width="match_parent">
+						<EditText android:layout_width="wrap_content"
+									android:paddingLeft="3dp" android:hint="ex) 산수유, 홍삼"
+									android:id="@+id/searchtext" android:layout_height="wrap_content"
+									android:singleLine="true" android:background="@drawable/search_box">
+						</EditText>
+						<Button android:layout_height="wrap_content"
+									android:layout_toRightOf="@id/searchtext" android:background="@drawable/list_search"
+									android:layout_alignParentRight="true" android:onClick="onClick"
+									android:layout_alignBottom="@id/searchtext"
+									android:layout_width="wrap_content" android:id="@+id/searchbtn"
+									android:layout_alignParentTop="true"></Button>
+			</RelativeLayout>
+			<LinearLayout android:id="@+id/searchlistbody"
+						android:orientation="vertical" android:layout_height="match_parent"
+						android:layout_width="match_parent" android:visibility="gone">
+						<ListView android:layout_height="match_parent" android:visibility="visible" android:layout_width="match_parent" android:background="#ffffff" android:id="@+id/searchlist"></ListView>
+			</LinearLayout>
+
+			<FrameLayout android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+						<ScrollView android:layout_width="match_parent"
+									android:layout_height="match_parent">
+
+									<FrameLayout android:id="@+id/searchbody"
+												android:paddingLeft="5dp" android:paddingRight="5dp"
+												android:layout_width="match_parent" android:layout_height="match_parent">
+												<LinearLayout android:orientation="vertical"
+															android:layout_height="match_parent"
+															android:layout_width="match_parent">
+															<Button android:layout_height="wrap_content"
+																		android:onClick="onClick" android:layout_width="match_parent"
+																		android:background="@drawable/search_noname"
+																		android:id="@+id/searchcategory1"></Button>
+															<TableLayout android:layout_height="wrap_content"
+																		android:visibility="visible" android:id="@+id/tableLayout1"
+																		android:layout_width="match_parent">
+																		<TableRow android:layout_width="wrap_content"
+																					android:layout_height="wrap_content">
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#ae0000"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c1btn1"
+																								android:layout_weight="1"></Button>
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#ae0000"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c1btn2"
+																								android:layout_weight="1"></Button>
+																		</TableRow>
+																		<TableRow android:layout_width="wrap_content"
+																					android:layout_height="wrap_content">
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#ae0000"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c1btn3"
+																								android:layout_weight="1"></Button>
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#ae0000"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c1btn4"
+																								android:layout_weight="1"></Button>
+																		</TableRow>
+															</TableLayout>
+															<Button android:layout_height="wrap_content"
+																		android:onClick="onClick" android:layout_width="match_parent"
+																		android:background="@drawable/search_noname"
+																		android:id="@+id/searchcategory2"></Button>
+															<TableLayout android:layout_height="wrap_content"
+																		android:visibility="gone" android:id="@+id/tableLayout2"
+																		android:layout_width="match_parent">
+																		<TableRow android:layout_width="wrap_content"
+																					android:layout_height="wrap_content">
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0052a3"
+																								android:layout_height="wrap_content"
+																								android:gravity="left|center_vertical"
+																								android:paddingLeft="3dp" android:layout_width="wrap_content"
+																								android:id="@+id/c2btn1" android:layout_weight="1"></Button>
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0052a3"
+																								android:layout_height="wrap_content"
+																								android:gravity="left|center_vertical"
+																								android:paddingLeft="3dp" android:layout_width="wrap_content"
+																								android:id="@+id/c2btn2" android:layout_weight="1"></Button>
+																		</TableRow>
+																		<TableRow android:layout_width="wrap_content"
+																					android:layout_height="wrap_content">
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0052a3"
+																								android:layout_height="wrap_content"
+																								android:gravity="left|center_vertical"
+																								android:paddingLeft="3dp" android:layout_width="wrap_content"
+																								android:id="@+id/c2btn3" android:layout_weight="1"></Button>
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0052a3"
+																								android:layout_height="wrap_content"
+																								android:gravity="left|center_vertical"
+																								android:paddingLeft="3dp" android:layout_width="wrap_content"
+																								android:id="@+id/c2btn4" android:layout_weight="1"></Button>
+																		</TableRow>
+																		<TableRow android:layout_width="wrap_content"
+																					android:layout_height="wrap_content">
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0052a3"
+																								android:layout_height="wrap_content"
+																								android:gravity="left|center_vertical"
+																								android:paddingLeft="3dp" android:layout_width="wrap_content"
+																								android:id="@+id/c2btn5" android:layout_weight="1"></Button>
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0052a3"
+																								android:layout_height="wrap_content"
+																								android:gravity="left|center_vertical"
+																								android:paddingLeft="3dp" android:layout_width="wrap_content"
+																								android:id="@+id/c2btn6" android:layout_weight="1"></Button>
+																		</TableRow>
+																		<TableRow android:layout_width="wrap_content"
+																					android:layout_height="wrap_content">
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0052a3"
+																								android:layout_height="wrap_content"
+																								android:gravity="left|center_vertical"
+																								android:paddingLeft="3dp" android:layout_width="wrap_content"
+																								android:id="@+id/c2btn7" android:layout_weight="1"></Button>
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0052a3"
+																								android:layout_height="wrap_content"
+																								android:gravity="left|center_vertical"
+																								android:paddingLeft="3dp" android:layout_width="wrap_content"
+																								android:id="@+id/c2btn8" android:layout_weight="1"></Button>
+																		</TableRow>
+																		<TableRow android:layout_width="wrap_content"
+																					android:layout_height="wrap_content">
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0052a3"
+																								android:layout_height="wrap_content"
+																								android:gravity="left|center_vertical"
+																								android:paddingLeft="3dp" android:layout_width="wrap_content"
+																								android:id="@+id/c2btn9" android:layout_weight="1"></Button>
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0052a3"
+																								android:layout_height="wrap_content"
+																								android:gravity="left|center_vertical"
+																								android:paddingLeft="3dp" android:layout_width="wrap_content"
+																								android:id="@+id/c2btn10" android:layout_weight="1"></Button>
+																		</TableRow>
+															</TableLayout>
+															<Button android:layout_height="wrap_content"
+																		android:onClick="onClick" android:layout_width="match_parent"
+																		android:background="@drawable/search_noname"
+																		android:id="@+id/searchcategory3"></Button>
+															<TableLayout android:layout_height="wrap_content"
+																		android:visibility="gone" android:id="@+id/tableLayout3"
+																		android:layout_width="match_parent">
+																		<TableRow android:layout_width="wrap_content"
+																					android:layout_height="wrap_content">
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0a670c"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c3btn1"
+																								android:layout_weight="1"></Button>
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0a670c"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c3btn2"
+																								android:layout_weight="1"></Button>
+																		</TableRow>
+																		<TableRow android:layout_width="wrap_content"
+																					android:layout_height="wrap_content">
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0a670c"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c3btn3"
+																								android:layout_weight="1"></Button>
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0a670c"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c3btn4"
+																								android:layout_weight="1"></Button>
+																		</TableRow>
+																		<TableRow android:layout_width="wrap_content"
+																					android:layout_height="wrap_content">
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0a670c"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c3btn5"
+																								android:layout_weight="1"></Button>
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#0a670c"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c3btn6"
+																								android:layout_weight="1"></Button>
+																		</TableRow>
+															</TableLayout>
+															<Button android:layout_height="wrap_content"
+																		android:onClick="onClick" android:layout_width="match_parent"
+																		android:background="@drawable/search_noname"
+																		android:id="@+id/searchcategory4"></Button>
+															<TableLayout android:layout_height="wrap_content"
+																		android:visibility="gone" android:id="@+id/tableLayout4"
+																		android:layout_width="match_parent">
+																		<TableRow android:layout_width="wrap_content"
+																					android:layout_height="wrap_content">
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#f07c00"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c4btn1"
+																								android:layout_weight="1"></Button>
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#f07c00"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c4btn2"
+																								android:layout_weight="1"></Button>
+																		</TableRow>
+																		<TableRow android:layout_width="wrap_content"
+																					android:layout_height="wrap_content">
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#f07c00"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c4btn3"
+																								android:layout_weight="1"></Button>
+																					<Button android:onClick="onClick"
+																								android:background="@drawable/search_btn_01"
+																								android:singleLine="true" android:textColor="#f07c00"
+																								android:layout_height="wrap_content"
+																								android:layout_width="wrap_content" android:id="@+id/c4btn4"
+																								android:layout_weight="1"></Button>
+																		</TableRow>
+															</TableLayout>
+															<Button android:layout_height="wrap_content"
+																		android:onClick="onClick" android:layout_width="match_parent"
+																		android:background="@drawable/search_situation"
+																		android:singleLine="true" android:id="@+id/searchcategory5"></Button>
+															<Button android:layout_height="wrap_content"
+																		android:onClick="onClick" android:layout_width="match_parent"
+																		android:background="@drawable/search_situation"
+																		android:singleLine="true" android:id="@+id/searchcategory6"></Button>
+												</LinearLayout>
+
+									</FrameLayout>
+						</ScrollView>
+
+						<ProgressBar style="?android:attr/progressBarStyleLarge"
+									android:layout_gravity="center" android:layout_width="wrap_content"
+									android:layout_height="wrap_content" android:id="@+id/searchprogress"
+									android:visibility="gone"></ProgressBar>
+			</FrameLayout>
+</LinearLayout>
+

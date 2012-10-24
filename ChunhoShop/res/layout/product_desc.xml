@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:background="#ffffff" android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+
+			<RelativeLayout android:layout_width="match_parent"
+						android:layout_height="match_parent">
+						<LinearLayout android:orientation="vertical"
+									android:id="@+id/productbody" android:layout_width="match_parent"
+									android:layout_height="match_parent" android:layout_above="@+id/productbottom">
+
+									<RelativeLayout android:layout_height="wrap_content"
+												android:id="@+id/producttitle" android:background="@drawable/navi_bg"
+												android:layout_width="match_parent">
+												<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+															android:layout_height="wrap_content" android:textColor="#ffffff"
+															android:text="제품상세정보" android:layout_width="wrap_content"
+															android:layout_centerVertical="true"
+															android:layout_centerHorizontal="true" android:id="@+id/textView1"></TextView>
+												<Button android:id="@+id/productsettingbtn"
+															android:onClick="onClick" android:layout_height="wrap_content"
+															android:background="@drawable/navi_settings"
+															android:layout_width="wrap_content"
+															android:layout_centerVertical="true"
+															android:layout_alignParentRight="true"></Button>
+												<Button android:id="@+id/productbackbtn"
+															android:layout_centerVertical="true" android:onClick="onClick"
+															android:layout_height="wrap_content" android:background="@drawable/navi_back"
+															android:layout_width="wrap_content"></Button>
+									</RelativeLayout>
+
+
+									<ScrollView android:layout_width="match_parent"
+												android:layout_height="wrap_content" android:id="@+id/scrollView1">
+												<LinearLayout android:id="@+id/productcontent"
+															android:paddingBottom="20dp" android:orientation="vertical"
+															android:layout_width="match_parent"
+															android:layout_height="wrap_content" android:weightSum="1">
+
+
+															<!-- title normal -->
+															<ImageView android:id="@+id/productbanner"
+																		android:visibility="gone" android:layout_margin="10dp"
+																		android:layout_height="wrap_content"
+																		android:layout_gravity="center" android:layout_width="wrap_content"></ImageView>
+															<ImageView android:src="@drawable/login_bg_line" android:visibility="gone"
+																		android:id="@+id/bannerline" android:layout_height="wrap_content"
+																		android:layout_width="match_parent"></ImageView>
+															<TextView android:textStyle="bold"
+																		android:layout_margin="5dp" android:layout_height="wrap_content"
+																		android:textColor="#000000" android:text="안녕하세요"
+																		android:textSize="18sp" android:id="@+id/productnumname"
+																		android:gravity="center" android:layout_width="match_parent"
+																		android:maxLines="2" android:marqueeRepeatLimit="999"></TextView>
+
+															<RelativeLayout android:layout_height="wrap_content"
+																		android:layout_width="match_parent" android:weightSum="1">
+																		<FrameLayout android:orientation="vertical" android:layout_marginLeft="3dp"
+																					android:paddingTop="4dp" android:paddingLeft="3dp"
+																					android:background="@drawable/detail_bg_00"
+																					android:layout_width="wrap_content" android:id="@+id/linearLayout4"
+																					android:layout_height="wrap_content"
+																					android:layout_centerVertical="true"
+																					android:layout_alignParentLeft="true">
+																					<ImageView android:id="@+id/productnumicon"
+																								android:layout_gravity="center"
+																								android:layout_margin="10dp"
+																								android:layout_width="match_parent"
+																								android:layout_height="match_parent"></ImageView>
+																					<TextView android:padding="3dp"
+																								android:id="@+id/productcardflag"
+																								android:textSize="12sp" android:background="@drawable/detail_card"
+																								android:textColor="#ffffff"
+																								android:layout_width="wrap_content"
+																								android:layout_height="wrap_content"></TextView>
+																		</FrameLayout>
+																		<ImageView android:id="@+id/imageView3"
+																					android:layout_width="wrap_content"
+																					android:layout_height="wrap_content" android:src="@drawable/detail_bg_02"
+																					android:layout_below="@+id/imageView2"
+																					android:layout_alignLeft="@+id/imageView2"></ImageView>
+																		<ImageView android:id="@+id/imageView4"
+																					android:layout_width="wrap_content"
+																					android:layout_below="@+id/imageView7"
+																					android:layout_height="wrap_content" android:src="@drawable/detail_bg_03"
+																					android:layout_toRightOf="@+id/linearLayout4"></ImageView>
+																		<ImageView android:id="@+id/imageView5"
+																					android:layout_width="wrap_content"
+																					android:layout_height="wrap_content" android:src="@drawable/detail_bg_04"
+																					android:layout_below="@+id/imageView4"
+																					android:layout_toRightOf="@+id/linearLayout4"></ImageView>
+																		<ImageView android:id="@+id/imageView6"
+																					android:layout_width="wrap_content"
+																					android:layout_height="wrap_content" android:src="@drawable/detail_bg_05"
+																					android:layout_below="@+id/imageView5"
+																					android:layout_alignLeft="@+id/imageView5"></ImageView>
+																		<TextView android:textColor="#000000"
+																					android:textSize="14sp" android:id="@+id/productnumprice"
+																					android:text="price" android:layout_width="wrap_content"
+																					android:layout_height="wrap_content"
+																					android:layout_alignParentRight="true"
+																					android:layout_toRightOf="@+id/imageView2"
+																					android:gravity="center_vertical"
+																					android:layout_alignBottom="@+id/imageView2"
+																					android:layout_alignTop="@+id/imageView2"></TextView>
+																		<TextView android:textColor="#000000"
+																					android:id="@+id/productnumpoint" android:text="point"
+																					android:textSize="14sp" android:layout_width="wrap_content"
+																					android:layout_height="wrap_content"
+																					android:layout_alignTop="@+id/imageView3"
+																					android:layout_alignBottom="@+id/imageView3"
+																					android:layout_alignLeft="@+id/productnumprice"
+																					android:layout_alignParentRight="true"
+																					android:gravity="center_vertical"></TextView>
+																		<TextView android:textColor="#000000"
+																					android:id="@+id/productnumnum" android:text="num"
+																					android:textSize="14sp" android:layout_width="wrap_content"
+																					android:layout_height="wrap_content"
+																					android:layout_alignTop="@+id/imageView4"
+																					android:layout_below="@+id/imageView7"
+																					android:layout_alignLeft="@+id/productnumpoint"
+																					android:layout_alignBottom="@+id/imageView4"
+																					android:layout_alignParentRight="true"
+																					android:gravity="center_vertical"></TextView>
+																		<TextView android:textColor="#000000"
+																					android:id="@+id/ptextView2" android:text="maker"
+																					android:layout_width="wrap_content"
+																					android:layout_height="wrap_content"
+																					android:layout_alignTop="@+id/imageView5"
+																					android:layout_alignLeft="@+id/productnumnum"
+																					android:maxLength="4" android:layout_alignBottom="@+id/imageView5"
+																					android:layout_alignParentRight="true"
+																					android:gravity="center_vertical"></TextView>
+																		<TextView android:textColor="#000000"
+																					android:id="@+id/ptextView3" android:text="별도표기"
+																					android:layout_width="wrap_content"
+																					android:layout_height="wrap_content"
+																					android:layout_alignTop="@+id/imageView6"
+																					android:layout_alignLeft="@+id/ptextView2"
+																					android:layout_alignBottom="@+id/imageView6"
+																					android:layout_alignParentRight="true"
+																					android:gravity="center_vertical"></TextView>
+																		<LinearLayout android:id="@+id/linearLayout5"
+																					android:orientation="vertical"
+																					android:layout_width="wrap_content"
+																					android:layout_height="wrap_content"
+																					android:layout_alignParentBottom="true"
+																					android:layout_alignParentRight="true"></LinearLayout>
+																		<LinearLayout android:layout_marginTop="10dp"
+																					android:layout_marginLeft="5dp"
+																					android:layout_marginBottom="10dp"
+																					android:layout_width="wrap_content"
+																					android:layout_height="wrap_content" android:id="@+id/relativeLayout1"
+																					android:layout_alignParentTop="true"
+																					android:layout_alignParentRight="true"
+																					android:layout_alignLeft="@+id/imageView2">
+																					<ImageView android:layout_width="wrap_content"
+																								android:layout_height="wrap_content"
+																								android:src="@drawable/list_s1" android:id="@+id/desceventflag"></ImageView>
+																					<ImageView android:layout_width="wrap_content"
+																								android:layout_height="wrap_content"
+																								android:src="@drawable/list_s2" android:id="@+id/descnewflag"></ImageView>
+																					<ImageView android:layout_width="wrap_content"
+																								android:layout_height="wrap_content"
+																								android:src="@drawable/list_s3" android:id="@+id/descmonthflag"></ImageView>
+																					<ImageView android:layout_width="wrap_content"
+																								android:layout_height="wrap_content"
+																								android:src="@drawable/list_s4" android:id="@+id/deschealthflag"></ImageView>
+																		</LinearLayout>
+																		<ImageView android:src="@drawable/login_bg_line"
+																					android:layout_margin="5dp" android:layout_width="wrap_content"
+																					android:layout_below="@id/productnumpoint"
+																					android:layout_height="wrap_content" android:id="@+id/imageView9"
+																					android:layout_alignParentRight="true"
+																					android:scaleType="fitXY" android:layout_toRightOf="@+id/linearLayout4"></ImageView>
+																		<ImageView android:src="@drawable/detail_bg_01"
+																					android:layout_width="wrap_content"
+																					android:layout_height="wrap_content" android:id="@+id/imageView2"
+																					android:layout_below="@+id/relativeLayout1"
+																					android:layout_alignLeft="@+id/imageView4"></ImageView>
+																		<ImageView android:src="@drawable/login_bg_line"
+																					android:layout_margin="5dp" android:layout_width="wrap_content"
+																					android:layout_below="@id/productnumpoint"
+																					android:layout_height="wrap_content" android:id="@+id/imageView7"
+																					android:layout_alignParentRight="true"
+																					android:scaleType="fitXY" android:layout_toRightOf="@+id/linearLayout4"></ImageView>
+
+
+															</RelativeLayout>
+
+
+															<!-- desc normal -->
+															<LinearLayout android:layout_height="wrap_content"
+																		android:padding="5dp" android:id="@+id/linearLayout1"
+																		android:layout_width="match_parent">
+																		<Button android:onClick="onClick"
+																					android:layout_marginRight="5dp"
+																					android:layout_height="wrap_content" android:id="@+id/productcartbtn"
+																					android:background="@drawable/detail_cart"
+																					android:layout_weight="1" android:layout_width="wrap_content"></Button>
+																		<Button android:onClick="onClick"
+																					android:layout_marginRight="5dp"
+																					android:layout_height="wrap_content" android:id="@+id/productcallbtn"
+																					android:background="@drawable/detail_call"
+																					android:layout_weight="1" android:layout_width="wrap_content"></Button>
+																		<Button android:onClick="onClick"
+																					android:layout_height="wrap_content" android:id="@+id/productsamplebtn"
+																					android:background="@drawable/detail_sample"
+																					android:layout_weight="1" android:layout_width="wrap_content"></Button>
+															</LinearLayout>
+															<LinearLayout android:layout_height="wrap_content"
+																		android:padding="5dp" android:id="@+id/linearLayout2"
+																		android:layout_width="match_parent">
+																		<Button android:onClick="onClick"
+																					android:layout_marginRight="3dp"
+																					android:layout_height="wrap_content" android:id="@+id/productsns"
+																					android:background="@drawable/detal_sns"
+																					android:layout_weight="1" android:layout_width="wrap_content"></Button>
+																		<Button android:layout_height="wrap_content"
+																					android:layout_marginRight="3dp" android:id="@+id/productbigsend"
+																					android:onClick="onClick" android:background="@drawable/detail_order"
+																					android:layout_weight="1" android:layout_width="wrap_content"></Button>
+																		<Button android:onClick="onClick"
+																					android:layout_marginRight="3dp"
+																					android:layout_height="wrap_content" android:id="@+id/productcomment"
+																					android:background="@drawable/detail_review"
+																					android:layout_weight="1" android:layout_width="wrap_content"></Button>
+																		<Button android:layout_weight="1"
+																					android:onClick="onClick" android:id="@+id/productnumgift"
+																					android:background="@drawable/detal_gift"
+																					android:layout_width="wrap_content"
+																					android:textColor="#ffffff" android:layout_height="wrap_content"
+																					android:visibility="visible"></Button>
+															</LinearLayout>
+															<RelativeLayout android:layout_height="wrap_content"
+																		android:layout_marginTop="30dp" android:id="@+id/linearLayout3"
+																		android:layout_width="match_parent">
+																		<ImageView android:id="@+id/imageView1"
+																					android:layout_height="wrap_content"
+																					android:layout_width="wrap_content" android:src="@drawable/detail_bg_06"></ImageView>
+																		<Button android:onClick="onClick" android:id="@+id/productvideobtn"
+																					android:layout_centerVertical="true"
+																					android:gravity="center_vertical"
+																					android:background="@drawable/detail_play"
+																					android:textSize="12sp" android:layout_width="wrap_content"
+																					android:text="동영상" android:layout_height="wrap_content"
+																					android:paddingLeft="35dp"
+																					android:layout_alignParentRight="true"></Button>
+															</RelativeLayout>
+															<LinearLayout android:id="@+id/productnumcontents"
+																		android:layout_width="match_parent"
+																		android:layout_height="wrap_content" android:gravity="center"
+																		android:orientation="vertical"></LinearLayout>
+
+												</LinearLayout>
+
+									</ScrollView>
+
+
+						</LinearLayout>
+
+
+
+			</RelativeLayout>
+
+
+			<ProgressBar android:id="@+id/productnumdialog"
+						android:visibility="gone" android:layout_gravity="center"
+						style="?android:attr/progressBarStyleLarge" android:layout_height="wrap_content"
+						android:layout_width="wrap_content"></ProgressBar>
+</FrameLayout>

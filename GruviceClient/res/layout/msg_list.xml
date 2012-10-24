@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:layout_width="wrap_content" android:layout_height="fill_parent"
+		android:background="#FFFFFF">
+		<ListView android:layout_width="fill_parent" android:id="@+id/mlLvMsgList"
+			android:layout_height="fill_parent" android:cacheColorHint="#00000000"
+			android:padding="10dip">
+		</ListView>
+		
+		<LinearLayout android:id="@+id/mlLlBottom" android:layout_width="fill_parent" android:layout_alignParentBottom="true" android:visibility="invisible" android:layout_height="wrap_content" android:background="#FFFFFF">
+			<Button android:layout_width="wrap_content" android:layout_height="50dip" android:background="@drawable/v2_btn_bg" android:textColor="#FFFFFF" android:id="@+id/mlBtnSelectAll" android:onClick="onClick" android:text="@string/txtSelectAll"></Button>
+			<Button android:layout_width="wrap_content" android:id="@+id/mlBtnDeleteItem" android:text="@string/mlBtnDeleteItem" android:background="@drawable/v2_btn_bg" android:layout_height="50dip" android:textColor="#FFFFFF"></Button>
+			
+			
+
+		</LinearLayout><ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/v2_ml_bottom"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true" android:id="@+id/mlIvBottom" android:visibility="invisible"></ImageView>
+		
+
+
+
+
+
+
+
+	</RelativeLayout>
+</LinearLayout>

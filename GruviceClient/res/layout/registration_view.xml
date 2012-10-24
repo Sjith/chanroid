@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/regMain"
+	android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent">
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/rsLlWebRegist">
+		<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:id="@+id/rsCbWebRegist" android:text="@string/rsCbWebRegist"></CheckBox>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/rsTvWebRegist"></TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" android:id="@+id/rsLlEmail" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content"
+			android:id="@+id/rsTvEmail" android:text="@string/rsTvEmail" android:layout_width="100dip"></TextView>
+		<EditText android:layout_height="wrap_content"
+			android:id="@+id/rsEtEmail" android:layout_width="fill_parent" android:inputType="textEmailAddress"></EditText>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" android:id="@+id/rsLlPw" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content"
+			android:id="@+id/rsTvPw" android:text="@string/rsTvPw" android:layout_width="100dip"></TextView>
+		<EditText android:layout_height="wrap_content"
+			android:id="@+id/rsEtPw" android:layout_width="fill_parent" android:password="true"></EditText>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" android:id="@+id/rsLlPw2" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content"
+			android:id="@+id/rsTvPw2" android:text="@string/rsTvPw2" android:layout_width="100dip"></TextView>
+		<EditText android:layout_height="wrap_content"
+			android:id="@+id/rsEtPw2" android:layout_width="fill_parent" android:password="true"></EditText>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" android:id="@+id/rsLlName" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content"
+			android:id="@+id/rsTvName" android:text="@string/rsTvName" android:layout_width="100dip"></TextView>
+		<EditText android:layout_height="wrap_content"
+			android:id="@+id/rsEtName" android:layout_width="fill_parent"></EditText>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" android:id="@+id/rsLlPhoneNo" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content"
+			android:id="@+id/rsTvPhoneNo" android:text="@string/rsTvPhoneNo" android:layout_width="100dip"></TextView>
+		<EditText android:layout_height="wrap_content" android:inputType="number"
+			android:id="@+id/rsEtPhoneNo" android:layout_width="fill_parent"></EditText>
+	</LinearLayout>
+<Button android:layout_height="wrap_content" android:text="Registration" android:layout_width="fill_parent" android:id="@+id/rsBtnRegistration"></Button>
+</LinearLayout>

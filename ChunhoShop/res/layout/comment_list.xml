@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:background="#ffffff" android:orientation="vertical"
+			android:layout_width="match_parent" android:layout_height="match_parent">
+			<LinearLayout android:layout_height="match_parent"
+						android:layout_width="match_parent" android:orientation="vertical">
+						<RelativeLayout android:layout_height="wrap_content"
+									android:id="@+id/producttitle" android:background="@drawable/navi_bg"
+									android:layout_width="match_parent">
+
+									<Button android:background="@drawable/navi_back"
+												android:layout_width="wrap_content" android:id="@+id/commentlistbackbtn"
+												android:layout_height="wrap_content"
+												android:layout_centerVertical="true" android:onClick="onClick"
+												android:layout_alignParentLeft="true"></Button>
+
+									<TextView android:text="@string/commentlist"
+												android:textColor="#ffffff" android:textAppearance="?android:attr/textAppearanceMedium"
+												android:layout_width="wrap_content" android:layout_height="wrap_content"
+												android:layout_centerVertical="true"
+												android:layout_centerHorizontal="true"></TextView>
+
+
+									<Button android:background="@drawable/navi_settings"
+												android:layout_width="wrap_content" android:id="@+id/commentsettingbtn"
+												android:layout_height="wrap_content"
+												android:layout_centerVertical="true" android:onClick="onClick"
+												android:layout_alignParentRight="true"></Button>
+
+						</RelativeLayout>
+
+						<RelativeLayout
+									android:orientation="vertical" android:layout_width="match_parent"
+									android:background="#ffffff" android:layout_height="wrap_content">
+									<LinearLayout android:orientation="vertical"
+												android:layout_height="wrap_content" android:layout_width="wrap_content"
+												android:background="@drawable/list_box"
+												android:layout_alignParentLeft="true" android:id="@+id/linearLayout2">
+												<ImageView android:layout_width="90dp"
+															android:src="@drawable/icon" android:layout_height="90dp"
+															android:id="@+id/producticon"
+															android:layout_alignParentTop="true"
+															android:layout_margin="10dp"
+															android:layout_alignParentLeft="true"></ImageView>
+									</LinearLayout>
+
+									<LinearLayout android:orientation="vertical"
+												android:layout_margin="7dp" android:layout_height="wrap_content"
+												android:layout_width="wrap_content"
+												android:layout_toRightOf="@+id/linearLayout2" android:id="@+id/linearLayout1"
+												android:layout_alignParentTop="true"
+												android:layout_alignBottom="@+id/linearLayout2"
+												android:layout_toLeftOf="@+id/imageView1">
+												<LinearLayout android:layout_width="match_parent"
+															android:id="@+id/linearLayout3" android:layout_height="wrap_content">
+															<ImageView android:layout_width="wrap_content"
+																		android:src="@drawable/list_s1" android:id="@+id/eventflag"
+																		android:layout_height="wrap_content"></ImageView>
+															<ImageView android:layout_width="wrap_content"
+																		android:src="@drawable/list_s2" android:id="@+id/newflag"
+																		android:layout_height="wrap_content"></ImageView>
+															<ImageView android:layout_width="wrap_content"
+																		android:src="@drawable/list_s3" android:id="@+id/monthflag"
+																		android:layout_height="wrap_content"></ImageView>
+															<ImageView android:layout_width="wrap_content"
+																		android:src="@drawable/list_s4" android:id="@+id/healthflag"
+																		android:layout_height="wrap_content"></ImageView>
+												</LinearLayout>
+												<TextView android:textSize="15sp"
+															android:layout_height="wrap_content" android:id="@+id/productname"
+															android:text="TextView" android:textColor="#000000"
+															android:layout_marginTop="3dp"
+															android:layout_marginBottom="3dp"
+															android:layout_alignTop="@+id/linearLayout1"
+															android:maxLines="2" android:layout_alignRight="@+id/linearLayout1"
+															android:layout_width="match_parent"></TextView>
+												<LinearLayout android:layout_width="match_parent"
+															android:layout_height="wrap_content" android:id="@+id/linearLayout4"
+															android:gravity="center_vertical">
+															<ImageView android:layout_width="wrap_content"
+																		android:layout_height="wrap_content" android:src="@drawable/list_btn_01"
+																		android:id="@+id/imageView2"></ImageView>
+															<TextView android:textColor="#000000"
+																		android:textStyle="bold" android:layout_height="wrap_content"
+																		android:textSize="13sp" android:id="@+id/productprice"
+																		android:layout_width="wrap_content" android:text="TextView"></TextView>
+															<TextView android:text="원" android:id="@+id/textView1"
+																		android:textColor="#000000" android:textSize="13sp"
+																		android:layout_width="wrap_content"
+																		android:layout_height="wrap_content"></TextView>
+												</LinearLayout>
+												<LinearLayout android:layout_width="match_parent"
+															android:layout_height="wrap_content" android:id="@+id/linearLayout5"
+															android:gravity="center_vertical">
+															<ImageView android:layout_width="wrap_content"
+																		android:layout_height="wrap_content" android:src="@drawable/list_btn_02"
+																		android:id="@+id/imageView3"></ImageView>
+															<TextView android:textColor="#000000"
+																		android:layout_height="wrap_content" android:textSize="13sp"
+																		android:id="@+id/productpoint" android:layout_width="wrap_content"
+																		android:text="TextView"></TextView>
+												</LinearLayout>
+									</LinearLayout>
+
+									<ImageView android:src="@drawable/list_arrow"
+												android:layout_marginRight="7dp" android:layout_height="wrap_content"
+												android:layout_width="wrap_content"
+												android:layout_alignParentRight="true"
+												android:layout_centerVertical="true" android:id="@+id/imageView1"></ImageView>
+
+
+						</RelativeLayout>
+
+						<TextView android:textColor="#000000" android:text="TextView"
+									android:id="@+id/commentproductname" android:layout_margin="10dp"
+									android:textAppearance="?android:attr/textAppearanceMedium"
+									android:gravity="center" android:layout_height="wrap_content"
+									android:maxLines="1" android:visibility="gone"
+									android:layout_width="match_parent"></TextView>
+						<ImageView android:layout_height="wrap_content"
+									android:id="@+id/imageView1" android:src="@drawable/event_line"
+									android:layout_width="match_parent"></ImageView>
+						<ListView android:id="@+id/commentlist"
+									android:layout_height="wrap_content" android:layout_width="match_parent"></ListView>
+			</LinearLayout>
+			<ProgressBar android:layout_width="wrap_content"
+						android:layout_gravity="center" android:id="@+id/commentdialog"
+						android:layout_height="wrap_content" android:visibility="gone"
+						style="?android:attr/progressBarStyleLarge"></ProgressBar>
+
+
+</FrameLayout>

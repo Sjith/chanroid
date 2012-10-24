@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="wrap_content" android:padding="3dp">
+
+
+	<CheckedTextView android:id="@+id/smcheckedView1"
+		android:layout_width="wrap_content" android:text="" android:background="@drawable/icon"
+		android:layout_height="wrap_content" android:layout_alignParentLeft="true"></CheckedTextView>
+
+	<TextView android:id="@+id/smTitle" android:layout_width="wrap_content" android:text="제목 테스트입니다." android:textSize="24sp"
+		android:layout_height="wrap_content" android:layout_toRightOf="@+id/smcheckedView1"></TextView>
+		
+	<TextView android:id="@+id/smSender" android:layout_width="wrap_content" android:text="수신자 테스트입니다." android:textSize="12sp"
+		android:layout_height="wrap_content" android:layout_below="@id/smTitle" android:layout_toRightOf="@+id/smcheckedView1"></TextView>
+
+</RelativeLayout>

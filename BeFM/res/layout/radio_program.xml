@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radio_sub_prgm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_original"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/bg_navibar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Schedule"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/radio_program_btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/btn_back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/day_mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/mon_off" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/day_tue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/tue_off" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/day_wed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/wed_off" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/day_thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/thu_off" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/day_fri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/fri_off" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/day_sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/sat_off" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/day_sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/sun_off" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/radio_schedule_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true" >
+            </ImageView>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

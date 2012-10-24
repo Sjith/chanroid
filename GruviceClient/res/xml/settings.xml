@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="preference_root">
+
+	<PreferenceCategory android:key="MsgNotification"
+		android:summary="" android:enabled="true" android:title="@string/settingsCategorAlram">
+		<CheckBoxPreference android:key="MsgNotifywithSound"
+			android:defaultValue="false" android:title="@string/settingsEnableSound"
+			android:summary="@string/settingsEnableSoundDetail" />
+		<CheckBoxPreference android:key="MsgNotifywithVibrate"
+			android:defaultValue="false" android:title="@string/settingsEnableVibrate"
+			android:summary="@string/settingsEnableVibrateDetail" />
+		<!--
+			RingtonePreference android:key="MsgNotifyRingtone"
+			android:title="Ringtone 설정" android:showDefault="true"
+			android:showSilent="true" android:ringtoneType="all"
+			android:summary="사용할 Ringtone을 설정 합니다" /
+		-->
+	</PreferenceCategory>
+	
+	
+	<PreferenceCategory android:key="SkinTypeSetting"
+		android:summary="" android:enabled="true" android:title="Skin Type 설정">
+	<ListPreference android:key="SkinType" android:title="SKIN TYPE"
+		android:summary="SKIN TYPE을 결정합니다." android:entries="@array/SkinTypeEntries"
+		android:entryValues="@array/SkinTypeValues" android:defaultValue="Gruvice2" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:key="ConnectionNotiSetting"
+		android:summary="" android:enabled="true" android:title="@string/settingsCategoryConnection">
+		<CheckBoxPreference android:key="ConnectionNoti"
+			android:defaultValue="false" android:title="@string/settingsConnectionNoti"
+			android:summary="@string/settingsConnectionNotiDetail" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:key="ConnectionTypeSetting"
+		android:summary="" android:enabled="true" android:title="Connection Type 설정">
+		<ListPreference android:key="ConnectionType" android:title="연결 방식"
+			android:summary="통신할 환경을 설정합니다." android:entries="@array/ConnectionTypeEntries"
+			android:entryValues="@array/ConnectionTypeValues" android:defaultValue="3G / WI-FI" />
+		<CheckBoxPreference android:key="AutoConnectionChange" android:title="자동 WI-FI해제"
+			android:defaultValue="true" android:summary="WI-FI감도가 매우 낮을시 자동으로 3G로 전환합니다.">
+		</CheckBoxPreference>
+	</PreferenceCategory>
+	
+</PreferenceScreen>

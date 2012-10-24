@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:background="@drawable/title_bg" android:orientation="vertical"
+			android:layout_width="match_parent" android:layout_height="match_parent">
+			<ImageView android:id="@+id/imageView1" android:src="@drawable/gift_text"
+						android:scaleType="fitXY" android:layout_height="wrap_content"
+						android:layout_width="match_parent"></ImageView>
+			<TextView android:id="@+id/gifttitle" android:layout_width="match_parent"
+						android:layout_height="wrap_content" android:layout_marginBottom="5dp"
+						android:gravity="center" android:text="text" android:textSize="24sp"
+						android:textColor="#ffffff"></TextView>
+			<TextView android:text="(주문완료시 쿠폰, 쇼핑칩 등 추가혜택적용)" android:id="@+id/textView1" android:gravity="center" android:textSize="14sp"
+						android:textColor="#ffffff" android:layout_marginBottom="10sp"
+						android:layout_height="wrap_content" android:layout_width="match_parent"></TextView>
+
+</LinearLayout>

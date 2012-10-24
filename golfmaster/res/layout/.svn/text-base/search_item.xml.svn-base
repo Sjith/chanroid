@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/srchTvName" android:text="@+id/srchTvName"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/srchTvAddress" android:text="@+id/srchTvAddress" android:layout_below="@+id/srchTvName"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/srchTvDistance" android:text="@+id/srchTvDistance" android:layout_toRightOf="@+id/srchTvAddress" android:layout_alignTop="@+id/srchTvAddress"></TextView>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/srchBtnCall" android:text="Call" android:layout_alignParentRight="true"></Button></RelativeLayout>
+</LinearLayout>
+</RelativeLayout>

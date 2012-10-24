@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Ingredient">
+    <item>마늘</item>
+    <item>양파</item>
+    <item>블루베리</item>
+    <item>쑥</item>
+    <item>홍삼</item>
+    <item>산수유</item>
+    <item>석류</item>
+    <item>도라지</item>
+    <item>다시마</item>
+    <item>콩</item>
+    <item>비타민</item>
+    <item>헛개/민들레</item>
+    </string-array>
+    
+    <string-array name="target">
+    <item>남성</item>
+    <item>여성</item>
+    <item>부모님</item>
+    <item>자녀/수험생</item>
+    </string-array>
+    
+    <string-array name="situation">
+    <item>몸이 천근만근 하다면</item>
+    <item>활기찬 결혼 생활을 위해</item>
+    <item>독소 배출이 필요하다면</item>
+    <item>몸 속 찬 기운이 걱정된다면</item>
+    <item>몸 속 흐름이 걱정된다면</item>
+    <item>환절기마다 힘들다면</item>
+    <item>전자파에 많이 노출된다면</item>
+    <item>과도한 업무에 시달린다면</item>
+    <item>체지방, 변비, 피부 관련</item>
+    <item>금주, 금연을 하고 있다면</item>
+    </string-array>
+    
+    
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFFFFF"
+>
+	<LinearLayout
+		android:id="@+id/LinearLayout01"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_width="fill_parent"
+		android:gravity="center_horizontal"
+		android:background="#FFFFFF"
+	>
+			<Button
+			android:id="@+id/tmBtnExcelInfo"
+			android:background="@drawable/topmenu_excel_info"
+			android:onClick="onClick"
+		android:layout_width="80dip" android:layout_height="30dip"></Button>
+		<Button
+			android:id="@+id/tmBtnFieldGC"
+			android:background="@drawable/topmenu_field_gc"
+			android:onClick="onClick"
+		android:layout_width="80dip" android:layout_height="30dip"></Button>
+		<Button
+			android:id="@+id/tmBtnScreenGC"
+			android:background="@drawable/topmenu_screen_gc"
+			android:onClick="onClick"
+		android:layout_width="80dip" android:layout_height="30dip"></Button>
+		<Button
+			android:id="@+id/tmBtnMyGolf"
+			android:onClick="onClick"
+			android:background="@drawable/topmenu_mygolf"
+		android:layout_width="80dip" android:layout_height="30dip"></Button>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/LinearLayout02"
+		android:orientation="vertical"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:layout_below="@+id/LinearLayout01"
+		android:layout_marginTop="1dip"
+	>		<RelativeLayout
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:id="@+id/searchLayout"
+			android:layout_width="fill_parent"
+			android:background="@drawable/btn_search_unpress_back"
+		android:layout_height="40dip">
+			<LinearLayout
+				android:id="@+id/LinearLayout02"
+				android:background="@drawable/m_search_back"
+				android:layout_marginBottom="3dip"
+				android:layout_marginLeft="3dip"
+				android:layout_marginTop="3dip"
+				android:layout_width="fill_parent"
+				android:layout_toLeftOf="@drawable/search_btn"
+				android:layout_marginRight="3dip"
+			android:layout_height="fill_parent">
+				<EditText
+					android:id="@+id/searchEtName"
+					android:hint="골프장명입력"
+					android:visibility="visible"
+					android:background="#00000000"
+					android:textSize="17sp"
+					android:layout_width="250dip"
+				android:layout_height="fill_parent" android:imeOptions="actionDone" android:singleLine="true"></EditText>
+			</LinearLayout>
+			<Button
+				android:layout_width="wrap_content"
+				android:id="@+id/searchBtnRun"
+				android:background="@drawable/btn_search"
+				android:onClick="onClick"
+				android:visibility="visible"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true"
+				android:layout_height="fill_parent"
+				android:layout_marginRight="3dip"
+				android:layout_marginBottom="3dip"
+				android:layout_marginTop="3dip"
+			></Button>
+</RelativeLayout>
+
+		<LinearLayout
+			android:id="@+id/LinearLayout03"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			android:orientation="vertical"
+		>
+			
+			<ListView
+				android:id="@+id/srchLvResult"
+				android:layout_width="fill_parent"
+				android:cacheColorHint="#00000000" android:divider="#00000000" android:layout_height="wrap_content">
+			</ListView>
+			
+		<ImageView android:id="@+id/ImageView01" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#cacfc1"></ImageView>
+</LinearLayout>
+
+
+	</LinearLayout>
+
+</RelativeLayout>

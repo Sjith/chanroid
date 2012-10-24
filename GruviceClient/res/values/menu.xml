@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="menuMnPreferences">Preferences</string>
+	<string name="menuMnRegistration">Registration</string>
+	<string name="menuAlDownload">Download</string>
+	<string name="menuAlDelete">Delete</string>
+	<string name="menuGlRemove">Remove</string>
+	<string name="menuGlRead">Read</string>
+	<string name="menuGsSubscribe">Subscribe</string>
+	<string name="menuGsUnsubscribe">Unsubscribe</string>
+	<string name="menuMlDelete">Delete</string>
+	<string name="menuMlRefresh">Refresh</string>
+	<string name="menuMlBack2Menu">Main Menu</string>
+	<string name="menuMsgDetail">Detail</string>
+	<string name="menuMsgDelete">Delete</string>
+	<string name="menuMsgReply">Reply</string>
+	<string name="menuRalRemove">Remove</string>
+	<string name="menuRalRemoveAll">Remove All</string>
+	<string name="menuArgos">TestPage</string>
+	<string name="menuSnmSaveTempMsg">Save Temp Msg</string>
+	<string name="menuSnmResumeTempMsg">Resume Temp Msg</string>
+</resources>

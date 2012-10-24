@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="settingsCategorAlram">노티피케이션 설정</string>
+	<string name="settingsEnableSound">알림음 설정</string>
+	<string name="settingsEnableSoundDetail">알림이 오면 알림음이 발생합니다. 진동인 경우는 울리지 않습니다. </string>
+	<string name="settingsEnableVibrate">진동 설정</string>
+	<string name="settingsEnableVibrateDetail">알림이 오면 진동이 발생합니다. </string>
+	<string name="settingsCategoryConnection">Connection 알림 설정</string>
+	<string name="settingsConnectionNoti">Connect 알림</string>
+	<string name="settingsConnectionNotiDetail">서버와 연결이 되면 Notification 바에  연결 Icon을 보여줍니다</string>
+</resources>

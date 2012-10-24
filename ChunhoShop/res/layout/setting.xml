@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:background="#ffffff" android:layout_height="match_parent">
+
+			<RelativeLayout android:layout_height="wrap_content" android:id="@+id/settingtitle"
+						android:background="@drawable/navi_bg" android:layout_width="match_parent">
+						<Button android:background="@drawable/navi_back"
+									android:layout_width="wrap_content" android:id="@+id/settingbackbtn"
+									android:layout_height="wrap_content"
+									android:layout_centerVertical="true" android:onClick="onClick"
+									android:layout_alignParentLeft="true"></Button>
+
+						<TextView android:text="회원혜택"
+									android:textColor="#ffffff" android:textAppearance="?android:attr/textAppearanceMedium"
+									android:layout_width="wrap_content" android:layout_height="wrap_content"
+									android:layout_centerVertical="true"
+									android:layout_centerHorizontal="true"></TextView>
+
+			</RelativeLayout>
+
+			<ScrollView android:layout_width="match_parent"
+						android:layout_height="match_parent" android:id="@+id/settingscroll">
+						<LinearLayout android:id="@+id/settingbody" android:padding="10dp"
+									android:orientation="vertical" android:layout_width="match_parent"
+									android:layout_height="wrap_content">
+									<LinearLayout android:layout_width="match_parent"
+												android:gravity="center_vertical" android:orientation="horizontal"
+												android:layout_height="wrap_content">
+												<ImageView android:layout_width="wrap_content"
+															android:layout_margin="10dp" android:src="@drawable/login_text_01"
+															android:id="@+id/imageView1" android:layout_height="wrap_content"></ImageView>
+									</LinearLayout>
+									<RelativeLayout android:id="@+id/loginnamelayout" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+									 android:layout_marginTop="0dp" android:layout_marginBottom="5dp"
+												android:layout_height="wrap_content" android:layout_width="match_parent">
+												<TextView android:textSize="18sp"
+															android:id="@+id/loginnametext" android:textColor="#000000"
+															android:layout_height="wrap_content"
+															android:layout_width="match_parent" android:text="TextView"
+															android:layout_centerVertical="true"
+															android:layout_alignParentLeft="true" android:layout_toLeftOf="@+id/loginnamebtn"></TextView>
+												<Button android:id="@+id/loginnamebtn" android:background="@drawable/login_btn"
+															android:layout_height="wrap_content" android:textSize="12sp"
+															android:layout_width="wrap_content" android:text="로그아웃" android:textColor="#ffffff"
+															android:layout_alignParentRight="true" android:layout_alignTop="@+id/loginnametext" android:layout_alignBottom="@+id/loginnametext"></Button>
+									</RelativeLayout>
+									<LinearLayout android:id="@+id/loginagent" android:gravity="center_vertical"
+												android:layout_marginBottom="5dp" android:background="@drawable/box"
+												android:layout_width="match_parent" android:layout_height="wrap_content">
+												<ImageView android:layout_width="wrap_content"
+															android:layout_marginLeft="5dp" android:id="@+id/loginagentpic"
+															android:src="@drawable/icon_70" android:layout_height="wrap_content"></ImageView>
+												<TextView android:text="TextView"
+															android:textColor="#000000" android:layout_width="match_parent"
+															android:layout_height="wrap_content"
+															android:textAppearance="?android:attr/textAppearanceSmall"
+															android:layout_marginLeft="10dp" android:id="@+id/loginagenttext"></TextView>
+									</LinearLayout>
+
+									<RelativeLayout android:layout_width="match_parent" android:id="@+id/loginform"
+												android:background="@drawable/box" android:layout_height="wrap_content">
+												<EditText android:id="@+id/settingidedit"
+															android:layout_width="wrap_content"
+															android:layout_height="wrap_content" android:singleLine="true"
+															android:layout_alignParentTop="true"
+															android:layout_toRightOf="@+id/login1"
+															android:layout_toLeftOf="@+id/loginbtn"
+															android:background="@drawable/search_box"
+															android:padding="3dp" android:hint="아이디"
+															android:layout_marginBottom="3dp">
+												</EditText>
+												<EditText android:inputType="textPassword"
+															android:id="@+id/settingpwedit" android:layout_width="wrap_content"
+															android:layout_height="wrap_content" android:singleLine="true"
+															android:layout_below="@+id/settingidedit"
+															android:layout_alignLeft="@+id/settingidedit"
+															android:layout_alignRight="@+id/settingidedit"
+															android:background="@drawable/search_box"
+															android:padding="3dp" android:hint="비밀번호">
+												</EditText>
+												<Button android:id="@+id/loginbtn" android:textStyle="bold"
+															android:layout_marginLeft="3dp" android:layout_width="wrap_content"
+															android:onClick="onClick" android:layout_height="wrap_content"
+															android:background="@drawable/login_btn"
+															android:layout_alignParentTop="true" android:textColor="#ffffff"
+															android:layout_alignParentRight="true"
+															android:layout_alignBottom="@+id/settingpwedit"></Button>
+
+
+												<RelativeLayout android:layout_width="match_parent"
+															android:layout_marginTop="7dp" android:gravity="center_vertical"
+															android:layout_below="@id/settingpwedit"
+															android:layout_height="wrap_content" android:id="@+id/relativeLayout1">
+															<CheckedTextView android:layout_width="wrap_content"
+																		android:id="@+id/autologincheck" android:clickable="true"
+																		android:layout_height="wrap_content"
+																		android:layout_margin="3dp" android:background="@drawable/login_switch"
+																		android:layout_centerVertical="true"
+																		android:layout_alignParentRight="true"></CheckedTextView>
+															<ImageView android:src="@drawable/login_text_03"
+																		android:layout_below="@id/imageView2"
+																		android:layout_width="wrap_content" android:id="@+id/imageView3"
+																		android:layout_margin="7dp" android:layout_height="wrap_content"></ImageView>
+
+												</RelativeLayout>
+												<ImageView android:layout_width="wrap_content"
+															android:src="@drawable/login_id_btn"
+															android:layout_height="wrap_content" android:id="@+id/login1"
+															android:layout_alignParentLeft="true"
+															android:layout_alignBottom="@+id/settingidedit"
+															android:layout_alignTop="@+id/settingidedit"></ImageView>
+												<ImageView android:layout_width="wrap_content"
+															android:src="@drawable/login_pass_btn"
+															android:layout_marginRight="3dp" android:layout_height="wrap_content"
+															android:id="@+id/login2" android:layout_alignParentLeft="true"
+															android:layout_alignBottom="@+id/settingpwedit"
+															android:layout_alignTop="@+id/settingpwedit"></ImageView>
+
+									</RelativeLayout>
+
+									<LinearLayout android:layout_width="match_parent" android:id="@+id/logininfo1"
+												android:gravity="center_vertical" android:orientation="horizontal"
+												android:layout_height="wrap_content">
+												<ImageView android:src="@drawable/login_text_02"
+															android:layout_margin="10dp" android:layout_width="wrap_content"
+															android:id="@+id/imageView2" android:layout_height="wrap_content"></ImageView>
+									</LinearLayout>
+
+									<LinearLayout android:layout_width="match_parent" android:id="@+id/logininfo2"
+												android:background="@drawable/box" android:gravity="center"
+												android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginBottom="5dp"
+												android:visibility="visible">
+												<TextView android:layout_width="wrap_content"
+															android:padding="7dp" android:textColor="#000000"
+															android:layout_height="wrap_content" android:autoLink="web"
+															android:textAppearance="?android:attr/textAppearanceSmall"
+															android:text="천호쇼핑 (http://www.chunhoshop.com) 에 접속하시면, 회원가입과 아이디/비밀번호 찾기를 하실 수 있습니다."></TextView>
+									</LinearLayout>
+
+									<LinearLayout android:layout_width="match_parent"
+												android:padding="7dp" android:orientation="vertical"
+												android:gravity="center"
+												android:layout_height="wrap_content" android:background="@drawable/login_box">
+												<ImageView android:src="@drawable/login_logo"
+															android:layout_gravity="left" android:layout_marginLeft="10dp"
+															android:layout_marginTop="3dp" android:layout_height="wrap_content"
+															android:layout_width="wrap_content"></ImageView>
+												<TextView android:text="@string/membonus1" android:id="@+id/loginmembonustxt"
+															android:textColor="#000000" android:layout_marginLeft="10dp" android:layout_marginTop="7dp"
+															android:layout_marginRight="10dp" android:layout_marginBottom="10dp"  
+															android:layout_width="wrap_content"
+															android:layout_height="wrap_content"></TextView>
+												<Button android:onClick="onClick"
+															android:layout_height="wrap_content"
+															android:layout_marginBottom="5dp" android:id="@+id/memberbonusbtn"
+															android:background="@drawable/gift_btn"
+															android:layout_width="wrap_content"></Button>
+									</LinearLayout>
+
+						</LinearLayout>
+			</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:background="#f9f9f9"
+			android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+			<RelativeLayout android:layout_height="wrap_content"
+						android:background="@drawable/navi_bg" android:layout_width="match_parent">
+
+						<Button android:background="@drawable/navi_back"
+									android:layout_width="wrap_content" android:id="@+id/worldbackbtn"
+									android:layout_height="wrap_content"
+									android:layout_centerVertical="true" android:onClick="onClick"
+									android:layout_alignParentLeft="true"></Button>
+
+						<TextView android:text="해외/대량 주문" android:textColor="#ffffff"
+									android:textAppearance="?android:attr/textAppearanceMedium"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_centerVertical="true"
+									android:layout_centerHorizontal="true"></TextView>
+
+						<Button android:background="@drawable/navi_settings"
+									android:layout_width="wrap_content" android:id="@+id/worldsettingbtn"
+									android:layout_height="wrap_content"
+									android:layout_centerVertical="true" android:onClick="onClick"
+									android:layout_alignParentRight="true"></Button>
+
+			</RelativeLayout>
+
+			<ImageView 
+						android:layout_marginTop="70dp" android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:src="@drawable/big_text_01"></ImageView>
+			<ImageView 
+						android:layout_marginTop="30dp" android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:src="@drawable/big_text_02"></ImageView>
+			<Button android:layout_height="wrap_content" android:id="@+id/worldbtn1" android:onClick="onClick"
+						android:background="@drawable/big_call" android:layout_marginTop="50dp" android:layout_gravity="center_horizontal"
+						android:layout_width="wrap_content"></Button>
+
+</LinearLayout>

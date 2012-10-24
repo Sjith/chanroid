@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:background="#ffffff"
+			android:layout_width="match_parent" android:padding="7dp"
+			android:layout_height="wrap_content">
+			<TextView android:id="@+id/buylistprice"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="TextView" android:textColor="#000000"
+						android:layout_alignParentTop="true" android:layout_marginBottom="3dp"
+						android:layout_alignParentRight="true"></TextView>
+			<TextView android:id="@+id/buylistcount"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="TextView" android:layout_below="@+id/buylistprice"
+						android:textColor="#000000" android:layout_alignParentRight="true"></TextView>
+			<LinearLayout android:layout_width="wrap_content"
+						android:orientation="vertical" android:layout_marginLeft="15dp"
+						android:layout_marginRight="5dp"
+						android:layout_height="wrap_content" android:id="@+id/linearLayout1"
+						android:layout_centerVertical="true"
+						android:layout_alignParentLeft="true" android:layout_toLeftOf="@+id/buylistprice">
+						<TextView android:layout_marginBottom="5dp"
+									android:textAppearance="?android:attr/textAppearanceMedium"
+									android:text="TextView" android:layout_width="wrap_content"
+									android:id="@+id/buylisttitle" android:layout_height="wrap_content"
+									android:textColor="#000000"></TextView>
+						<LinearLayout android:orientation="vertical"
+									android:gravity="center_vertical" android:layout_height="wrap_content"
+									android:layout_width="wrap_content" android:id="@+id/buygiftchildbody">
+									<LinearLayout android:layout_height="wrap_content"
+												android:id="@+id/linearLayout2" android:layout_width="wrap_content">
+												<ImageView android:layout_height="wrap_content"
+															android:layout_width="wrap_content" android:src="@drawable/list_s4"
+															android:id="@+id/buychildhealthflag"></ImageView>
+												<ImageView android:layout_height="wrap_content"
+															android:layout_width="wrap_content" android:src="@drawable/list_s5"
+															android:id="@+id/buychildgiftflag"></ImageView>
+									</LinearLayout>
+									<TextView android:text="TextView"
+												android:layout_width="wrap_content"
+												android:layout_marginTop="3dp" android:id="@+id/buychildgifttext"
+												android:layout_height="wrap_content" android:textSize="13sp"
+												android:textColor="#000000" android:layout_marginLeft="3dp"></TextView>
+						</LinearLayout>
+			</LinearLayout>
+
+</RelativeLayout>

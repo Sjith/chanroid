@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="EstkindValues">
+	<item>전체</item>
+	<item>골프연습장</item>
+    <item>클럽</item>
+	<item>호프</item>
+	<item>바</item>
+	<item>노래방</item>
+	<item>주점</item>
+	<item>고기</item>
+	<item>해산물</item>
+	<item>중식</item>
+	<item>실내포차</item>
+</string-array>
+</resources>

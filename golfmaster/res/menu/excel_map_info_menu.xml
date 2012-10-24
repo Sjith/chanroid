@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 첨부파일리스트 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/btnHome" android:title="홈" android:icon="@drawable/menu_key_home"></item>
+<item android:id="@+id/btnFeildGC" android:title="골프장검색"></item>
+<item android:id="@+id/btnScreenGC" android:title="스크린골프장" android:icon="@drawable/menu_key_screen"></item>
+<item android:id="@+id/btnFavorite" android:title="My골프" android:icon="@drawable/menu_key_my"></item>
+</menu>
