@@ -104,7 +104,7 @@ public class Util {
 		 *            호출한 액티비티든 뭐든
 		 * @return 네트워크 종류(ConnectivityManager 상수)
 		 */
-		public static String getType(Context context) {
+		public static int getType(Context context) {
 			ConnectivityManager cm = (ConnectivityManager) context
 					.getSystemService(Context.CONNECTIVITY_SERVICE);
 			NetworkInfo ni = cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
@@ -114,11 +114,11 @@ public class Util {
 			boolean isMobileAvail = ni.isAvailable();
 			boolean isMobileConn = ni.isConnected();
 			if (isWifiAvail && isWifiConn) {
-				return "WIFI";
+				return ConnectivityManager.TYPE_WIFI;
 			} else if (isMobileAvail && isMobileConn) {
-				return ni.getSubtypeName();
+				return ni.getType();
 			} else {
-				return ""; // 네트워크 안됨
+				return ConnectivityManager.TYPE_DUMMY; // 네트워크 안됨
 			}
 		}
 	}
