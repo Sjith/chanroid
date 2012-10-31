@@ -7,11 +7,15 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.net.URL;
 import java.net.URLConnection;
 import java.security.MessageDigest;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Formatter;
 import java.util.List;
@@ -311,6 +315,79 @@ public class Util {
 					android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
 			intent.addCategory(Intent.CATEGORY_DEFAULT);
 			context.startActivity(intent);
+		}
+	}
+	
+	public static class Time {
+		/**
+		 * 
+		 * <PRE>
+		 * 1. MethodName : getCurrentTimeString1
+		 * 2. ClassName  : Time
+		 * 3. Comment   : 현재 날짜, 시간을 00-00-00 00:00:00 의 형식으로 반환 
+		 * 4. 작성자    : 박찬우
+		 * 5. 작성일    : 2012. 10. 30. 오후 5:43:53
+		 * </PRE>
+		 *   @return void
+		 */
+		public static String getCurrentTimeString1() {
+			Calendar c = Calendar.getInstance(Locale.KOREA);
+			String time = String.format("%04d-%02d-%02d %02d:%02d:%02d",
+					c.get(Calendar.YEAR), c.get(Calendar.MONTH) + 1,
+					c.get(Calendar.DAY_OF_MONTH), c.get(Calendar.HOUR_OF_DAY),
+					c.get(Calendar.MINUTE), c.get(Calendar.SECOND));
+			return time;
+		}
+
+		/**
+		 * 시간정보를 00:00:00 의 형식으로 변환한다.
+		 * 
+		 * @param timeMs
+		 * @return
+		 */
+		public static String stringForTime(int timeMs) {
+			try {
+				int totalSeconds = timeMs / 1000;
+
+				int seconds = totalSeconds % 60;
+				int minutes = (totalSeconds / 60) % 60;
+				int hours = totalSeconds / 3600;
+
+				StringBuilder mFormatBuilder = new StringBuilder();
+				Formatter mFormatter = new Formatter(mFormatBuilder,
+						Locale.getDefault());
+				mFormatBuilder.setLength(0);
+				if (hours > 0) {
+					return mFormatter.format("%02d:%02d:%02d", hours, minutes,
+							seconds).toString();
+				} else {
+					return mFormatter.format("00:%02d:%02d", minutes, seconds)
+							.toString();
+				}
+			} catch (ArithmeticException e) {
+				return "00:00:00";
+			}
+
+		}
+
+		/**
+		 * 시간정보를 00:00:00 의 형식으로 변환한다.
+		 * 
+		 * @param timeMs
+		 * @return
+		 */
+		public static String stringForTime(String timeMs) {
+			return stringForTime(Integer.valueOf(timeMs));
+		}
+
+		/**
+		 * 시간정보를 00:00:00 의 형식으로 변환한다.
+		 * 
+		 * @param timeMs
+		 * @return
+		 */
+		public static String stringForTime(long timeMs) {
+			return stringForTime((int) timeMs);
 		}
 	}
 
@@ -1138,6 +1215,26 @@ public class Util {
 			else
 				return entity.getContent();
 		}
+		
+		/**
+		 * 
+		 * <PRE>
+		 * 1. MethodName : stringFromThrowable
+		 * 2. ClassName  : Stream
+		 * 3. Comment   : 해당 에러에 대한 stack trace를 리턴 
+		 * 4. 작성자    : 박찬우
+		 * 5. 작성일    : 2012. 10. 30. 오후 5:24:30
+		 * </PRE>
+		 *   @return String
+		 *   @param t
+		 *   @return
+		 */
+		public static String stringFromThrowable(Throwable t) {
+			Writer writer = new StringWriter();
+			PrintWriter print = new PrintWriter(writer);
+			t.printStackTrace(print);
+			return writer.toString();
+		}
 
 		/**
 		 * 지정된 url의 내용을 가져옴
@@ -1607,56 +1704,6 @@ public class Util {
 		ctx.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
 	}
 
-	/**
-	 * 시간정보를 00:00:00 의 형식으로 변환한다.
-	 * 
-	 * @param timeMs
-	 * @return
-	 */
-	public static String stringForTime(int timeMs) {
-		try {
-			int totalSeconds = timeMs / 1000;
-
-			int seconds = totalSeconds % 60;
-			int minutes = (totalSeconds / 60) % 60;
-			int hours = totalSeconds / 3600;
-
-			StringBuilder mFormatBuilder = new StringBuilder();
-			Formatter mFormatter = new Formatter(mFormatBuilder,
-					Locale.getDefault());
-			mFormatBuilder.setLength(0);
-			if (hours > 0) {
-				return mFormatter.format("%02d:%02d:%02d", hours, minutes,
-						seconds).toString();
-			} else {
-				return mFormatter.format("00:%02d:%02d", minutes, seconds)
-						.toString();
-			}
-		} catch (ArithmeticException e) {
-			return "00:00:00";
-		}
-
-	}
-
-	/**
-	 * 시간정보를 00:00:00 의 형식으로 변환한다.
-	 * 
-	 * @param timeMs
-	 * @return
-	 */
-	public static String stringForTime(String timeMs) {
-		return stringForTime(Integer.valueOf(timeMs));
-	}
-
-	/**
-	 * 시간정보를 00:00:00 의 형식으로 변환한다.
-	 * 
-	 * @param timeMs
-	 * @return
-	 */
-	public static String stringForTime(long timeMs) {
-		return stringForTime((int) timeMs);
-	}
 
 	/**
 	 * 확실한 기능이 뭔진 모르겠으나 화면의 방향을 기반으로 계산하는 것을 보아 중력센서 정보를 가져오지 않을까 합니다
