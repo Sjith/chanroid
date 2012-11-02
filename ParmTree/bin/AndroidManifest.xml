@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+			package="kr.co.drdesign.parmtree" android:versionCode="1"
+			android:versionName="1.0">
+			<uses-sdk android:minSdkVersion="8" />
+			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+			<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+			<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+			<uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+			<uses-permission android:name="android.permission.CALL_PHONE"/>
+
+			<application android:icon="@drawable/icon" android:label="@string/app_name">
+
+						<uses-library android:name="com.google.android.maps" />
+						
+						<activity android:name=".MainActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:multiprocess="true"/>
+
+						<activity android:name=".MainListActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"/>
+
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".IntroActivity"
+									android:label="@string/app_name">
+									<intent-filter>
+												<action android:name="android.intent.action.MAIN" />
+												<category android:name="android.intent.category.LAUNCHER" />
+									</intent-filter>
+						</activity>
+
+
+						<activity android:name=".RegistrationActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" />
+						<activity android:name=".NameCheckActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" />
+						<activity android:name=".SettingActivity" />
+						<activity android:name=".AboutActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" />
+
+						<activity android:name=".LoginActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"  />
+
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".MyPageActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".OnGoingEventActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".NoticeActivity" />
+
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".location.SearchActivity"/>
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".location.NearFieldActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".location.PremiumActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".location.LocationActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".location.SearchTabActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".location.HotelActivity" />
+
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".community.AdvertiseActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".community.FreeBoardActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".community.RatingActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".community.CommunityActivity" />
+
+
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".CouponActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".AllSettingActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".FriendListActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".EstListActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".EventActivity" />
+									
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".est.EstablishActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".est.EstIntroduceActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".est.EstNoticeActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".est.EstPicActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".est.EstRatingActivity" />
+
+
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".message.MessageActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".message.ReceivedMsgActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".message.ReceivedMsgListActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".message.SendedMsgActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".message.SendedMsgListActivity" />
+						<activity android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:name=".message.SendMsgActivity">
+									<intent-filter>
+												<category android:name="android.intent.category.DEFAULT" />
+												<data android:mimeType="*/*" />
+												<action android:name="android.intent.action.SEND" />
+									</intent-filter>
+						</activity>
+			</application>
+
+
+
+</manifest>

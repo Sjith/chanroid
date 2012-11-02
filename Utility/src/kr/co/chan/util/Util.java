@@ -38,6 +38,7 @@ import org.json.JSONObject;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningAppProcessInfo;
@@ -98,7 +99,22 @@ import android.widget.Toast;
  * @author chan-woo park
  * 
  */
+@SuppressLint("NewApi")
 public class Util {
+
+	public static class Collection {
+		public static Object[] listToArray(List<?> list) {
+			Object[] o = new Object[list.size()];
+			return list.toArray(o);
+		}
+		public static List<?> arrayToList(Object[] array) {
+			List<Object> list = new ArrayList<Object>();
+			for (Object item : array) {
+				list.add(item);
+			}
+			return list;
+		}
+	}
 
 	public static class Connection {
 		/**
@@ -317,7 +333,7 @@ public class Util {
 			context.startActivity(intent);
 		}
 	}
-	
+
 	public static class Time {
 		/**
 		 * 
@@ -328,7 +344,8 @@ public class Util {
 		 * 4. 작성자    : 박찬우
 		 * 5. 작성일    : 2012. 10. 30. 오후 5:43:53
 		 * </PRE>
-		 *   @return void
+		 * 
+		 * @return void
 		 */
 		public static String getCurrentTimeString1() {
 			Calendar c = Calendar.getInstance(Locale.KOREA);
@@ -346,6 +363,7 @@ public class Util {
 		 * @return
 		 */
 		public static String stringForTime(int timeMs) {
+			Formatter mFormatter = null;
 			try {
 				int totalSeconds = timeMs / 1000;
 
@@ -354,8 +372,7 @@ public class Util {
 				int hours = totalSeconds / 3600;
 
 				StringBuilder mFormatBuilder = new StringBuilder();
-				Formatter mFormatter = new Formatter(mFormatBuilder,
-						Locale.getDefault());
+				mFormatter = new Formatter(mFormatBuilder, Locale.getDefault());
 				mFormatBuilder.setLength(0);
 				if (hours > 0) {
 					return mFormatter.format("%02d:%02d:%02d", hours, minutes,
@@ -366,6 +383,9 @@ public class Util {
 				}
 			} catch (ArithmeticException e) {
 				return "00:00:00";
+			} finally {
+				if (mFormatter != null)
+					mFormatter.close();
 			}
 
 		}
@@ -1215,7 +1235,7 @@ public class Util {
 			else
 				return entity.getContent();
 		}
-		
+
 		/**
 		 * 
 		 * <PRE>
@@ -1225,9 +1245,10 @@ public class Util {
 		 * 4. 작성자    : 박찬우
 		 * 5. 작성일    : 2012. 10. 30. 오후 5:24:30
 		 * </PRE>
-		 *   @return String
-		 *   @param t
-		 *   @return
+		 * 
+		 * @return String
+		 * @param t
+		 * @return
 		 */
 		public static String stringFromThrowable(Throwable t) {
 			Writer writer = new StringWriter();
@@ -1703,7 +1724,6 @@ public class Util {
 	public static void showInternet(Context ctx, String url) {
 		ctx.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
 	}
-
 
 	/**
 	 * 확실한 기능이 뭔진 모르겠으나 화면의 방향을 기반으로 계산하는 것을 보아 중력센서 정보를 가져오지 않을까 합니다

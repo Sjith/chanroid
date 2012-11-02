@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+			package="kr.co.chunhoshop" android:installLocation="preferExternal"
+			android:versionName="1.04" android:versionCode="5">
+			<uses-sdk android:minSdkVersion="7" />
+			<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+			<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+			<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+			<application android:icon="@drawable/icon" android:label="@string/app_name">
+						<activity android:name=".IntroActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait" android:label="@string/app_name">
+									<intent-filter>
+												<action android:name="android.intent.action.MAIN" />
+												<category android:name="android.intent.category.LAUNCHER" />
+									</intent-filter>
+						</activity>
+
+						<activity android:name=".BonusActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".BuyListActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".CartActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".ChunhoTabActivity"
+									android:windowSoftInputMode="stateHidden" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".ChunhoWayActivity"
+									android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".ChunhoZoneActivity"
+									android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".CommentListActivity"
+									android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".CompanyActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".EventActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".FAQActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".GetEventActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".GiftInfoActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".MainActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".MemberBonusActivity"
+									android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".MyCartActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".MyChunhoActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".NoticeActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".NoticeDescActivity"
+									android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".OrderActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"
+									android:windowSoftInputMode="stateHidden"></activity>
+						<activity android:name=".ProductActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".SampleActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"
+									android:windowSoftInputMode="stateHidden"></activity>
+						<activity android:name=".SearchActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"
+									android:windowSoftInputMode="stateHidden"></activity>
+						<activity android:name=".SendingActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".SettingActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"
+									android:windowSoftInputMode="stateHidden"></activity>
+						<activity android:name=".TwitterLogin" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"
+									android:windowSoftInputMode="stateHidden"
+									android:configChanges="orientation|keyboardHidden">
+									<intent-filter>
+												<action android:name="com.android.twittercon.TWITTER_LOGIN" />
+									</intent-filter>
+						</activity>
+						<activity android:name=".WorldActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+						<activity android:name=".ZoneActivity" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+
+
+
+						<activity android:name=".util.FontTest" android:theme="@android:style/Theme.NoTitleBar"
+									android:screenOrientation="portrait"></activity>
+
+			</application>
+</manifest>

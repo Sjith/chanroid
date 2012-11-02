@@ -249,6 +249,8 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
 				case PULL_DOWN_TO_REFRESH:
 					mIndicatorIvTop.pullToRefresh();
 					break;
+			default:
+				break;
 			}
 		}
 	}
@@ -265,6 +267,8 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extend
 				case PULL_DOWN_TO_REFRESH:
 					mIndicatorIvTop.releaseToRefresh();
 					break;
+			default:
+				break;
 			}
 		}
 	}

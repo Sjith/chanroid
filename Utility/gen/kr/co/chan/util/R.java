@@ -35,40 +35,20 @@ public final class R {
         public static int time_bar_btn=0x7f020015;
     }
     public static final class id {
-        public static int background=0x7f06001a;
+        public static int background=0x7f060006;
         public static int button1=0x7f060001;
-        public static int current=0x7f06000d;
         public static int editText1=0x7f060000;
-        public static int ffwd=0x7f06000b;
-        public static int loading=0x7f060011;
-        public static int loadinglayout=0x7f060010;
-        public static int loadingtext=0x7f060012;
-        public static int mediapanel=0x7f060007;
-        public static int next=0x7f06000c;
-        public static int pause=0x7f06000a;
-        public static int prev=0x7f060008;
-        public static int progress=0x7f06000e;
+        public static int progress=0x7f060008;
         public static int relativeLayout1=0x7f060003;
-        public static int rew=0x7f060009;
-        public static int secondaryProgress=0x7f06001b;
+        public static int secondaryProgress=0x7f060007;
         public static int status_icon=0x7f060002;
         public static int status_progress=0x7f060005;
         public static int status_text=0x7f060004;
-        public static int textView1=0x7f060015;
-        public static int textView2=0x7f060017;
-        public static int textView3=0x7f060019;
-        public static int textView4=0x7f060018;
-        public static int textView5=0x7f060016;
-        public static int time=0x7f06000f;
-        public static int videoView1=0x7f060006;
-        public static int volumecontrollayout=0x7f060014;
-        public static int volumelayout=0x7f060013;
     }
     public static final class layout {
         public static int claearable_edittext=0x7f030000;
         public static int download_progress=0x7f030001;
         public static int main=0x7f030002;
-        public static int mediacontrolbox=0x7f030003;
     }
     public static final class string {
         public static int app_name=0x7f040000;
