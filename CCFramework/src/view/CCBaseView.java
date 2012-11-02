@@ -6,14 +6,14 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 public abstract class CCBaseView extends LinearLayout {
-	
+
 	private View contentView;
-	
+
 	public CCBaseView(Context context) {
 		super(context);
 		inflate();
 	}
-	
+
 	public CCBaseView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		inflate();
@@ -25,15 +25,17 @@ public abstract class CCBaseView extends LinearLayout {
 	}
 
 	private void inflate() {
-		contentView = inflate(getContext(), getLayoutId(), null);
-		addView(contentView, getLayoutParams());
+		if (getLayoutId() != 0) {
+			contentView = inflate(getContext(), getLayoutId(), null);
+			addView(contentView, getLayoutParam());
+		}
 		allocViews();
 	}
 
-	public LayoutParams getLayoutParams() {
+	public LayoutParams getLayoutParam() {
 		return new LayoutParams(-1, -1);
 	}
-	
+
 	public View getContentView() {
 		return contentView;
 	}
