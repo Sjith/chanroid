@@ -57,6 +57,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.graphics.Bitmap.CompressFormat;
 import android.graphics.Bitmap.Config;
@@ -107,6 +108,7 @@ public class Util {
 			Object[] o = new Object[list.size()];
 			return list.toArray(o);
 		}
+
 		public static List<?> arrayToList(Object[] array) {
 			List<Object> list = new ArrayList<Object>();
 			for (Object item : array) {
@@ -338,7 +340,7 @@ public class Util {
 		/**
 		 * 
 		 * <PRE>
-		 * 1. MethodName : getCurrentTimeString1
+		 * 1. MethodName : getCurrentDateTimeString
 		 * 2. ClassName  : Time
 		 * 3. Comment   : 현재 날짜, 시간을 00-00-00 00:00:00 의 형식으로 반환 
 		 * 4. 작성자    : 박찬우
@@ -347,12 +349,49 @@ public class Util {
 		 * 
 		 * @return void
 		 */
-		public static String getCurrentTimeString1() {
+		public static String getCurrentDateTimeString() {
 			Calendar c = Calendar.getInstance(Locale.KOREA);
 			String time = String.format("%04d-%02d-%02d %02d:%02d:%02d",
 					c.get(Calendar.YEAR), c.get(Calendar.MONTH) + 1,
 					c.get(Calendar.DAY_OF_MONTH), c.get(Calendar.HOUR_OF_DAY),
 					c.get(Calendar.MINUTE), c.get(Calendar.SECOND));
+			return time;
+		}
+
+		/**
+		 * <PRE>
+		 * 1. MethodName : getCurrentDateString
+		 * 2. ClassName  : Time
+		 * 3. Comment   : 현재 날짜를 00-00-00 의 형식으로 반환 
+		 * 4. 작성자    : 박찬우
+		 * 5. 작성일    : 2012. 11. 5. 오후 7:43:53
+		 * </PRE>
+		 * 
+		 * @return
+		 */
+		public static String getCurrentDateString() {
+			Calendar c = Calendar.getInstance(Locale.KOREA);
+			String time = String.format("%04d-%02d-%02d", c.get(Calendar.YEAR),
+					c.get(Calendar.MONTH) + 1, c.get(Calendar.DAY_OF_MONTH));
+			return time;
+		}
+
+		/**
+		 * <PRE>
+		 * 1. MethodName : getCurrentTimeString
+		 * 2. ClassName  : Time
+		 * 3. Comment   : 현재 시간을 00:00:00 의 형식으로 반환 
+		 * 4. 작성자    : 박찬우
+		 * 5. 작성일    : 2012. 11. 5. 오후 7:44:16
+		 * </PRE>
+		 * 
+		 * @return
+		 */
+		public static String getCurrentTimeString() {
+			Calendar c = Calendar.getInstance(Locale.KOREA);
+			String time = String.format("%02d:%02d:%02d",
+					c.get(Calendar.HOUR_OF_DAY), c.get(Calendar.MINUTE),
+					c.get(Calendar.SECOND));
 			return time;
 		}
 
@@ -425,6 +464,12 @@ public class Util {
 
 	public static class App {
 
+		/**
+		 * 앱의 현재 버전을 실수형으로 리턴 (버전에 알파벳이 있을시 0.0으로 리턴됨)
+		 * 
+		 * @param ctx
+		 * @return
+		 */
 		public static Float getVersionNum(Context ctx) {
 			try {
 				return Float
@@ -437,6 +482,12 @@ public class Util {
 			}
 		}
 
+		/**
+		 * 터미널 콘솔에 지정된 명령어를 수행하고 그 결과의 가장 마지막 줄을 리턴
+		 * 
+		 * @param shell
+		 * @return
+		 */
 		public static String executeShell(String shell) {
 			java.lang.Process p = null;
 			BufferedReader in = null;
@@ -1463,6 +1514,16 @@ public class Util {
 	}
 
 	public static class Display {
+
+		public static boolean isTablet(Context context) {
+			// TODO: This hacky stuff goes away when we allow users to target
+			// devices
+			int xlargeBit = 4; // Configuration.SCREENLAYOUT_SIZE_XLARGE; //
+								// upgrade to HC SDK to get this
+			Configuration config = context.getResources().getConfiguration();
+			return (config.screenLayout & xlargeBit) == xlargeBit;
+		}
+
 		/**
 		 * 상단바의 사이즈를 반환
 		 * 

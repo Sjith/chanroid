@@ -76,5 +76,10 @@ public class ClearableEditText extends RelativeLayout implements TextWatcher, On
 		// TODO Auto-generated method stub
 		clear();
 	}
+	
+	public void setPrivateImeOptions(String option) {
+		textBox.setPrivateImeOptions(option);
+	}
+
 
 }

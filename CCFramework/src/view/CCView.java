@@ -5,21 +5,21 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
 
-public abstract class CCBaseView extends LinearLayout {
+public abstract class CCView extends LinearLayout {
 
 	private View contentView;
 
-	public CCBaseView(Context context) {
+	public CCView(Context context) {
 		super(context);
 		inflate();
 	}
 
-	public CCBaseView(Context context, AttributeSet attrs, int defStyle) {
+	public CCView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		inflate();
 	}
 
-	public CCBaseView(Context context, AttributeSet attrs) {
+	public CCView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		inflate();
 	}
