@@ -1516,12 +1516,10 @@ public class Util {
 	public static class Display {
 
 		public static boolean isTablet(Context context) {
-			// TODO: This hacky stuff goes away when we allow users to target
-			// devices
-			int xlargeBit = 4; // Configuration.SCREENLAYOUT_SIZE_XLARGE; //
-								// upgrade to HC SDK to get this
 			Configuration config = context.getResources().getConfiguration();
-			return (config.screenLayout & xlargeBit) == xlargeBit;
+			boolean isXlarge = (config.screenLayout & 4) == 4;
+			boolean isLarge = (config.screenLayout & 3) == 3;
+			return (isXlarge || isLarge);
 		}
 
 		/**
