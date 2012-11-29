@@ -43,7 +43,7 @@ public class ClearableEditText extends RelativeLayout implements TextWatcher, On
 		clearBtn.setOnClickListener(this);
 	}
 	
-	void clear() {
+	public void clear() {
 		textBox.setText("");
 		clearBtn.setVisibility(View.INVISIBLE);
 	}
@@ -79,6 +79,10 @@ public class ClearableEditText extends RelativeLayout implements TextWatcher, On
 	
 	public void setPrivateImeOptions(String option) {
 		textBox.setPrivateImeOptions(option);
+	}
+	
+	public void setImeOptions(int option) {
+		textBox.setImeOptions(option);
 	}
 
 

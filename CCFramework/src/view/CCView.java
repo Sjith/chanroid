@@ -25,10 +25,8 @@ public abstract class CCView extends LinearLayout {
 	}
 
 	private void inflate() {
-		if (getLayoutId() != 0) {
-			contentView = inflate(getContext(), getLayoutId(), null);
-			addView(contentView, getLayoutParam());
-		}
+		contentView = inflate(getContext(), getLayoutId(), null);
+		addView(contentView, getLayoutParam());
 		allocViews();
 	}
 

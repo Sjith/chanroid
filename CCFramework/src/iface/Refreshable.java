@@ -1,4 +1,4 @@
-package kr.co.chan.util.Interfaces;
+package iface;
 /**
  * what하고 extra는 님 알아서 구현하셈
  * @author chanroid

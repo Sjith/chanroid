@@ -1,4 +1,4 @@
-package kr.co.chan.util.Interfaces;
+package iface;
 
 public interface Destroyable {
 	public void destroy();

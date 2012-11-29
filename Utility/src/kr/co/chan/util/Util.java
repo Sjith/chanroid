@@ -9,6 +9,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.net.URL;
 import java.net.URLConnection;
@@ -22,6 +23,10 @@ import java.util.List;
 import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import net.sf.json.JSON;
+import net.sf.json.JSONSerializer;
+import net.sf.json.xml.XMLSerializer;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -37,6 +42,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
+
+import com.google.gson.Gson;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -1116,6 +1123,10 @@ public class Util {
 
 	public static class Stream {
 
+		public static InputStream openAsset(Context ctx, String fileName) throws IOException {
+			return ctx.getAssets().open(fileName);
+		}
+
 		/**
 		 * html을 파싱하기 편한 형태로 정리. script, style css, blank, 개행문자 등 제거
 		 * 
@@ -1387,6 +1398,19 @@ public class Util {
 				ArrayList<NameValuePair> params)
 				throws ClientProtocolException, JSONException, IOException {
 			return new JSONObject(stringFromURLbyPOST(url, params));
+		}
+
+		public static JSONObject xmlTojson(String xmlString)
+				throws IllegalArgumentException, IllegalStateException,
+				IOException, JSONException {
+			XMLSerializer serializer = new XMLSerializer();
+			JSON json = serializer.read(xmlString);
+			return new JSONObject(json.toString(2));
+		}
+
+		public static String jsonToxml(JSONObject json) {
+			return new XMLSerializer()
+					.write(JSONSerializer.toJSON(json.toString()));
 		}
 
 		/**
@@ -1870,6 +1894,26 @@ public class Util {
 			temp = temp + eip;
 		}
 		return temp;
+	}
+
+	public static String EUCKRToUTF8(String string) {
+		try {
+			return new String(string.getBytes("EUC-KR"), "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			return null;
+		}
+	}
+
+	public static String UTF8ToEUCKR(String string) {
+		try {
+			return new String(string.getBytes(), "EUC-KR");
+		} catch (UnsupportedEncodingException e) {
+			return null;
+		}
+	}
+
+	public static JSONObject jsonEncode(Object o) throws JSONException {
+		return new JSONObject(new Gson().toJson(o));
 	}
 
 }
