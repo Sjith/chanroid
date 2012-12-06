@@ -85,5 +85,12 @@ public class ClearableEditText extends RelativeLayout implements TextWatcher, On
 		textBox.setImeOptions(option);
 	}
 
+	public void setText(CharSequence cs) {
+		textBox.setText(cs);
+	}
+	
+	public Editable getText() {
+		return textBox.getText();
+	}
 
 }

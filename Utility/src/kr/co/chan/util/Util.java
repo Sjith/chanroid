@@ -43,8 +43,6 @@ import org.json.JSONObject;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-import com.google.gson.Gson;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -101,13 +99,15 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+
 /**
  * 걍 이것저것 넣은 유틸리티 클래스
  * 
  * @author chan-woo park
  * 
  */
-@SuppressLint("NewApi")
+@SuppressLint({ "NewApi", "DefaultLocale" })
 public class Util {
 
 	public static class Collection {
@@ -343,6 +343,7 @@ public class Util {
 		}
 	}
 
+	@SuppressLint("DefaultLocale")
 	public static class Time {
 		/**
 		 * 
@@ -1123,7 +1124,8 @@ public class Util {
 
 	public static class Stream {
 
-		public static InputStream openAsset(Context ctx, String fileName) throws IOException {
+		public static InputStream openAsset(Context ctx, String fileName)
+				throws IOException {
 			return ctx.getAssets().open(fileName);
 		}
 
@@ -1409,8 +1411,8 @@ public class Util {
 		}
 
 		public static String jsonToxml(JSONObject json) {
-			return new XMLSerializer()
-					.write(JSONSerializer.toJSON(json.toString()));
+			return new XMLSerializer().write(JSONSerializer.toJSON(json
+					.toString()));
 		}
 
 		/**
@@ -1543,7 +1545,26 @@ public class Util {
 			Configuration config = context.getResources().getConfiguration();
 			boolean isXlarge = (config.screenLayout & 4) == 4;
 			boolean isLarge = (config.screenLayout & 3) == 3;
-			return (isXlarge || isLarge);
+
+			boolean mask = true;
+			if (Build.DEVICE.contains("SHV-E160")) // 노트1
+				mask = false;
+			else if (Build.DEVICE.contains("SHW-M180")) // 탭7
+				mask = true;
+			else if (getScreenInch(context) < 6.d) // 6인치 미만은 폰으로 취급
+				mask = false;
+
+			return (isXlarge || isLarge) & mask;
+		}
+
+		public static double getScreenInch(Context ctx) {
+			DisplayMetrics dm = new DisplayMetrics();
+			WindowManager wm = (WindowManager) ctx
+					.getSystemService(Context.WINDOW_SERVICE);
+			wm.getDefaultDisplay().getMetrics(dm);
+			double x = java.lang.Math.pow(dm.widthPixels / dm.xdpi, 2);
+			double y = java.lang.Math.pow(dm.heightPixels / dm.ydpi, 2);
+			return java.lang.Math.sqrt(x + y);
 		}
 
 		/**
