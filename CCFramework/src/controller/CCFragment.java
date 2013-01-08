@@ -4,14 +4,13 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import view.CCView;
-
 import model.CCModel;
+import view.CCView;
 import android.content.Context;
 import android.support.v4.app.Fragment;
 
 public abstract class CCFragment extends Fragment implements CCController {
-
+	
 	@Override
 	public CCModel loadModel(Class<? extends CCModel> cls) {
 		// TODO Auto-generated method stub

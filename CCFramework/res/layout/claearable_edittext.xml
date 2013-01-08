@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:hint="검색어"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@drawable/text_cursor_holo_light"
+        android:paddingRight="35dp" >
+        <requestFocus />
+    </EditText>
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:visibility="invisible"
+        android:background="@drawable/ic_clear"></Button>
+
+</RelativeLayout>

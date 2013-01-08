@@ -48,7 +48,7 @@ public class MyPrefItem extends RelativeLayout {
 		arrow.setImageResource(R.drawable.arrow);
 		arrow.setId(2);
 		
-		LinearLayout left = new LinearLayout(getContext());
+		LinearLayout left = new LinearLayout(context);
 		left.setOrientation(LinearLayout.VERTICAL);
 		left.addView(title);
 		left.addView(summary);

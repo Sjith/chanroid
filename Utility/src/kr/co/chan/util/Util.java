@@ -7,16 +7,17 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
 import java.io.Writer;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.security.MessageDigest;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Formatter;
 import java.util.List;
@@ -28,16 +29,8 @@ import net.sf.json.JSON;
 import net.sf.json.JSONSerializer;
 import net.sf.json.xml.XMLSerializer;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.xmlpull.v1.XmlPullParser;
@@ -140,8 +133,8 @@ public class Util {
 			boolean isWifiAvail = ni.isAvailable();
 			boolean isWifiConn = ni.isConnected();
 			ni = cm.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
-			boolean isMobileAvail = ni.isAvailable();
-			boolean isMobileConn = ni.isConnected();
+			boolean isMobileAvail = ni == null ? false : ni.isAvailable();
+			boolean isMobileConn = ni == null ? false : ni.isConnected();
 			if (isWifiAvail && isWifiConn) {
 				return ConnectivityManager.TYPE_WIFI;
 			} else if (isMobileAvail && isMobileConn) {
@@ -346,64 +339,6 @@ public class Util {
 	@SuppressLint("DefaultLocale")
 	public static class Time {
 		/**
-		 * 
-		 * <PRE>
-		 * 1. MethodName : getCurrentDateTimeString
-		 * 2. ClassName  : Time
-		 * 3. Comment   : 현재 날짜, 시간을 00-00-00 00:00:00 의 형식으로 반환 
-		 * 4. 작성자    : 박찬우
-		 * 5. 작성일    : 2012. 10. 30. 오후 5:43:53
-		 * </PRE>
-		 * 
-		 * @return void
-		 */
-		public static String getCurrentDateTimeString() {
-			Calendar c = Calendar.getInstance(Locale.KOREA);
-			String time = String.format("%04d-%02d-%02d %02d:%02d:%02d",
-					c.get(Calendar.YEAR), c.get(Calendar.MONTH) + 1,
-					c.get(Calendar.DAY_OF_MONTH), c.get(Calendar.HOUR_OF_DAY),
-					c.get(Calendar.MINUTE), c.get(Calendar.SECOND));
-			return time;
-		}
-
-		/**
-		 * <PRE>
-		 * 1. MethodName : getCurrentDateString
-		 * 2. ClassName  : Time
-		 * 3. Comment   : 현재 날짜를 00-00-00 의 형식으로 반환 
-		 * 4. 작성자    : 박찬우
-		 * 5. 작성일    : 2012. 11. 5. 오후 7:43:53
-		 * </PRE>
-		 * 
-		 * @return
-		 */
-		public static String getCurrentDateString() {
-			Calendar c = Calendar.getInstance(Locale.KOREA);
-			String time = String.format("%04d-%02d-%02d", c.get(Calendar.YEAR),
-					c.get(Calendar.MONTH) + 1, c.get(Calendar.DAY_OF_MONTH));
-			return time;
-		}
-
-		/**
-		 * <PRE>
-		 * 1. MethodName : getCurrentTimeString
-		 * 2. ClassName  : Time
-		 * 3. Comment   : 현재 시간을 00:00:00 의 형식으로 반환 
-		 * 4. 작성자    : 박찬우
-		 * 5. 작성일    : 2012. 11. 5. 오후 7:44:16
-		 * </PRE>
-		 * 
-		 * @return
-		 */
-		public static String getCurrentTimeString() {
-			Calendar c = Calendar.getInstance(Locale.KOREA);
-			String time = String.format("%02d:%02d:%02d",
-					c.get(Calendar.HOUR_OF_DAY), c.get(Calendar.MINUTE),
-					c.get(Calendar.SECOND));
-			return time;
-		}
-
-		/**
 		 * 시간정보를 00:00:00 의 형식으로 변환한다.
 		 * 
 		 * @param timeMs
@@ -473,7 +408,7 @@ public class Util {
 	public static class App {
 
 		/**
-		 * 앱의 현재 버전을 실수형으로 리턴 (버전에 알파벳이 있을시 0.0으로 리턴됨)
+		 * 앱의 현재 버전(versionName)을 실수형으로 리턴 (버전에 알파벳이 있을시 0.0으로 리턴됨)
 		 * 
 		 * @param ctx
 		 * @return
@@ -1279,25 +1214,28 @@ public class Util {
 		public static InputStream inStreamFromURLbyPOST(String url,
 				ArrayList<NameValuePair> params) throws IllegalStateException,
 				IOException {
-			HttpClient client = new DefaultHttpClient();
-			HttpUriRequest post;
-			if (params == null) {
-				post = new HttpGet(url);
-			} else {
-				HttpPost poster = new HttpPost(url);
-				UrlEncodedFormEntity formentity = new UrlEncodedFormEntity(
-						params);
-				poster.setEntity(formentity);
-				post = poster;
+
+			StringBuilder paramBuilder = new StringBuilder();
+			HttpURLConnection conn = (HttpURLConnection) new URL(url)
+					.openConnection();
+			conn.setDoInput(true);
+			conn.setRequestMethod("GET");
+
+			if (params != null) {
+				conn.setDoOutput(true); // 이거 호출하면 자동으로 POST로 변경됨
+				for (NameValuePair p : params)
+					paramBuilder.append(p.getName() + "=" + p.getValue() + "&");
+				OutputStream paramWriter = conn.getOutputStream();
+				paramWriter.write(paramBuilder.toString().getBytes());
+				paramWriter.flush();
+				paramWriter.close();
 			}
-			HttpResponse res = client.execute(post);
-			if (res == null)
-				return null;
-			HttpEntity entity = res.getEntity();
-			if (entity == null)
-				return null;
+
+			if (conn.getResponseCode() == HttpURLConnection.HTTP_OK)
+				return conn.getInputStream();
 			else
-				return entity.getContent();
+				return null;
+
 		}
 
 		/**
@@ -1747,16 +1685,6 @@ public class Util {
 
 	public static class File {
 
-		public static String getDownloadDir() {
-			if (Build.VERSION.SDK_INT > 7) {
-				return Environment.getExternalStoragePublicDirectory(
-						Environment.DIRECTORY_DOWNLOADS).getPath();
-			} else {
-				return Environment.getExternalStorageDirectory() + "/"
-						+ "Download";
-			}
-		}
-
 		/**
 		 * 파일 이름이나 경로에서 파일 확장자를 구함
 		 * 
@@ -1776,6 +1704,11 @@ public class Util {
 			String realName = fileName.split("\\.")[0];
 			String extension = "smi";
 			return path + realName + "." + extension;
+		}
+
+		public static String clearName(String name) {
+			return name.replace(">", "").replace("<", "").replace("?", "")
+					.replace(":", "").replace("/", "").replace("|", "");
 		}
 
 		/**

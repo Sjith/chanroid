@@ -8,6 +8,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SimpleAdapter;
 
+/**
+ * ViewHolder와 Struct를 활용하여 설계가 용이하도록 재구성한 어댑터
+ * 
+ * @author CINEPOX
+ * 
+ * @param <T>
+ */
 public abstract class CCAdapter<T> extends SimpleAdapter {
 
 	private Context mContext;
@@ -32,11 +39,7 @@ public abstract class CCAdapter<T> extends SimpleAdapter {
 		// TODO Auto-generated method stub
 		if (convertView == null)
 			convertView = inflateItem();
-		if (getHolder(convertView) == null)
-			return initItem(setHolder(convertView, getItemData(position)),
-					convertView);
-		else
-			return initItem(getHolder(convertView), convertView);
+		return initItem(getItemData(position), convertView);
 	}
 
 	@Override
@@ -49,16 +52,6 @@ public abstract class CCAdapter<T> extends SimpleAdapter {
 	public int getCount() {
 		return mData.size();
 	};
-
-	private T setHolder(View item, T holder) {
-		item.setTag(holder);
-		return holder;
-	}
-
-	@SuppressWarnings("unchecked")
-	private T getHolder(View item) {
-		return (T) item.getTag();
-	}
 
 	private T getItemData(int location) {
 		return mData.get(location);
@@ -73,9 +66,8 @@ public abstract class CCAdapter<T> extends SimpleAdapter {
 	}
 
 	/**
-	 * 뷰 내용 초기화
-	 * 널체크 필요없이 뷰 선언하고
-	 * 데이터 세팅만 해 주면 됨
+	 * 뷰 내용 초기화 널체크 필요없이 뷰 선언하고 데이터 세팅만 해 주면 됨
+	 * 뷰홀더 생성 이런건 상속받은 클래스에서 알아서..
 	 * 
 	 * @param data
 	 * @param convertView

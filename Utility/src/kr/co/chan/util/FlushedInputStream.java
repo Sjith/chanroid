@@ -4,6 +4,11 @@ import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * 2.2부터는 쓸 필요 없음
+ * @author CINEPOX
+ *
+ */
 public class FlushedInputStream extends FilterInputStream {
 	
     public FlushedInputStream(InputStream inputStream) {

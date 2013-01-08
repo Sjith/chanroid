@@ -37,7 +37,7 @@ public abstract class CCView extends LinearLayout {
 	public View getContentView() {
 		return contentView;
 	}
-
+	
 	public abstract int getLayoutId();
 
 	public abstract void allocViews();
