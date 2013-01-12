@@ -20,6 +20,17 @@ public class FileUtils {
 	}
 
 	/**
+	 * 파일 이름에서 금칙어 제거
+	 * 
+	 * @param name
+	 * @return
+	 */
+	public static String clearName(String name) {
+		return name.replace(">", "").replace("<", "").replace("?", "")
+				.replace(":", "").replace("/", "").replace("|", "");
+	}
+	
+	/**
 	 * 지정 파일에서 확장자가 바뀐 "파일명"을 리턴(파일 아님, 실제 존재하는 경로 아닐 수 있음)
 	 * 
 	 * @param path
@@ -45,6 +56,8 @@ public class FileUtils {
 	 * @return
 	 */
 	public static String getMediaPathfromUri(Context context, Uri uri) {
+		if (uri == null)
+			return null;
 		Cursor c = context.getContentResolver().query(uri, null, null,
 				null, null);
 		if (c.moveToNext())

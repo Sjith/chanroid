@@ -1,6 +1,7 @@
 package extend;
 
 import iface.OnShakeListener;
+import utils.LogUtils.l;
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -92,6 +93,8 @@ public class ShakeListener implements SensorEventListener {
 					+ values[SensorManager.DATA_Z] - mLastX - mLastY - mLastZ)
 					/ diff * 10000;
 			if (speed > SHAKE_THRESHOLD) {
+				l.i("speed : " + speed);
+				l.i("shake count : " + ++mShakeCount);
 				if ((++mShakeCount >= SHAKE_COUNT)
 						&& (now - mLastShake > SHAKE_DURATION)) {
 					mLastShake = now;

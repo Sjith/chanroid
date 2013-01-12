@@ -15,20 +15,20 @@ public class StorageUtils {
 	public static long getTotalInternalMemorySize() {
 		File path = Environment.getDataDirectory();
 		StatFs stat = new StatFs(path.getPath());
-		return stat.getBlockSize() * stat.getBlockCount();
+		return Math.abs(stat.getBlockSize() * stat.getBlockCount());
 	}
 
 	public static long getAvailableInternalMemorySize() {
 		File path = Environment.getDataDirectory();
 		StatFs stat = new StatFs(path.getPath());
-		return stat.getBlockSize() * stat.getAvailableBlocks();
+		return Math.abs(stat.getBlockSize() * stat.getAvailableBlocks());
 	}
 
 	public static long getTotalExternalMemorySize() {
 		if (isExternalMemoryAvailable() == true) {
 			File path = Environment.getExternalStorageDirectory();
 			StatFs stat = new StatFs(path.getPath());
-			return stat.getBlockSize() * stat.getBlockCount();
+			return Math.abs(stat.getBlockSize() * stat.getBlockCount());
 		} else {
 			return -1;
 		}
@@ -38,7 +38,7 @@ public class StorageUtils {
 		if (isExternalMemoryAvailable() == true) {
 			File path = Environment.getExternalStorageDirectory();
 			StatFs stat = new StatFs(path.getPath());
-			return stat.getBlockSize() * stat.getAvailableBlocks();
+			return Math.abs(stat.getBlockSize() * stat.getAvailableBlocks());
 		} else {
 			return -1;
 		}

@@ -15,24 +15,27 @@ public class NetworkUtils {
 	 * @return 네트워크 종류(ConnectivityManager 상수)
 	 */
 	public static int getNetworkType(Context context) {
+		ConnectivityManager cm = (ConnectivityManager) context
+				.getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo ni = cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+		boolean isWifiAvail = ni.isAvailable();
+		boolean isWifiConn = ni.isConnected();
+		boolean isMobileAvail = false;
+		boolean isMobileConn = false;
+
 		try {
-			ConnectivityManager cm = (ConnectivityManager) context
-					.getSystemService(Context.CONNECTIVITY_SERVICE);
-			NetworkInfo ni = cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
-			boolean isWifiAvail = ni.isAvailable();
-			boolean isWifiConn = ni.isConnected();
 			ni = cm.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
-			boolean isMobileAvail = ni == null ? false : ni.isAvailable();
-			boolean isMobileConn = ni == null ? false : ni.isConnected();
-			if (isWifiAvail && isWifiConn) {
-				return ConnectivityManager.TYPE_WIFI;
-			} else if (isMobileAvail && isMobileConn) {
-				return ni.getType();
-			} else {
-				return ConnectivityManager.TYPE_DUMMY; // 네트워크 안됨
-			}
+			isMobileAvail = ni == null ? false : ni.isAvailable();
+			isMobileConn = ni == null ? false : ni.isConnected();
 		} catch (Exception e) {
-			return ConnectivityManager.TYPE_DUMMY;
+		}
+
+		if (isWifiAvail && isWifiConn) {
+			return ConnectivityManager.TYPE_WIFI;
+		} else if (isMobileAvail && isMobileConn) {
+			return ni.getType();
+		} else {
+			return ConnectivityManager.TYPE_DUMMY; // 네트워크 안됨
 		}
 	}
 
