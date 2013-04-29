@@ -2,13 +2,13 @@ package model;
 
 
 public abstract class CCModel {
-	private boolean isLoaded = false;
-
-	public final boolean isLoaded() {
-		return isLoaded;
+	
+	public final boolean isY(String flag) {
+		return "Y".equals(flag);
 	}
-
-	public final void setLoaded(boolean flag) {
-		isLoaded = flag;
+	
+	public final String isY(boolean flag) {
+		return flag ? "Y" : "N";
 	}
+	
 }

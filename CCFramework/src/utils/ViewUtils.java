@@ -36,6 +36,30 @@ public class ViewUtils {
 	}
 
 	/**
+	 * 별 기능없이 메시지만 있는 간단한 알림창을 하나 띄움 (캔슬 됨)
+	 * 
+	 * @param ctx
+	 *            띄울 액티비티
+	 * @param title
+	 *            타이틀
+	 * @param message
+	 *            메시지
+	 * @param click
+	 *            클릭 리스너
+	 * 
+	 * @return 여러번 사용할 필요가 있는 경우 레퍼런스를 반환
+	 */
+	public static AlertDialog showAlert(Context ctx, int title, int message,
+			int btntext, DialogInterface.OnClickListener click,
+			boolean cancelable) {
+		String titleText = ctx.getString(title);
+		String messageText = ctx.getString(message);
+		String btnText = ctx.getString(btntext);
+		return showAlert(ctx, titleText, messageText, btnText, click,
+				cancelable);
+	}
+
+	/**
 	 * 별 기능 없이 뺑뺑이만 도는 로딩창을 하나 띄움 (캔슬 안됨)
 	 * 
 	 * @param ctx

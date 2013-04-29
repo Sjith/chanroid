@@ -39,9 +39,10 @@ public abstract class CCAdapter<T> extends SimpleAdapter {
 		// TODO Auto-generated method stub
 		if (convertView == null)
 			convertView = inflateItem();
-		return initItem(getItemData(position), convertView);
+		convertView = initItem(getItemData(position), convertView);
+		return convertView;
 	}
-
+	
 	@Override
 	public long getItemId(int position) {
 		// TODO Auto-generated method stub
@@ -74,4 +75,5 @@ public abstract class CCAdapter<T> extends SimpleAdapter {
 	 * @return
 	 */
 	public abstract View initItem(T data, View convertView);
+	
 }

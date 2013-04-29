@@ -2,6 +2,9 @@ int drawable ic_clear 0x7f020000
 int drawable ic_clear_selected 0x7f020001
 int drawable ic_clear_unselected 0x7f020002
 int drawable text_cursor_holo_light 0x7f020003
-int id button1 0x7f040001
-int id editText1 0x7f040000
+int id btn_cleartext_clear 0x7f050001
+int id edit_cleartext_text 0x7f050000
 int layout claearable_edittext 0x7f030000
+int string error_connect 0x7f040001
+int string error_device 0x7f040000
+int string error_server_data 0x7f040002

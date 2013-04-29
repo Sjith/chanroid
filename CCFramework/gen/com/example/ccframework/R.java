@@ -17,10 +17,15 @@ public final class R {
         public static int text_cursor_holo_light=0x7f020003;
     }
     public static final class id {
-        public static int button1=0x7f040001;
-        public static int editText1=0x7f040000;
+        public static int btn_cleartext_clear=0x7f050001;
+        public static int edit_cleartext_text=0x7f050000;
     }
     public static final class layout {
         public static int claearable_edittext=0x7f030000;
+    }
+    public static final class string {
+        public static int error_connect=0x7f040001;
+        public static int error_device=0x7f040000;
+        public static int error_server_data=0x7f040002;
     }
 }

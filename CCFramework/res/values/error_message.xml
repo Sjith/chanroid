@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_device">실행에 필요한 시스템 정보가 없습니다. 이러한 현상이 지속되면 휴대폰을 재부팅하신 후 다시 시도해 주세요.</string>
+    <string name="error_connect">일시적으로 서버에 접근할 수 없는 상태입니다. 통신망이 양호한 곳에서 다시 시도해 주세요.</string>
+    <string name="error_server_data">실행에 필요한 정보를 가져오는데 실패했습니다. 이러한 현상이 지속되면 앱을 재설치 하거나 업데이트 해 주세요.</string>
+
+</resources>

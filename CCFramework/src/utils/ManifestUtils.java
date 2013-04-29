@@ -22,6 +22,16 @@ public class ManifestUtils {
 		}
 	}
 
+	public static String getVersionNameText(Context ctx) {
+		try {
+			return ctx.getPackageManager().getPackageInfo(ctx.getPackageName(),
+					PackageManager.GET_META_DATA).versionName;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			return null;
+		}
+	}
+
 	/**
 	 * 앱의 현재 버전(versionCode)을 정수형으로 리턴
 	 * 

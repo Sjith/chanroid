@@ -1,22 +1,22 @@
 package view;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public abstract class CCView extends LinearLayout {
 
 	private View contentView;
 
 	public CCView(Context context) {
-		super(context);
-		inflate();
+		this(context, null);
 	}
 
 	public CCView(Context context, AttributeSet attrs, int defStyle) {
-		super(context, attrs, defStyle);
-		inflate();
+		this(context, attrs);
 	}
 
 	public CCView(Context context, AttributeSet attrs) {
@@ -37,7 +37,15 @@ public abstract class CCView extends LinearLayout {
 	public View getContentView() {
 		return contentView;
 	}
-	
+
+	public void changeFont(String fontFileName, TextView... tv) {
+		for (TextView view : tv) {
+			if (view != null)
+				view.setTypeface(Typeface.createFromAsset(getContext()
+						.getAssets(), fontFileName));
+		}
+	}
+
 	public abstract int getLayoutId();
 
 	public abstract void allocViews();
